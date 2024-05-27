@@ -30,14 +30,6 @@ window.addEventListener('scroll', () => {
    };
 
 });
-var typed = new Typed('.auto', {
-   strings: ["   Deloping beautiful and functional websites is what I love doing, that's why I give my all in every new challange"],
-   typeSpeed: 5,
-   backSpeed: 8,
-   loop: true
-});
-let cursor_blink = document.getElementsByClassName('typed-cursor');
-cursor_blink[1].style.display = 'none';
 let section_3 = document.getElementsByClassName('section-3');
 
 let scroll_button = document.querySelector('.goto-top');
@@ -189,3 +181,10 @@ for (let i = 0; i < 3; i++) {
 
 }
 
+
+let burger=document.querySelector('.burger');
+let options=document.querySelector('.options');
+burger.addEventListener('click',()=>{
+   options.classList.toggle('burger-use');
+   burger.classList.toggle('lines-burger');
+});

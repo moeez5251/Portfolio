@@ -138,9 +138,12 @@ body {
 }
 .burger{
     width: 5%;
-    height: 30%;    
     cursor: pointer;
     display: none;
+    position: relative;
+    top: -173px;
+    float: right;
+    right: -58px;
 }
 .lines{
     width: 39px;
@@ -215,7 +218,7 @@ body {
     background-size: 200% 100%;
     background-position: right bottom;
     transition: background-position 1s;
-    box-shadow: -3px 1px 6px 1px gray;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 #btn1:hover {
@@ -231,7 +234,7 @@ body {
     background-position: right bottom;
     transition: background-position 1s;
     color: white;
-    box-shadow: -3px 1px 7px 1px black;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 
 }
 
@@ -827,7 +830,6 @@ body {
    }
    .message{
     color: antiquewhite;
-    text-shadow: 0px 1px 7px white;
     
    }
   .about{
@@ -887,11 +889,48 @@ body {
   .goto-top{
     background-color: cyan;
   }
-
+.footer span{
+    color:red;
 }
+}
+.lines-burger{
+    .line-1{
+        transition: all 1s;
+        transform: rotate(40deg);
+        width: 50px;
+    }
+    .line-2{
+        transition: all 1s;
+        transform: rotate(130deg);
+        width: 50px;
+    }
+    .line-3{
+        display: none;
 
+    }
+}
 @media screen and (max-width:930px) {
-   .burger{
-    display: block;
+    .burger{
+        display: block;
    }
+   .navbar{
+    flex-direction: column;
+   }
+   .theme{
+    position: relative;
+    right: -459px;
+    width: 60px;
+    top: -139px;
+}
+   .options{
+    justify-content: center;
+    position: relative;
+    top: -400px;
+    transition: all 1s;
+    
+}
+.burger-use{
+    transition: all 1s;
+    top: 0px;
+}
 }
