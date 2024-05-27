@@ -1,0 +1,897 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body { 
+    transition: all 1s;
+    height: 100vh;
+    background-color: white;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    background-color: ghostwhite;
+    width: 12px;
+    height: 12px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e30ae3;
+    border-radius: 50px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name {
+    font-family: "Roboto", sans-serif;
+    margin: 14px 19px;
+    font-size: 13px;
+    text-wrap: nowrap;
+}
+
+.dot {
+    position: relative;
+    top: -37px;
+    font-weight: bolder;
+    left: 130px;
+    font-size: 35px;
+    color: #a905ed;
+
+}
+
+.options {
+    list-style: none;
+    display: flex;
+}
+
+.goto-top {
+    font-size: 33px;
+    background-color: #e30ae3;
+    color: white;
+    margin-right: 12px;
+    border-radius: 8px;
+    padding: 2px 4px;
+    opacity: 0;
+    cursor: pointer;
+    position: fixed;
+    top: 277px;
+    left: 1303px;
+    transition: all 1s;
+    z-index: 100;
+}
+
+#top {
+    transform: rotate(180deg);
+}
+
+.nav {
+    margin: 10px 55px;
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+    padding: 3px 10px;
+    font-family: "Radio Canada Big", sans-serif;
+    font-weight: bolder;
+    transition: all 0.6s ease-in-out;
+    border-bottom-width: 0;
+}
+
+.nav:hover {
+    color: #8b08c1;
+}
+
+.nav:before {
+    content: "";
+    background: #8b08c1;
+    width: 0%;
+    display: block;
+    position: relative;
+    top: 95%;
+    height: 5px;
+    transition: 1s all ease;
+}
+
+.nav:hover::before {
+    width: 100%;
+}
+
+.theme {
+    position: relative;
+    right: 43px;
+    width: 60px;
+    top: 10px;
+}
+
+.icon {
+    color: #a905ed;
+    font-size: 37px;
+    cursor: pointer;
+    transition: all 1s ease-in;
+}
+
+.icon1 {
+    color: white;
+    cursor: pointer;
+    transition: all 1s ease-in;
+
+}
+.burger{
+    width: 5%;
+    height: 30%;    
+    cursor: pointer;
+    display: none;
+}
+.lines{
+    width: 39px;
+    height: 7px;
+    background-color: #8b08c1;
+    margin: 7px;
+}
+.section-1 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Hey {
+    margin-left: 60px;
+    margin-top: 40px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.auto-typed {
+    margin-left: 250px;
+    font-size: 46px;
+    font-family: "Radio Canada Big", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #8b08c1;
+    text-wrap: nowrap;
+}
+
+.typed-cursor {
+    font-size: 45px;
+    color: #8b08c1;
+}
+
+.message {
+    position: relative;
+    top: 20px;
+    left: 95px;
+    font-family: "Kanit", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #5a5959;
+}
+
+.btns {
+    text-align: center;
+}
+
+.btn {
+    padding: 12px 11px;
+    margin: 36px 75px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+}
+
+#btn1 {
+    background: linear-gradient(to right, black 50%, rgb(225 224 224) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 1s;
+    box-shadow: -3px 1px 6px 1px gray;
+}
+
+#btn1:hover {
+    color: white;
+    background-position: left bottom;
+    transform: scale(0.9);
+
+}
+
+#btn2 {
+    background: linear-gradient(to right, rgb(196, 196, 196) 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 1s;
+    color: white;
+    box-shadow: -3px 1px 7px 1px black;
+
+}
+
+#btn2:hover {
+    color: black;
+    background-position: left top;
+    transform: scale(0.9);
+
+}
+
+.right {
+    width: 40%;
+}
+
+.Moeez {
+    width: 136px;
+    height: 156px;
+    position: relative;
+    left: 60px;
+    top: 140px;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: all 0.7s ease;
+    opacity: 0;
+}
+
+.Moeez:hover {
+    transition: all 1s ;
+    transform: scale(1.5)
+}
+
+.pic {
+    opacity: 1;
+    position: relative;
+    left: 260px;
+    transition: all 2s ease-in;
+}
+
+.section-2 {
+    margin-top: -40px;
+    height: 152vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    position: relative;
+    top: 83px;
+    font-size: 55px;
+    font-family: "Radio Canada Big", sans-serif;
+    font-weight: 700;
+    margin-left: 90px;
+
+}
+
+.dot1 {
+    color: #8b08c1;
+    font-size: 70px;
+
+}
+
+#message {
+    position: relative;
+    top: 121px;
+    width: 53%;
+    height: 81px;
+}
+
+#message::before {
+    position: absolute;
+    content: '';
+    width: 6px;
+    display: block;
+    left: -3%;
+    background-color: #a905ed;
+    animation: height 2s infinite linear 0s;
+}
+
+@keyframes height {
+    0% {
+        height: 0px;
+
+    }
+
+    100% {
+        height: 40px;
+    }
+}
+
+.stocks {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30vh;
+    width: 100%;
+
+}
+
+.my-stocks {
+    display: flex;
+    margin-left: 90px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    margin-top: 172px;
+}
+
+.my {
+    display: flex;
+    text-wrap: nowrap;
+}
+
+.my-places {
+    margin-left: 490px;
+    margin-top: 4px;
+    font-size: 20px;
+
+}
+
+.dot2 {
+    position: relative;
+    left: 2px;
+    top: -40px;
+}
+
+.dot3 {
+    top: -30px;
+    position: relative;
+    font-size: 60px;
+
+}
+
+.skills {
+    position: relative;
+    width: 31%;
+    height: 39%;
+    left: 128px;
+    background-color: rgb(203 197 163);
+    border-radius: 10px;
+    top: -11px;
+    padding: 0px 10px;
+    overflow: hidden;
+    z-index: 10;    filter: drop-shadow(2px 4px 6px black);
+    transition: all 1s;
+    cursor: pointer;
+}
+.skills:hover,.place:hover{
+    transition: all 1s;
+    transform: scale(1.04);
+}
+.one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 23px;
+    z-index: -10;
+    position: relative;
+    overflow: hidden;
+}
+
+.stars {
+    color: #8b08c1;
+    font-size: 30px;
+    margin-top: -5px;
+    font-weight: bold;
+}
+
+.elements {
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 6px 19px;
+    padding-bottom: 12px;
+    border-radius: 10px;
+    margin: 0px 3px;
+    text-wrap: nowrap;
+}
+
+.elements-2 {
+    text-wrap: nowrap;
+    margin: 2px 3px;
+}
+
+#Designs {
+    position: relative;
+    left: -89px;
+    margin-right: -84px;
+    text-wrap: nowrap;
+}
+
+#JS {
+    position: relative;
+    left: -172px;
+    margin-right: -144px;
+
+}
+
+#node {
+    position: relative;
+    right: -42px;
+
+
+}
+
+#resolve {
+    position: relative;
+    left: -69px;
+    margin-right: -45px;
+
+}
+
+#star-animation {
+    position: relative;
+    right: -28px;
+}
+
+.place {
+    position: relative;
+    width: 31%;
+    height: 39%;
+    right: -719px;
+    background-color: rgb(203 197 163);
+    border-radius: 10px;
+    top: -264px;
+    overflow: hidden;
+    z-index: 10;  
+      filter: drop-shadow(2px 4px 6px black);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.img {
+    position: relative;
+    top: 88px;
+    left: 70px;
+}
+
+.image {
+    width: 304px;
+    height: 276px;
+    filter: grayscale(1);
+}
+
+.dotted {
+    position: relative;
+    color: purple;
+    top: -206px;
+    font-weight: bold;
+    font-size: 73px;
+    text-shadow: -1px 0px 20px #a905ed;
+    left: -210px;
+}
+
+.section-3 {
+    height: 135vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.Experience {
+    display: flex;
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 27px;
+    margin-left: 100px;
+}
+
+.arrow {
+    color: red;
+    position: relative;
+    top: 9px;
+    left: 7px;
+    font-size: 38px;
+    animation: colors infinite 0.5s forwards;
+}
+
+@keyframes colors {
+    0% {
+        color: red;
+        top: -3px;
+    }
+
+    50% {
+        color: orange
+    }
+
+    100% {
+        color: rgb(255, 0, 128);
+        top: 9px;
+    }
+}
+
+.my-skills {
+    display: flex;
+    justify-content: space-evenly;
+    height: 60vh;
+    flex-direction: column;
+    position: relative;
+    left: -1100px;
+    transition: all 1s;
+}
+
+.my-skills::before {
+    content: "";
+    background: gray;
+    width: 5px;
+    height: 162%;
+    position: absolute;
+    left: 269px;
+    top: 61px;
+    border-radius: 69px;
+
+}
+
+.purple-color::before {
+    transition: all 1s;
+    display: block;
+    content: '';
+    position: absolute;
+    left: 269px;
+    top: 59px;
+    border-radius: 33px;
+    width: 5px;
+    height: 28%;
+    background: purple;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.names {
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "Ubuntu", sans-serif;
+    color: #a905ed;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: "Radio Canada Big", sans-serif;
+    font-weight: 500;
+    width: 30%;
+    color: #5a5959;
+    margin-top: 18px;
+}
+
+.quoted-text {
+    font-style: italic;
+    color: black;
+}
+
+.time {
+    font-family: sans-serif;
+    font-weight: bolder;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    transition: color 1s;
+}
+
+.project-image {
+    display: block;
+    margin: 0px auto;
+    width: 30%;
+    height: 40%;
+}
+
+.pro {
+    color: black;
+    font-family: "Radio Canada Big", sans-serif;
+    margin-left: 61px;
+    font-size: 40px;
+}
+
+.dott {
+    position: relative;
+    left: 220px;
+    font-size: 54px;
+    top: -60px;
+}
+
+.going {
+    display: inline-block;
+    background-color: yellow;
+    margin: 40px 620px;
+    font-size: 25px;
+    padding: 7px 15px;
+    border-radius: 11px;
+    box-shadow: 2px 4px 20px 5px yellow;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    text-wrap: nowrap;
+}
+
+.go1 {
+    margin: 40px 540px;
+}
+
+.go2 {
+    margin: 40px 590px;
+}
+
+.scroll {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Ubuntu", sans-serif;
+
+}
+
+.skills-section {
+    height: 55vh;
+    margin-top: 35px;
+}
+
+.skill-head {
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 43px;
+    margin-left: 82px;
+
+}
+
+.dot-skills {
+    position: relative;
+    top: -60px;
+    left: 189px;
+    font-size: 50px;
+}
+
+.all-skills {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills-of-web {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.skill-heading {
+    font-weight: 700;
+
+}
+
+.skill-para {
+    font-family: "Kanit", sans-serif;
+    color: #5a5959;
+    font-weight: 500;
+    padding: 7px 0px;
+}
+
+.contact-section {
+    height: 105vh;
+}
+
+.Contact-me {
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.forms{
+    transition: all 1s;
+    position: relative;
+    left: -900px;
+
+}
+.inputs {
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 15px;
+    margin: 41px auto;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+}
+
+.inputs:focus {
+    box-shadow: 1px 1px 9px 0px #8b08c1;
+    font-weight: 400;
+}
+.contact-btn{
+    padding: 9px 11px;
+    background-color: #e30ae3;
+    color: white;
+    border-radius: 10px;
+    margin: 0px auto;
+    display: block;
+    cursor: pointer;
+    font-size: 15px;
+    overflow: hidden;
+    transition: all 1s;
+
+}
+.contact-btn:hover{
+    transition: all 1s;
+    box-shadow: 0px 5px 8px 2px #e30ae3;
+    transform: scale(0.9);
+}
+.plane{
+    color: white;
+    font-size: 20px;
+}
+.social-medias{
+    position: relative;
+    width: 35px;
+    top: -520px;
+    left: 15px;
+
+}
+.logos{
+    font-size: 35px;
+    color: black;
+    animation: logo 2s infinite linear 0s;
+    transition: all 1s;
+    margin: 12px 12px;
+    text-decoration: none;
+    
+}
+.logos:hover{
+  color: #e30ae3;
+ 
+}
+
+@keyframes logo {
+    0%{
+        transform: rotate(0deg);
+
+    }
+   
+    100%{
+        transform: rotate(20deg);
+
+
+    }
+
+}
+.name-of-logo{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    top: -40px;
+    opacity: 0;
+    transition: all 1s;
+    z-index: -10;
+    cursor: none;
+}
+.footer{
+    font-family: "Radio Canada Big", sans-serif;
+
+    position: relative;
+        top: -199px;
+        height: 30px;
+        background-color: #e30ae3;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        padding-top: 8px;
+}
+.footer span{
+    color: yellow;
+}
+.dark-theme{
+    transition: all 1s;
+   background-color: #0a092d;
+   .name{
+    color: white;
+   }
+   .dot,.dot1{
+    color: orange;
+   }
+   .nav{
+    color: white;
+   }
+   .nav::before{
+   background-color: cyan;
+   }
+   .Hey{
+    color: white;
+   }
+   .auto-typed{
+    color: cyan;
+   }
+   .typed-cursor{
+    color: cyan;
+   }
+   .message{
+    color: antiquewhite;
+    text-shadow: 0px 1px 7px white;
+    
+   }
+  .about{
+    color: white;
+  }
+  #message::before{
+    background-color: cyan;
+  }
+  .my,.my-places{
+    color: white;
+  }
+  .skills,.place{
+    filter: drop-shadow(2px 4px 6px white);
+  }
+  .pro,.Experience,.Contact-me{
+    color: white;
+  }
+  .quoted-text{
+    color: yellow;
+  }
+  .description,.skill-head{
+    color: white;
+  }
+  .skill-heading{
+    color: cyan;
+    text-shadow: 0px 1px 7px cyan;
+
+  }
+  .skill-para{
+        color: white;
+  }
+  .inputs:focus{
+    box-shadow: 1px 1px 9px 0px white;
+  }
+  .contact-btn{
+    background-color: cyan;
+    color: black;
+  }
+  .contact-btn:hover{
+    box-shadow: 0px 5px 8px 2px cyan;
+
+  }
+  .logos{
+    color: white;
+  }
+  .logos:hover{
+    color: yellow;
+  }
+  .name-of-logo{
+    color: yellow;
+    text-shadow: 2px 2px 13px yellow;
+  }
+  .footer{
+    background-color: cyan;
+    color: black;
+  }
+  .goto-top{
+    background-color: cyan;
+  }
+
+}
+
+@media screen and (max-width:930px) {
+   .burger{
+    display: block;
+   }
+}
