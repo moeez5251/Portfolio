@@ -7,7 +7,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -75,7 +74,7 @@ body {
     opacity: 0;
     cursor: pointer;
     position: fixed;
-    top: 277px;
+    top: 80%;
     left: 1303px;
     transition: all 1s;
     z-index: 100;
@@ -250,8 +249,8 @@ body {
 }
 
 .Moeez {
-    width: 136px;
-    height: 156px;
+    width: 169px;
+    height: 159px;
     position: relative;
     left: 60px;
     top: 140px;
@@ -310,19 +309,8 @@ body {
     display: block;
     left: -3%;
     background-color: #a905ed;
-    animation: height 2s infinite linear 0s;
-}
+    height: 40px;}
 
-@keyframes height {
-    0% {
-        height: 0px;
-
-    }
-
-    100% {
-        height: 40px;
-    }
-}
 
 .stocks {
     margin-top: 100px;
@@ -377,7 +365,8 @@ body {
     top: -11px;
     padding: 0px 10px;
     overflow: hidden;
-    z-index: 10;    filter: drop-shadow(2px 4px 6px black);
+    z-index: 10; 
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     transition: all 1s;
     cursor: pointer;
 }
@@ -462,7 +451,7 @@ body {
     top: -264px;
     overflow: hidden;
     z-index: 10;  
-      filter: drop-shadow(2px 4px 6px black);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     transition: all 1s;
     cursor: pointer;
 }
@@ -587,6 +576,7 @@ body {
     width: 30%;
     color: #5a5959;
     margin-top: 18px;
+    transition: all 1s;
 }
 
 .quoted-text {
@@ -626,17 +616,18 @@ body {
 
 .going {
     display: inline-block;
-    background-color: yellow;
+    background: linear-gradient(69deg, #ff0bed, #b800ff);
     margin: 40px 620px;
     font-size: 25px;
     padding: 7px 15px;
     border-radius: 11px;
-    box-shadow: 2px 4px 20px 5px yellow;
+    box-shadow: -2px 2px 8px 1px #ab8ea9;
     cursor: pointer;
     text-decoration: none;
-    color: black;
+    color: white;
     text-wrap: nowrap;
 }
+
 
 .go1 {
     margin: 40px 540px;
@@ -734,7 +725,7 @@ body {
     font-size: 15px;
     overflow: hidden;
     transition: all 1s;
-
+    border: none;
 }
 .contact-btn:hover{
     transition: all 1s;
@@ -817,16 +808,16 @@ body {
     color: white;
    }
    .nav::before{
-   background-color: cyan;
+    background-color: orange;
    }
    .Hey{
     color: white;
    }
    .auto-typed{
-    color: cyan;
+    color: orange;
    }
    .typed-cursor{
-    color: cyan;
+    color: orange;
    }
    .message{
     color: antiquewhite;
@@ -836,7 +827,7 @@ body {
     color: white;
   }
   #message::before{
-    background-color: cyan;
+   background-color:  orange;
   }
   .my,.my-places{
     color: white;
@@ -848,14 +839,13 @@ body {
     color: white;
   }
   .quoted-text{
-    color: yellow;
+    color: orange;
   }
   .description,.skill-head{
     color: white;
   }
   .skill-heading{
-    color: cyan;
-    text-shadow: 0px 1px 7px cyan;
+    color: orange;
 
   }
   .skill-para{
@@ -865,7 +855,8 @@ body {
     box-shadow: 1px 1px 9px 0px white;
   }
   .contact-btn{
-    background-color: cyan;
+    background-color:  orange;
+
     color: black;
   }
   .contact-btn:hover{
@@ -883,15 +874,17 @@ body {
     text-shadow: 2px 2px 13px yellow;
   }
   .footer{
-    background-color: cyan;
+    background-color:  orange;
+
     color: black;
   }
-  .goto-top{
-    background-color: cyan;
+  .footer span{
+    color: white;
   }
-.footer span{
-    color:red;
-}
+  .goto-top{
+    background-color:  orange;
+
+  }
 }
 .lines-burger{
     .line-1{

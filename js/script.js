@@ -11,10 +11,10 @@ var typed = new Typed('.auto-typed', {
    backSpeed: 20,
    loop: true
 });
-window.scrollTo(0,10);
+window.scrollTo(0, 10);
 window.addEventListener('scroll', () => {
    var scroll = window.scrollY;
-   if (scroll <= 270||scroll===0) {
+   if (scroll <= 270 || scroll === 0) {
 
       setTimeout(() => {
          let temp = document.getElementById('Moeez');
@@ -51,6 +51,7 @@ window.addEventListener('scroll', () => {
 let names = document.querySelectorAll('.names');
 let purple_color = document.querySelector('.purple-color');
 let time = document.querySelectorAll('.time');
+let description=document.querySelectorAll('.description');
 names[0].addEventListener('click', () => {
    names[0].style.color = '#a905ed';
    names[1].style.color = 'gray';
@@ -64,6 +65,11 @@ names[0].addEventListener('click', () => {
    time[1].style.color = 'gray';
    time[2].style.color = 'gray';
    time[3].style.color = 'gray';
+   description[0].style.opacity='1';
+   description[1].style.opacity='0';
+   description[2].style.opacity='0';
+   description[2].style.opacity='0';
+   description[3].style.opacity='0';
 });
 names[0].click();
 names[1].addEventListener('click', () => {
@@ -79,6 +85,10 @@ names[1].addEventListener('click', () => {
    time[0].style.color = 'gray';
    time[2].style.color = 'gray';
    time[3].style.color = 'gray';
+   description[1].style.opacity='1';
+   description[0].style.opacity='0';
+   description[2].style.opacity='0';
+   description[3].style.opacity='0';
 });
 names[2].addEventListener('click', () => {
    names[2].style.color = '#a905ed';
@@ -93,6 +103,10 @@ names[2].addEventListener('click', () => {
    time[0].style.color = 'gray';
    time[1].style.color = 'gray';
    time[3].style.color = 'gray';
+   description[2].style.opacity='1';
+   description[1].style.opacity='0';
+   description[0].style.opacity='0';
+   description[3].style.opacity='0';
 });
 names[3].addEventListener('click', () => {
    names[3].style.color = '#a905ed';
@@ -107,17 +121,12 @@ names[3].addEventListener('click', () => {
    time[1].style.color = 'gray';
    time[2].style.color = 'gray';
    time[0].style.color = 'gray';
+   description[3].style.opacity='1';
+   description[1].style.opacity='0';
+   description[2].style.opacity='0';
+   description[0].style.opacity='0';
 });
 
-var swiper = new Swiper(".mySwiper", {
-   direction: "horizontal",
-   slidesPerView: 1,
-   spaceBetween: 10,
-   autoplay: {
-      delay: 1200,
-      disableOnInteraction: false,
-   },
-});
 let image = document.getElementsByClassName('project-image');
 image[1].style.width = '40%'
 image[3].style.width = '40%'
@@ -182,9 +191,9 @@ for (let i = 0; i < 3; i++) {
 }
 
 
-let burger=document.querySelector('.burger');
-let options=document.querySelector('.options');
-burger.addEventListener('click',()=>{
+let burger = document.querySelector('.burger');
+let options = document.querySelector('.options');
+burger.addEventListener('click', () => {
    options.classList.toggle('burger-use');
    burger.classList.toggle('lines-burger');
 });
