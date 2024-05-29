@@ -22,10 +22,10 @@ window.addEventListener('scroll', () => {
       }, 100);
    }
    let inputs = document.getElementsByClassName('inputs');
-   if (window.scrollY > 2890) {
+   if (window.scrollY > 2410) {
       document.querySelector('.forms').style.left = '0px';
    };
-   if (window.scrollY > 1710) {
+   if (window.scrollY > 1610) {
       document.querySelector('.my-skills').style.left = '0px';
    };
 
@@ -78,7 +78,7 @@ names[1].addEventListener('click', () => {
    names[2].style.color = 'gray';
    names[3].style.color = 'gray';
    var style = document.createElement('style');
-   var newCSS = '.purple-color::before { top: 196px; }';
+   var newCSS = '.purple-color::before { top: 139px; }';
    style.innerHTML = newCSS;
    document.body.appendChild(style);
    time[1].style.color = '#a905ed';
@@ -96,7 +96,7 @@ names[2].addEventListener('click', () => {
    names[1].style.color = 'gray';
    names[3].style.color = 'gray';
    var style = document.createElement('style');
-   var newCSS = '.purple-color::before { top: 366px; }';
+   var newCSS = '.purple-color::before { top: 220px; }';
    style.innerHTML = newCSS;
    document.body.appendChild(style);
    time[2].style.color = '#a905ed';
@@ -114,7 +114,7 @@ names[3].addEventListener('click', () => {
    names[1].style.color = 'gray';
    names[2].style.color = 'gray';
    var style = document.createElement('style');
-   var newCSS = '.purple-color::before { top: 540px; }';
+   var newCSS = '.purple-color::before { top: 282px; }';
    style.innerHTML = newCSS;
    document.body.appendChild(style);
    time[3].style.color = '#a905ed';

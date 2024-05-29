@@ -479,7 +479,7 @@ body {
 }
 
 .section-3 {
-    height: 135vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
 }
@@ -530,7 +530,7 @@ body {
     content: "";
     background: gray;
     width: 5px;
-    height: 162%;
+    height: 82%;
     position: absolute;
     left: 269px;
     top: 61px;
@@ -547,7 +547,7 @@ body {
     top: 59px;
     border-radius: 33px;
     width: 5px;
-    height: 28%;
+    height: 20%;
     background: purple;
 }
 
@@ -555,6 +555,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 15px;
+    height: 60px;
 }
 
 .names {
