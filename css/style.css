@@ -297,7 +297,7 @@ body {
 
 #message {
     position: relative;
-    top: 137px;
+    top: 143px;
     width: 53%;
     height: 81px;
     left: 121px;
@@ -354,8 +354,9 @@ body {
 .experience{
     position: relative;
     top: 114px;
-    left: 203px;
-    width: 56%;
+    left: 571px;
+    width: 51%;
+
 }
 .experience-para{
     font-family: "Kanit", sans-serif;
@@ -602,6 +603,7 @@ body {
 }
 
 .description {
+    position: relative;
     display: flex;
     flex-direction: column;
     font-size: 16px;
@@ -610,9 +612,19 @@ body {
     width: 30%;
     color: #5a5959;
     margin-top: 18px;
-    transition: all 1s;
 }
-
+.description1{
+    top: 134%;
+}
+.description2{
+    top: 0%;
+}
+.description3{
+    top: -140%;
+}
+.description4{
+    top: -280%;
+}
 .quoted-text {
     font-style: italic;
     color: black;
@@ -814,21 +826,6 @@ body {
     z-index: -10;
     cursor: none;
 }
-/* .footer{
-    font-family: "Radio Canada Big", sans-serif;
-
-    position: relative;
-        top: -199px;
-        height: 30px;
-        background-color: #e30ae3;
-        color: white;
-        text-align: center;
-        font-size: 18px;
-        padding-top: 8px;
-}
-.footer span{
-    color: yellow;
-} */
 .site-footer
 {
   background-color:#e30ae3;
@@ -837,6 +834,8 @@ body {
   line-height:24px;
   color:white;
   margin-top: -200px;
+  font-family: "Radio Canada Big", sans-serif;
+
 }
 .site-footer hr
 {
@@ -1076,14 +1075,13 @@ font-size: 17px;
     color: yellow;
     text-shadow: 2px 2px 13px yellow;
   }
-  .footer{
-    background-color:  orange;
-
+ .site-footer{
+    background-color: orange;
     color: black;
-  }
-  .footer span{
+ }
+ .site-footer a{
     color: white;
-  }
+ }
   .goto-top{
     background-color:  orange;
 
