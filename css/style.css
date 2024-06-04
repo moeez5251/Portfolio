@@ -28,14 +28,28 @@ body {
     background-color: ghostwhite;
     width: 12px;
     height: 12px;
-
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #e30ae3;
     border-radius: 50px;
 }
-
+.loader{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #e9e9ff;
+    z-index: 10;
+   
+}
+.load{
+    z-index: 1;
+    position: relative;
+    top: 39px;
+    width: 40%;
+    height: 74%;
+    left: 32%;
+}
 .navbar {
     display: flex;
     flex-direction: row;
@@ -43,12 +57,18 @@ body {
 }
 
 .name {
+    position: relative;
     font-family: "Roboto", sans-serif;
     margin: 14px 19px;
     font-size: 13px;
     text-wrap: nowrap;
+    left: 0px;
+    transition: all 1s;
 }
+.name-animate{
+    left: -203px;
 
+}
 .dot {
     position: relative;
     top: -37px;
@@ -164,14 +184,19 @@ body {
 }
 
 .Hey {
+    position: relative;
     margin-left: 60px;
     margin-top: 40px;
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-size: 19px;
     margin-bottom: 20px;
+    transition: all 1.5s;
+    top: 0px;
 }
-
+.hello{
+    top: -35px;
+}
 .auto-typed {
     margin-left: 250px;
     font-size: 46px;
@@ -180,8 +205,11 @@ body {
     font-style: normal;
     color: #8b08c1;
     text-wrap: nowrap;
+    transition: all 1.5s;
 }
-
+.auto-typed-animation{
+    margin-left: 150px;
+}
 .typed-cursor {
     font-size: 45px;
     color: #8b08c1;
@@ -198,9 +226,14 @@ body {
 }
 
 .btns {
+    position: relative;
+    transition: all 1s;
     text-align: center;
+    top: 0px;
 }
-
+.btns-animation{
+    top: 30px;
+}
 .btn {
     padding: 12px 11px;
     margin: 36px 75px;

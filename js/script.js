@@ -44,10 +44,17 @@ cursor[1].style.fontWeight='bold';
 // =====================>Event Listener for pic animation<=================================
 window.addEventListener('load',()=>{
    setTimeout(() => {
+      
+      document.querySelector('body').removeChild(document.getElementsByClassName('loader')[0]);
+      document.getElementsByClassName('Hey')[1].classList.remove('hello');
+      document.getElementsByClassName('auto-typed ')[0].classList.remove('auto-typed-animation');
+      document.getElementsByClassName('btns ')[0].classList.remove('btns-animation');
+      document.getElementsByClassName('name ')[0].classList.remove('name-animate');
+   }, 2000);
+   setTimeout(() => {
       let temp = document.getElementById('Moeez');
       temp.classList.add('pic');
-   }, 100);
-   window.scrollTo(0,0);
+   }, 2500);
 });
 
 // =====================>Window event listner<=================================
