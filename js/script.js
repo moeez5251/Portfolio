@@ -9,10 +9,10 @@ theme_icon.addEventListener('click', () => {
 
 let nav = document.getElementsByClassName('nav');
 nav[1].addEventListener('click', () => {
-   window.scrollTo(0, 1440);
+   window.scrollTo(0, 1340);
 });
 nav[2].addEventListener('click', () => {
-   window.scrollTo(0, 600);
+   window.scrollTo(0, 500);
 });
 document.getElementById('btn2').addEventListener('click', () => {
    window.scrollTo(0, 1440);
@@ -41,21 +41,19 @@ let cursor=document.getElementsByClassName('typed-cursor');
 cursor[1].style.fontSize='24px';
 cursor[1].style.fontWeight='bold';
 
-// =====================>Default Window Scroll<================================
+// =====================>Event Listener for pic animation<=================================
+window.addEventListener('load',()=>{
+   setTimeout(() => {
+      let temp = document.getElementById('Moeez');
+      temp.classList.add('pic');
+   }, 100);
+   window.scrollTo(0,0);
+});
 
-window.scrollTo(0, 10);
 // =====================>Window event listner<=================================
 
 window.addEventListener('scroll', () => {
-   var scroll = window.scrollY;
-// =====================>Event Listener for pic animation<=================================
-   if (scroll <= 270 || scroll === 0) {
-
-      setTimeout(() => {
-         let temp = document.getElementById('Moeez');
-         temp.classList.add('pic');
-      }, 100);
-   }
+  
 // =====================>Contact form animation<=================================
 
    let inputs = document.getElementsByClassName('inputs');

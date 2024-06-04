@@ -19,7 +19,7 @@ html {
 
 body { 
     transition: all 1s;
-    height: 100vh;
+    height: 100%;
     background-color: white;
     width: 100%;
 }
@@ -334,8 +334,8 @@ body {
     align-items: end;
     position: relative;
     top: 96px;
-    left: 204px;
-    width: 800px;
+    left: 571px;
+    width: 600px;
     font-size: 15px;
     font-family: "Radio Canada Big", sans-serif;
 }
@@ -651,6 +651,7 @@ body {
     font-family: "Radio Canada Big", sans-serif;
     margin-left: 61px;
     font-size: 40px;
+    margin-top: -156px;
 }
 
 .dott {
@@ -887,7 +888,9 @@ body {
 }
 .site-footer .social-icons
 {
-  text-align:right
+  text-align:right;
+  margin-right: 12px;
+
 }
 .site-footer .social-icons a
 {
@@ -1035,7 +1038,7 @@ font-size: 17px;
     color: orange;
   }
   .skills,.place{
-    filter: drop-shadow(2px 4px 6px white);
+    filter: drop-shadow(1px 1px 2px white);
   }
   .pro,.Experience,.Contact-me{
     color: white;
@@ -1102,6 +1105,7 @@ font-size: 17px;
         display: none;
 
     }
+    
 }
 @media screen and (max-width:930px) {
     .burger{
