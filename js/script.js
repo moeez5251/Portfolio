@@ -159,7 +159,7 @@ names[3].addEventListener('click', () => {
    names[0].style.color = 'gray';
    names[1].style.color = 'gray';
    names[2].style.color = 'gray';
-   purple_color.style.top='-17px'
+   purple_color.style.top='-12px'
   description.innerHTML=  `Node JS<span class="quoted-text">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
   &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
   &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;"
