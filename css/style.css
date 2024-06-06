@@ -584,53 +584,52 @@ body {
 }
 
 .my-skills {
-    display: flex;
-    justify-content: space-evenly;
-    height: 60vh;
-    flex-direction: column;
+    height: 500px;
     position: relative;
     left: -1100px;
     transition: all 1s;
+    top: 5%;
 }
 
 .my-skills::before {
+    display: block;
     content: "";
     background: gray;
     width: 5px;
-    height: 82%;
-    position: absolute;
+    height: 54%;
+    position: relative;
     left: 269px;
-    top: 61px;
+    top: 41px;
     border-radius: 69px;
-
 }
 
-.purple-color::before {
+.purple-color {
     transition: all 1s;
     display: block;
     content: '';
-    position: absolute;
+    position: relative;
     left: 269px;
-    top: 59px;
+    top: 17%;
     border-radius: 33px;
     width: 5px;
-    height: 20%;
+    height: 13%;
     background: purple;
 }
 
 .main {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 15px;
-    height: 60px;
-}
+    margin-bottom: 14px;
+    height: 50px;
+    position: relative;
+    top: -60%;
 
+}
 .names {
     font-size: 23px;
     font-weight: bold;
     font-family: "Ubuntu", sans-serif;
     color: #a905ed;
-    margin-top: 50px;
     cursor: pointer;
     transition: all 0.5s;
 }
@@ -645,19 +644,9 @@ body {
     width: 30%;
     color: #5a5959;
     margin-top: 18px;
+    top: 96%;
 }
-.description1{
-    top: 134%;
-}
-.description2{
-    top: 0%;
-}
-.description3{
-    top: -140%;
-}
-.description4{
-    top: -280%;
-}
+
 .quoted-text {
     font-style: italic;
     color: black;
@@ -669,7 +658,7 @@ body {
     display: block;
     text-align: center;
     margin-top: 5px;
-    transition: color 1s;
+    color: #e30ae3;
 }
 
 .project-image {

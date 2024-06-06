@@ -16,11 +16,11 @@ nav[2].addEventListener('click', () => {
 });
 document.getElementById('btn2').addEventListener('click', () => {
    window.scrollTo(0, 1440);
-
+   
 });
 document.getElementById('btn1').addEventListener('click', () => {
    window.scrollTo(0, 3332);
-
+   
 });
 
 // =====================>Animation<================================
@@ -42,21 +42,30 @@ cursor[1].style.fontSize='24px';
 cursor[1].style.fontWeight='bold';
 
 // =====================>Event Listener for pic animation<=================================
+function disable(){
+   document.querySelector('body').style.overflow='hidden';
+}
+function enable(){
+   document.querySelector('body').style.overflow='';
+}
+disable();
 window.addEventListener('load',()=>{
    setTimeout(() => {
-      
       document.querySelector('body').removeChild(document.getElementsByClassName('loader')[0]);
       document.getElementsByClassName('Hey')[1].classList.remove('hello');
       document.getElementsByClassName('auto-typed ')[0].classList.remove('auto-typed-animation');
       document.getElementsByClassName('btns ')[0].classList.remove('btns-animation');
       document.getElementsByClassName('name ')[0].classList.remove('name-animate');
+      enable();
    }, 2000);
    setTimeout(() => {
       let temp = document.getElementById('Moeez');
       temp.classList.add('pic');
    }, 2500);
 });
-
+window.onload=()=>{
+window.scrollTo(0,0);
+};
 // =====================>Window event listner<=================================
 
 window.addEventListener('scroll', () => {
@@ -64,12 +73,12 @@ window.addEventListener('scroll', () => {
 // =====================>Contact form animation<=================================
 
    let inputs = document.getElementsByClassName('inputs');
-   if (window.scrollY > 2560) {
+   if (window.scrollY > 2400) {
       document.querySelector('.forms').style.left = '0px';
    };
 // =====================>Timeline animation<=================================
 
-   if (window.scrollY > 1810) {
+   if (window.scrollY > 1600) {
       document.querySelector('.my-skills').style.left = '0px';
    };
 
@@ -96,25 +105,20 @@ window.addEventListener('scroll', () => {
 let names = document.querySelectorAll('.names');
 let purple_color = document.querySelector('.purple-color');
 let time = document.querySelectorAll('.time');
-let description=document.querySelectorAll('.description');
+let description=document.querySelector('.description');
 names[0].addEventListener('click', () => {
    names[0].style.color = '#a905ed';
    names[1].style.color = 'gray';
    names[2].style.color = 'gray';
    names[3].style.color = 'gray';
-   var style = document.createElement('style');
-   var newCSS = '.purple-color::before { top: 59px; }';
-   style.innerHTML = newCSS;
-   document.body.appendChild(style);
-   time[0].style.color = '#a905ed';
-   time[1].style.color = 'gray';
-   time[2].style.color = 'gray';
-   time[3].style.color = 'gray';
-   description[0].style.opacity='1';
-   description[1].style.opacity='0';
-   description[2].style.opacity='0';
-   description[2].style.opacity='0';
-   description[3].style.opacity='0';
+   purple_color.style.top='-45%'
+   description.innerHTML=`HTML<span class="quoted-text">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+   &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+   &nbsp;&nbsp; "Hypertext Markup Language" </span>is a cornerstone of web
+development and plays a crucial role in my timeline as a web developer.I can create interactive
+website skeletone with HTML. 
+<p class="time">2015-2022</p>
+`
 });
 //Default Click
 names[0].click();
@@ -124,18 +128,14 @@ names[1].addEventListener('click', () => {
    names[0].style.color = 'gray';
    names[2].style.color = 'gray';
    names[3].style.color = 'gray';
-   var style = document.createElement('style');
-   var newCSS = '.purple-color::before { top: 139px; }';
-   style.innerHTML = newCSS;
-   document.body.appendChild(style);
-   time[1].style.color = '#a905ed';
-   time[0].style.color = 'gray';
-   time[2].style.color = 'gray';
-   time[3].style.color = 'gray';
-   description[1].style.opacity='1';
-   description[0].style.opacity='0';
-   description[2].style.opacity='0';
-   description[3].style.opacity='0';
+   purple_color.style.top='-30%'
+   description.innerHTML=`CSS<span class="quoted-text">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+   &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+   &nbsp;&nbsp; &nbsp;&nbsp; "Cascading Style Sheets" </span> is an essential component
+of modern web design and a critical component of my web development timeline. I'm specialize in
+crafting complex layouts or developing custom animations.
+<p class="time">2016-2024</p>
+`
 });
 //3rd Button
 names[2].addEventListener('click', () => {
@@ -143,18 +143,15 @@ names[2].addEventListener('click', () => {
    names[0].style.color = 'gray';
    names[1].style.color = 'gray';
    names[3].style.color = 'gray';
-   var style = document.createElement('style');
-   var newCSS = '.purple-color::before { top: 220px; }';
-   style.innerHTML = newCSS;
-   document.body.appendChild(style);
-   time[2].style.color = '#a905ed';
-   time[0].style.color = 'gray';
-   time[1].style.color = 'gray';
-   time[3].style.color = 'gray';
-   description[2].style.opacity='1';
-   description[1].style.opacity='0';
-   description[0].style.opacity='0';
-   description[3].style.opacity='0';
+   purple_color.style.top='-17%'
+   description.innerHTML=`JS<span class="quoted-text">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+   &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+   &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; "JavaScript" </span>JavaScript
+(JS) is my superpower in the world of web development. With its
+magic, I conjure up captivating animations, seamless transitions, and interactive elements that
+elevate user experiences from ordinary to extraordinary.
+<p class="time">2018-2025</p>
+`
 });
 //4th Button
 names[3].addEventListener('click', () => {
@@ -162,18 +159,15 @@ names[3].addEventListener('click', () => {
    names[0].style.color = 'gray';
    names[1].style.color = 'gray';
    names[2].style.color = 'gray';
-   var style = document.createElement('style');
-   var newCSS = '.purple-color::before { top: 282px; }';
-   style.innerHTML = newCSS;
-   document.body.appendChild(style);
-   time[3].style.color = '#a905ed';
-   time[1].style.color = 'gray';
-   time[2].style.color = 'gray';
-   time[0].style.color = 'gray';
-   description[3].style.opacity='1';
-   description[1].style.opacity='0';
-   description[2].style.opacity='0';
-   description[0].style.opacity='0';
+   purple_color.style.top='-17px'
+  description.innerHTML=  `Node JS<span class="quoted-text">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;"
+  Node JS"</span>Node.js is my go-to for server-side magic in web development. With its
+event-driven architecture and non-blocking I/O, Node.js empowers me to build lightning-fast,
+scalable web applications that handle thousands of concurrent connections with ease.
+<p class="time">2018-2024</p>
+`
 });
 // =====================>Project landspace images styling<=================================
 let image = document.getElementsByClassName('project-image');
@@ -235,3 +229,4 @@ burger.addEventListener('click', () => {
    options.classList.toggle('burger-use');
    burger.classList.toggle('lines-burger');
 });
+
