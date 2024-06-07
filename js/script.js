@@ -73,12 +73,12 @@ window.addEventListener('scroll', () => {
 // =====================>Contact form animation<=================================
 
    let inputs = document.getElementsByClassName('inputs');
-   if (window.scrollY > 2400) {
+   if (window.scrollY > 2600) {
       document.querySelector('.forms').style.left = '0px';
    };
 // =====================>Timeline animation<=================================
 
-   if (window.scrollY > 1600) {
+   if (window.scrollY > 1700) {
       document.querySelector('.my-skills').style.left = '0px';
    };
 
@@ -230,3 +230,33 @@ burger.addEventListener('click', () => {
    burger.classList.toggle('lines-burger');
 });
 
+// =====================>Media Query Styles<=================================
+
+const media_query_930 = window.matchMedia('(max-width: 930px)');
+
+function media_930() {
+    let slides = document.querySelectorAll('.swiper-slide');
+  
+        slides.forEach(slide => slide.style.width = '116%');
+      
+        window.addEventListener('scroll',()=>{
+         if (window.scrollY > 1164) {
+            document.querySelector('.my-skills').style.left = '0px';
+         };
+      if (window.scrollY > 1979) {
+         document.querySelector('.forms').style.left = '0px';
+      }
+      if (window.scrollY>= 120) {
+         scroll_button.style.opacity = '1';
+         scroll_button.addEventListener('click', () => {
+            window.scrollTo(0, 0);
+         });
+      }
+      else {
+         scroll_button.style.opacity = '0';
+   
+      }
+   });
+   }
+media_930(media_query_930);
+media_query_930.addEventListener('change', media_930);

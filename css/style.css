@@ -35,19 +35,19 @@ body {
     border-radius: 50px;
 }
 .loader{
-    position: absolute;
-    width: 100%;
+    position: fixed;
     height: 100%;
     background-color: #e9e9ff;
+    width: 100%;
     z-index: 10;
    
 }
 .load{
     z-index: 1;
     position: relative;
-    top: 39px;
-    width: 40%;
-    height: 74%;
+    top: 0px;
+    width: 510px;
+    height: 600px;
     left: 32%;
 }
 .navbar {
@@ -156,19 +156,20 @@ body {
 
 }
 .burger{
-    width: 5%;
+    width: 53px;
     cursor: pointer;
     display: none;
     position: relative;
-    top: -173px;
+    top: -182px;
     float: right;
-    right: -58px;
+    right: -151px;
 }
 .lines{
     width: 39px;
     height: 7px;
     background-color: #8b08c1;
     margin: 7px;
+    position: relative;
 }
 .section-1 {
     margin-top: 40px;
@@ -307,7 +308,7 @@ body {
 
 .section-2 {
     margin-top: -40px;
-    height: 181vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
 }
@@ -421,11 +422,13 @@ body {
     font-size: 60px;
 
 }
-
+.height-110vh{
+    height: 110vh;
+}
 .skills {
     position: relative;
-    width: 31%;
-    height: 39%;
+    width: 380px;
+    height: 286px;
     left: 128px;
     background-color: rgb(203 197 163);
     border-radius: 10px;
@@ -457,7 +460,24 @@ body {
     margin-top: -5px;
     font-weight: bold;
 }
+.ski{
+    display: flex;
+    position: relative;
+    transition: all .5s;
+    animation: moving 15s 1s infinite linear;
+}
+@keyframes moving {
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: -990px;
+    }
+}
+.ski1{
+    position: relative;
 
+}
 .elements {
     background-color: black;
     color: white;
@@ -475,16 +495,10 @@ body {
     margin: 2px 3px;
 }
 
-#Designs {
-    position: relative;
-    left: -89px;
-    margin-right: -84px;
-    text-wrap: nowrap;
-}
 
 #JS {
     position: relative;
-    left: -172px;
+    left: -157px;
     margin-right: -144px;
 
 }
@@ -510,14 +524,13 @@ body {
 
 .place {
     position: relative;
-    width: 31%;
-    height: 39%;
+    width: 413px;
     right: -719px;
     background-color: rgb(203 197 163);
     border-radius: 10px;
-    top: -264px;
+    top: -299px;
     overflow: hidden;
-    z-index: 10;  
+    z-index: 10;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     transition: all 1s;
     cursor: pointer;
@@ -691,9 +704,9 @@ body {
 }
 
 .going {
-    display: inline-block;
+    display: block;
     background: linear-gradient(69deg, #ff0bed, #b800ff);
-    margin: 40px 620px;
+    margin: 40px auto;
     font-size: 25px;
     padding: 7px 15px;
     border-radius: 11px;
@@ -702,15 +715,7 @@ body {
     text-decoration: none;
     color: white;
     text-wrap: nowrap;
-}
-
-
-.go1 {
-    margin: 40px 540px;
-}
-
-.go2 {
-    margin: 40px 590px;
+    width: fit-content;
 }
 
 .scroll {
@@ -762,6 +767,7 @@ body {
 
 .contact-section {
     height: 105vh;
+    margin-top: 55px;
 }
 
 .Contact-me {
@@ -1118,17 +1124,20 @@ font-size: 17px;
     background-color:  orange;
 
   }
+  
 }
 .lines-burger{
     .line-1{
         transition: all 1s;
-        transform: rotate(40deg);
+        transform: rotate(49deg);
         width: 50px;
+        top: 13px;
     }
     .line-2{
         transition: all 1s;
         transform: rotate(130deg);
         width: 50px;
+        right: 2px;
     }
     .line-3{
         display: none;
@@ -1142,6 +1151,7 @@ font-size: 17px;
    }
    .navbar{
     flex-direction: column;
+    align-items: baseline;
    }
    .theme{
     position: relative;
@@ -1157,7 +1167,48 @@ font-size: 17px;
     
 }
 .burger-use{
-    transition: all 1s;
+    transition: all 0.5s;
     top: 0px;
+    left: 205px;
+}
+.btns{
+    display: flex;
+    text-wrap: nowrap;
+}
+.about-message,.experience{
+    left: 271px;
+}
+.place{
+    right: -641px;
+}
+.skills{
+    left: 82px;
+}
+.my{
+    margin-right: -71px;
+}
+.height-110vh{
+    height: 60vh;
+}
+.section-3{
+    height: 44vh;
+}
+.swiper-slide{
+    width: 116%;
+}
+.skills-section{
+    height: 33vh;
+}
+.contact-section{
+    height: 77vh;
+}
+.site-footer{
+    width: 1082px;
+}
+.goto-top{
+    left: 1010px;
+}
+.load{
+    top: 250px;
 }
 }
