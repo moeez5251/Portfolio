@@ -37,7 +37,7 @@ body {
 .loader{
     position: fixed;
     height: 100%;
-    background-color: #e9e9ff;
+    background-color: rgb(230, 239, 240);
     width: 100%;
     z-index: 10;
    
@@ -45,10 +45,11 @@ body {
 .load{
     z-index: 1;
     position: relative;
-    top: 0px;
+    top: 27px;
     width: 510px;
-    height: 600px;
+    height: 514px;
     left: 32%;
+
 }
 .navbar {
     display: flex;
@@ -95,9 +96,9 @@ body {
     cursor: pointer;
     position: fixed;
     top: 80%;
-    left: 1303px;
+    right: 0px;
     transition: all 1s;
-    z-index: 100;
+    z-index: 1;
 }
 
 #top {
@@ -162,7 +163,6 @@ body {
     position: relative;
     top: -182px;
     float: right;
-    right: -151px;
 }
 .lines{
     width: 39px;
@@ -302,7 +302,7 @@ body {
 .pic {
     opacity: 1;
     position: relative;
-    left: 260px;
+    left: 160px;
     transition: all 2s ease-in;
 }
 
@@ -358,7 +358,7 @@ body {
 
 .my-stocks {
     display: flex;
-    margin-left: 90px;
+    justify-content: space-around;
     font-family: "Ubuntu", sans-serif;
     font-size: 20px;
     margin-top: 172px;
@@ -368,7 +368,7 @@ body {
     align-items: end;
     position: relative;
     top: 96px;
-    left: 571px;
+    left: 361px;
     width: 600px;
     font-size: 15px;
     font-family: "Radio Canada Big", sans-serif;
@@ -388,7 +388,7 @@ body {
 .experience{
     position: relative;
     top: 114px;
-    left: 571px;
+    left: 361px;
     width: 51%;
 
 }
@@ -404,7 +404,6 @@ body {
 }
 
 .my-places {
-    margin-left: 490px;
     margin-top: 4px;
     font-size: 20px;
 
@@ -423,24 +422,27 @@ body {
 
 }
 .height-110vh{
-    height: 110vh;
+    height: 588px;
+}
+.m{
+    height: 251px;
+    display: flex;
+    justify-content: space-around;
 }
 .skills {
     position: relative;
     width: 380px;
-    height: 286px;
-    left: 128px;
+    height: 251px;
     background-color: rgb(203 197 163);
     border-radius: 10px;
-    top: -11px;
     padding: 0px 10px;
     overflow: hidden;
-    z-index: 10; 
+    z-index: -10; 
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     transition: all 1s;
     cursor: pointer;
 }
-.skills:hover,.place:hover{
+.skills:hover,.place{
     transition: all 1s;
     transform: scale(1.04);
 }
@@ -525,12 +527,10 @@ body {
 .place {
     position: relative;
     width: 413px;
-    right: -719px;
     background-color: rgb(203 197 163);
     border-radius: 10px;
-    top: -299px;
     overflow: hidden;
-    z-index: 10;
+    z-index: -10;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     transition: all 1s;
     cursor: pointer;
@@ -726,7 +726,7 @@ body {
 }
 
 .skills-section {
-    height: 55vh;
+    height: 309px;
     margin-top: 35px;
 }
 
@@ -1073,7 +1073,7 @@ font-size: 17px;
     color: orange;
   }
   .skills,.place{
-    filter: drop-shadow(1px 1px 2px white);
+    filter: drop-shadow(2px 2px 7px white);
   }
   .pro,.Experience,.Contact-me{
     color: white;
@@ -1124,7 +1124,9 @@ font-size: 17px;
     background-color:  orange;
 
   }
-  
+  .lines{
+    background-color: orange;
+  }
 }
 .lines-burger{
     .line-1{
@@ -1145,7 +1147,7 @@ font-size: 17px;
     }
     
 }
-@media screen and (max-width:930px) {
+@media screen and (max-width:950px) {
     .burger{
         display: block;
    }
@@ -1171,44 +1173,107 @@ font-size: 17px;
     top: 0px;
     left: 205px;
 }
+.Hey{
+    margin-left: 20px;
+}
 .btns{
     display: flex;
     text-wrap: nowrap;
 }
+.pic{
+    left: 160px;
+}
 .about-message,.experience{
-    left: 271px;
+    left: 243px;
 }
-.place{
-    right: -641px;
-}
-.skills{
-    left: 82px;
-}
-.my{
-    margin-right: -71px;
+.experience{
+    width: 70%;
 }
 .height-110vh{
-    height: 60vh;
+    height: 573px;
 }
 .section-3{
-    height: 44vh;
+    height:500px;
 }
-.swiper-slide{
-    width: 116%;
-}
+
 .skills-section{
-    height: 33vh;
+    height: 406px;
 }
 .contact-section{
-    height: 77vh;
+    height: 635px;
 }
-.site-footer{
-    width: 1082px;
-}
-.goto-top{
-    left: 1010px;
-}
+
+
 .load{
-    top: 250px;
+    left: 24%;
 }
+}
+@media screen and (max-width:835px) {
+    .burger-use{
+        left: 130px;
+    }
+    .auto-typed{
+        margin-left: 150px
+    }
+    .message{
+        width: 500px;
+    left: 36px;
+
+    }
+    .section-1{
+        margin-top: -60px;
+    }
+    .auto-typed-animation{
+        margin-left: 50px;
+    }
+    .about-message,.experience{
+        left: 167px;
+    }
+    .skills,.place{
+        width: 360px;
+    }
+    .img{
+        left: 42px;
+    }
+    .Experience{
+        margin-left: 64px;
+    }
+}
+@media screen and (max-width:745px) {
+    .skills, .place {
+        width: 337px;
+    }
+    .section-3 {
+        width: 680px;
+        overflow: hidden;
+    }
+    .site-footer [class^=col-] {
+        margin-bottom: 0px;
+    }
+    .Hey {
+        margin-left: 10px;
+    }
+    .Moeez{
+        width: 107px;
+    height: 106px;
+    }
+    .about-message, .experience {
+        left: 130px;
+    }
+    .experience{
+        width: 70%;
+    }
+    #message{
+    width: 75%;
+    left: 59px;
+    }
+    .my-skills{
+        overflow: hidden;
+    width: 889px;
+    }
+}
+@media screen and (max-width:625px) {
+    .auto-typed{
+        font-size: 35px;
+    }
 }
