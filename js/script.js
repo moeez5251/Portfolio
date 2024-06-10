@@ -112,7 +112,7 @@ names[0].addEventListener('click', () => {
    names[2].style.color = 'gray';
    names[3].style.color = 'gray';
    purple_color.style.top='-45%'
-   description.innerHTML=`HTML<span class="quoted-text">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+   description.innerHTML=`<span class="quoted-text">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
    &nbsp;&nbsp; "Hypertext Markup Language" </span>is a cornerstone of web
 development and plays a crucial role in my timeline as a web developer.I can create interactive
@@ -129,7 +129,7 @@ names[1].addEventListener('click', () => {
    names[2].style.color = 'gray';
    names[3].style.color = 'gray';
    purple_color.style.top='-30%'
-   description.innerHTML=`CSS<span class="quoted-text">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+   description.innerHTML=`<span class="quoted-text">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
    &nbsp;&nbsp; &nbsp;&nbsp; "Cascading Style Sheets" </span> is an essential component
 of modern web design and a critical component of my web development timeline. I'm specialize in
@@ -144,7 +144,7 @@ names[2].addEventListener('click', () => {
    names[1].style.color = 'gray';
    names[3].style.color = 'gray';
    purple_color.style.top='-17%'
-   description.innerHTML=`JS<span class="quoted-text">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+   description.innerHTML=`<span class="quoted-text">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
    &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; "JavaScript" </span>JavaScript
 (JS) is my superpower in the world of web development. With its
@@ -160,7 +160,7 @@ names[3].addEventListener('click', () => {
    names[1].style.color = 'gray';
    names[2].style.color = 'gray';
    purple_color.style.top='-12px'
-  description.innerHTML=  `Node JS<span class="quoted-text">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+  description.innerHTML=  `<span class="quoted-text">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
   &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
   &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;"
   Node JS"</span>Node.js is my go-to for server-side magic in web development. With its

@@ -467,6 +467,7 @@ body {
     position: relative;
     transition: all .5s;
     animation: moving 15s 1s infinite linear;
+    margin-top: 10px;
 }
 @keyframes moving {
     0%{
@@ -1213,7 +1214,7 @@ font-size: 17px;
         left: 130px;
     }
     .auto-typed{
-        margin-left: 150px
+        margin-left: 100px
     }
     .message{
         width: 500px;
@@ -1272,8 +1273,20 @@ font-size: 17px;
     width: 889px;
     }
 }
-@media screen and (max-width:625px) {
+@media screen and (max-width:690px) {
     .auto-typed{
         font-size: 35px;
+    }
+    .m{
+        justify-content: space-between;
+    }
+    .place{
+        margin: 0px -29px;
+    }
+    .skills{
+        margin: 0px 10px;
+    }
+    .burger-use{
+        left: 68px;
     }
 }
