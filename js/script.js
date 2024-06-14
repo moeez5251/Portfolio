@@ -297,7 +297,7 @@ media_query_835.addEventListener('change',media_835);
 // for 710 px
 const media_query_710 = window.matchMedia('(max-width:710px)');
 
-function media_835(event) {
+function media_710(event) {
       if (event.matches) {
             window.addEventListener('scroll',scroll_handler_710);
       }
@@ -322,3 +322,37 @@ function scroll_handler_710(){
             window.scrollTo(0,2647);
       });
 }
+media_710(media_query_710);
+media_query_710.addEventListener('change',media_710);
+//For 570px
+const media_query_570 = window.matchMedia('(max-width:570px)');
+function media_570(event) {
+   if (event.matches) {
+      names[0].addEventListener('click',()=>{
+         purple_color.style.top='-49%';
+         
+      });
+      names[0].click();
+     names[1].addEventListener('click',()=>{
+      purple_color.style.top='-35%';
+     });
+     names[2].addEventListener('click',()=>{
+      purple_color.style.top='-20%';
+     });
+     names[3].addEventListener('click',()=>{
+      purple_color.style.top='-8%';
+     });
+
+   }
+   else{
+      purple_color.style.top='';
+
+
+   }
+
+}
+function scroll_handler_570(){
+  
+}
+media_570(media_query_570);
+media_query_570.addEventListener('change',media_570);

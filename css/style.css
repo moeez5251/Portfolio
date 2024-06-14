@@ -1330,6 +1330,75 @@ font-size: 17px;
     width: 100%;
   }
   .sk{
-    left: 460px;
+    top: -333px;
+    width: 286px;
   }
+  .about{
+    margin-left: 30px;
+  }
+  .about-message, .experience {
+    left: 60px;
+}
+.burger-use{
+  top: -30px;
+}
+.theme{
+  right: -311px;
+}
+.section-3{
+  width: 100%;
+}
+}
+@media screen and (max-width:570px) {
+  .message{
+    width: 369px;
+  }
+  .auto-typed{
+    margin-left: 85px;
+  }
+  .auto-typed-animation{
+    margin-left: 50px;
+  }
+  .btns{
+    left: -45px;
+  }
+  .about-message, .experience {
+    left: 47px;
+    font-size: 13px;
+  }
+  #message{
+    width: 90%;
+        left: 30px;
+  }
+    .main{
+      row-gap: 70%;
+    }
+    .my-skills::before{
+      top: 20px;
+    }
+    .sk{
+      left: 440px;
+    }
+    .skills-section{
+      height: 510px;
+    }
+    .all-skills{
+      display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin-left: 47px;
+    }
+    .social-medias{
+      top: -557px;
+    left: 3px;
+    }
+    .btn{
+      font-size: 12px;
+    }
+    .burger-use{
+      left: -20px;
+    }
+    .nav{
+      margin: 10px 48px;
+    }
 }
