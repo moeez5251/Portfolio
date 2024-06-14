@@ -1268,10 +1268,6 @@ font-size: 17px;
     width: 75%;
     left: 59px;
     }
-    .my-skills{
-        overflow: hidden;
-    width: 889px;
-    }
 }
 @media screen and (max-width:710px) {
   .burger-use{
@@ -1400,5 +1396,8 @@ font-size: 17px;
     }
     .nav{
       margin: 10px 48px;
+    }
+    .theme{
+      right: -244px;
     }
 }
