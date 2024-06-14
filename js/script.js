@@ -342,6 +342,7 @@ function media_570(event) {
      names[3].addEventListener('click',()=>{
       purple_color.style.top='-8%';
      });
+     window.addEventListener('scroll',scroll_handler_570);
 
    }
    else{
@@ -352,7 +353,16 @@ function media_570(event) {
 
 }
 function scroll_handler_570(){
-  
+   if (window.scrollY>2200) {
+      document.querySelector('.my-skills').style.left = '-240px';
+      
+   }
+   if (window.scrollY > 3200) {
+      document.querySelector('.forms').style.left = '0px';
+   }
+   nav[1].addEventListener('click',()=>{
+         window.scrollTo(0,2647);
+   });
 }
 media_570(media_query_570);
 media_query_570.addEventListener('change',media_570);

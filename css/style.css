@@ -1359,7 +1359,7 @@ font-size: 17px;
     left: -45px;
   }
   .about-message, .experience {
-    left: 47px;
+    left: 30px;
     font-size: 13px;
   }
   #message{
@@ -1400,4 +1400,8 @@ font-size: 17px;
     .theme{
       right: -244px;
     }
+    .goto-top{
+      top: 90%;
+    }
+  
 }
