@@ -175,6 +175,7 @@ body {
     margin-top: 40px;
     display: flex;
     flex-direction: row;
+
 }
 
 .left {
@@ -278,9 +279,6 @@ body {
 
 }
 
-.right {
-    width: 40%;
-}
 
 .Moeez {
     width: 169px;
@@ -356,13 +354,7 @@ body {
 
 }
 
-.my-stocks {
-    display: flex;
-    justify-content: space-around;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 20px;
-    margin-top: 172px;
-}
+
 .about-message{
     display: flex;
     align-items: end;
@@ -401,6 +393,8 @@ body {
 .my {
     display: flex;
     text-wrap: nowrap;
+    font-family: "Ubuntu", sans-serif;
+
 }
 
 .my-places {
@@ -423,11 +417,13 @@ body {
 }
 .height-110vh{
     height: 588px;
+    margin-top: 179px;
 }
 .m{
-    height: 251px;
+  height: 338px;
     display: flex;
     justify-content: space-around;
+
 }
 .skills {
     position: relative;
@@ -526,21 +522,22 @@ body {
 }
 
 .place {
-    position: relative;
-    width: 413px;
-    background-color: rgb(203 197 163);
-    border-radius: 10px;
-    overflow: hidden;
-    z-index: -10;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-    transition: all 1s;
-    cursor: pointer;
+  position: relative;
+  width: 383px;
+  background-color: rgb(203 197 163);
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: -10;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 1s;
+  cursor: pointer;
+  height: 251px;
 }
 
 .img {
     position: relative;
     top: 88px;
-    left: 70px;
+    left: 45px;
 }
 
 .image {
@@ -1258,6 +1255,9 @@ font-size: 17px;
         width: 107px;
     height: 106px;
     }
+    .about-message{
+      width: 580px;
+    }
     .about-message, .experience {
         left: 130px;
     }
@@ -1273,20 +1273,63 @@ font-size: 17px;
     width: 889px;
     }
 }
-@media screen and (max-width:690px) {
-    .auto-typed{
-        font-size: 35px;
-    }
-    .m{
-        justify-content: space-between;
-    }
-    .place{
-        margin: 0px -29px;
-    }
-    .skills{
-        margin: 0px 10px;
-    }
-    .burger-use{
-        left: 68px;
-    }
+@media screen and (max-width:710px) {
+  .burger-use{
+    left: 52px;
+  }
+  .message{
+    width: 449px;
+  }
+  .auto-typed{
+    margin-left: 140px;
+    font-size: 35px;
+  }
+  .auto-typed-animation{
+    margin-left: 100px;
+  }
+  .about-message{
+    width: 480px;
+  }
+  .height-110vh{
+    height: 870px;
+    margin-top: 80px;
+  }
+  .m{
+    flex-direction: column;
+  }
+  .skil,.plac{
+    margin: 10px auto;
+  }
+  .section-2{
+    height: 543px;
+  }
+  .section-1{
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 107px;
+  }
+  .Moeez{
+    left: 0px;
+    top: 0px;
+  }
+  .pic{
+    left: 60px;
+  }
+  .Hey{
+    margin-top: 0px;
+  }
+  .load{
+    left: 15%;
+  }
+  .theme{
+    right: -360px;
+  }
+}
+@media screen and (max-width:660px) {
+  .left{
+    width: 100%;
+  }
+  .sk{
+    left: 460px;
+  }
 }

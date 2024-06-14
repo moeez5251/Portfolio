@@ -294,3 +294,31 @@ function scroll_handler_835(){
 }
 media_835(media_query_835);
 media_query_835.addEventListener('change',media_835);
+// for 710 px
+const media_query_710 = window.matchMedia('(max-width:710px)');
+
+function media_835(event) {
+      if (event.matches) {
+            window.addEventListener('scroll',scroll_handler_710);
+      }
+      else{
+         window.removeEventListener('scroll',scroll_handler_710);
+         document.querySelector('.my-skills').style.left = '';
+         document.querySelector('.forms').style.left = '';
+
+
+      }
+   
+}
+function scroll_handler_710(){
+      if (window.scrollY>1460) {
+         document.querySelector('.my-skills').style.left = '-240px';
+         
+      }
+      if (window.scrollY > 3200) {
+         document.querySelector('.forms').style.left = '0px';
+      }
+      nav[1].addEventListener('click',()=>{
+            window.scrollTo(0,2647);
+      });
+}
