@@ -1,9 +1,8 @@
 // =======================>Theme<=============================================
-let theme_icon = document.querySelector('.icon');
-theme_icon.addEventListener('click', () => {
-   theme_icon.classList.toggle('icon1');
+let Theme=document.getElementById('themeToggle');
+Theme.addEventListener('change',()=>{
    document.querySelector('body').classList.toggle('dark-theme');
-});
+})
 
 // =======================>Navbar buttons events<=============================================
 
@@ -222,14 +221,15 @@ for (let i = 0; i < 3; i++) {
 
 }
 // =====================>HamBurger Menu<=================================
-
-let burger = document.querySelector('.burger');
-let options = document.querySelector('.options');
-burger.addEventListener('click', () => {
-   options.classList.toggle('burger-use');
-   burger.classList.toggle('lines-burger');
+const hamburgerCheckbox = document.getElementById('hamburger-toggle');
+const options = document.querySelector('.options');
+hamburgerCheckbox.addEventListener('change', () => {
+    if (hamburgerCheckbox.checked) {
+        options.classList.add('burger-use');
+    } else {
+        options.classList.remove('burger-use');
+    }
 });
-
 // =====================>Media Query Styles<=================================
 
 //For 930 px
