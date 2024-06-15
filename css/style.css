@@ -1255,7 +1255,6 @@ font-size: 17px;
 .burger-use{
     transition: all 0.5s;
     top: 0px;
-    left: 205px;
 }
 .Hey{
     margin-left: 20px;
@@ -1294,7 +1293,7 @@ font-size: 17px;
 }
 @media screen and (max-width:835px) {
     .burger-use{
-        left: 130px;
+      left: 60px;
     }
     .auto-typed{
         margin-left: 100px
@@ -1356,6 +1355,9 @@ font-size: 17px;
     }
 }
 @media screen and (max-width:710px) {
+  .typed-cursor{
+    font-size: 35px;
+  }
   .burger-use{
     left: 52px;
   }
@@ -1408,6 +1410,7 @@ font-size: 17px;
   }
 }
 @media screen and (max-width:660px) {
+  
   .left{
     width: 100%;
   }
@@ -1448,8 +1451,10 @@ font-size: 17px;
     left: 30px;
     font-size: 13px;
   }
+  .about-message{
+    width: 410px;
+  }
   #message{
-    width: 90%;
         left: 30px;
   }
     .main{
@@ -1478,7 +1483,7 @@ font-size: 17px;
       font-size: 12px;
     }
     .burger-use{
-      left: -20px;
+      left: 12px;
     }
     .nav{
       margin: 10px 48px;
@@ -1489,5 +1494,110 @@ font-size: 17px;
     .goto-top{
       top: 90%;
     }
-  
+  .load{
+    width: 400px;
+    height: 400px;
+    left: 16%;
+  }
+}
+@media screen and (max-width:430px) {
+  .theme{
+    right: -141px;
+    font-size: 26px;
+  }
+  .name{
+    font-size: 10px;
+  }
+
+  .Hey{
+    font-size: 15px;
+  }
+  .typed-cursor,.auto-typed{
+    font-size: 25px;
+  }
+  .message{
+    width: 280px;
+    font-size: 13px;
+  }
+  .btn{
+    margin: 36px 44px;
+  }
+  .about-message{
+    font-size: 12px;
+    width: 263px;
+    height: 58px;
+  }
+  .auto{
+    font-size: 19px;
+  }
+  .about-message,.experience{
+    left: 17px;
+  }
+  .message{
+    font-size: 11px;
+    left: 5px;
+  }
+  .about{
+    margin-left: 4px;
+    font-size: 40px;
+  }
+  .nav{
+    margin: 10px 3px;
+    font-size: 19px;
+  }
+  .auto-typed{
+    margin-left: 70px;
+  }
+  .auto-typed-animation{
+    margin-left: 30px;
+  }
+  .experience-para{
+    font-size: 11px;
+  }
+  .auto{
+    text-wrap: nowrap;
+  }
+  #message::before{
+    left: -7%;
+  }
+  .skills,.place{
+    height: 214px;
+        width: 254px;
+  }
+  .sk{
+    width: 130px;
+    left: 418px;
+    top: -381px;
+  }
+  .section-3{
+    height: 550px;
+  }
+  .skills-section{
+    height: 600px;
+  }
+  .inputs{
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+  .goto-top{
+    font-size: 25px;
+  }
+  .logos{
+    font-size: 26px;
+  }
+  .name-of-logo{
+    font-size: 12px;
+  }
+  .copyright-text{
+    font-size: 16px;
+  }
+  .load {
+    width: 250px;
+    height: 250px;
+    left: 16%;
+    top: 18%;
+}
+.going{
+  font-size: 16px;
+}
 }
