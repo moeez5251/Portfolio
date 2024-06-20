@@ -1445,7 +1445,8 @@ font-size: 17px;
     margin-left: 50px;
   }
   .btns{
-    left: -45px;
+    left: -27px;
+    
   }
   .about-message, .experience {
     left: 30px;
@@ -1600,5 +1601,16 @@ font-size: 17px;
 }
 .going{
   font-size: 16px;
+}
+.image{
+  height: 250px;
+  width: 250px;
+}
+.img{
+  left: 1px;
+}
+.dotted {
+  top: -247px;
+  left: 68px;
 }
 }
