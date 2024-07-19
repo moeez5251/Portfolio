@@ -230,7 +230,7 @@ body {
 
 }
 .burger{
-    width: 53px;
+    width: 59px;
     cursor: pointer;
     display: none;
     position: relative;
@@ -758,7 +758,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Radio Canada Big", sans-serif;
     font-weight: 500;
     width: 80%;
@@ -773,7 +773,8 @@ body {
 }
 
 .time {
-    font-family: sans-serif;
+  font-family: "Radio Canada Big", sans-serif;
+
     font-weight: bolder;
     display: block;
     text-align: center;
@@ -1397,7 +1398,7 @@ font-size: 17px;
     top: 0px;
   }
   .pic{
-    left: 60px;
+    left: 44px;
   }
   .Hey{
     margin-top: 0px;
@@ -1474,7 +1475,7 @@ font-size: 17px;
       display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px;
-    margin-left: 47px;
+    margin-left: 14px;
     }
     .social-medias{
       top: -557px;
