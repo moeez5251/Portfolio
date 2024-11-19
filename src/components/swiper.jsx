@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation, Keyboard,Autoplay } from 'swiper/modules';
 import './swiper.css';
-export default function App() {
+ function App() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 2847 && window.scrollY < 3500) {
@@ -303,3 +303,4 @@ export default function App() {
     </>
   );
 }
+export default App
