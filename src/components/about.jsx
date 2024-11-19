@@ -20,7 +20,7 @@ const About = () => {
     <>
       <div className='flex' >
         <div className="about-left">
-          <img className='left-image' src="src/assets/Me-1.jpeg" alt="" />
+          <img className='left-image' src="dist/assets/Me-1.jpeg" alt="" />
           <div className='left-border'></div>
         </div>
         <div className="about-right">
@@ -65,7 +65,7 @@ const About = () => {
             </div>
           </div>
           <div className="button">
-            <a download="Xheikh Moeez CV" href="src/assets/files/My CV.pdf" className="anchor">
+            <a download="Xheikh Moeez CV" href="dist/assets/files/My CV.pdf" className="anchor">
               <span>Download CV</span>
             </a>
           </div>

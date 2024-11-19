@@ -60,7 +60,7 @@ import './swiper.css';
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="src/assets/Swiper/Chat-App.png" alt="" />
+                <img src="dist/assets/Swiper/Chat-App.png" alt="" />
               </div>
               <div className="swiper-name">Chat App</div>
 
@@ -77,7 +77,7 @@ import './swiper.css';
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="src/assets/Swiper/Todo.png" alt="" />
+                <img src="dist/assets/Swiper/Todo.png" alt="" />
               </div>
               <div className="swiper-name">Todo App</div>
 
@@ -94,7 +94,7 @@ import './swiper.css';
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="src/assets/Swiper/E-Commerce.png" alt="" />
+                <img src="dist/assets/Swiper/E-Commerce.png" alt="" />
               </div>
               <div className="swiper-name">E-Commerce Website</div>
 
@@ -111,7 +111,7 @@ import './swiper.css';
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="src/assets/Swiper/Calculator.png" alt="" />
+                <img src="dist/assets/Swiper/Calculator.png" alt="" />
               </div>
               <div className="swiper-name">Calculator</div>
 
@@ -128,7 +128,7 @@ import './swiper.css';
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="src/assets/Swiper/Spotify.png" alt="" />
+                <img src="dist/assets/Swiper/Spotify.png" alt="" />
               </div>
               <div className="swiper-name">Spotify Clone</div>
 
@@ -145,7 +145,7 @@ import './swiper.css';
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="src/assets/Swiper/X.png" alt="" />
+                <img src="dist/assets/Swiper/X.png" alt="" />
               </div>
               <div className="swiper-name">X Clone</div>
 
@@ -162,7 +162,7 @@ import './swiper.css';
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="src/assets/Swiper/Snake-Game.png" alt="" />
+                <img src="dist/assets/Swiper/Snake-Game.png" alt="" />
               </div>
               <div className="swiper-name">Snake Game</div>
 
@@ -179,7 +179,7 @@ import './swiper.css';
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="src/assets/Swiper/Weather.png" alt="" />
+                <img src="dist/assets/Swiper/Weather.png" alt="" />
               </div>
               <div className="swiper-name">Weather App</div>
 
@@ -196,7 +196,7 @@ import './swiper.css';
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="src/assets/Swiper/Table.png" alt="" />
+                <img src="dist/assets/Swiper/Table.png" alt="" />
               </div>
               <div className="swiper-name">Table Generator</div>
 
@@ -213,7 +213,7 @@ import './swiper.css';
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="src/assets/Swiper/Recipes.png" alt="" />
+                <img src="dist/assets/Swiper/Recipes.png" alt="" />
               </div>
               <div className="swiper-name">Recipes Website</div>
 
@@ -230,7 +230,7 @@ import './swiper.css';
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="src/assets/Swiper/AI.png" alt="" />
+                <img src="dist/assets/Swiper/AI.png" alt="" />
               </div>
               <div className="swiper-name">AI Chat</div>
 
@@ -247,7 +247,7 @@ import './swiper.css';
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="src/assets/Swiper/Clock.png" alt="" />
+                <img src="dist/assets/Swiper/Clock.png" alt="" />
               </div>
               <div className="swiper-name">Clock</div>
 
@@ -264,7 +264,7 @@ import './swiper.css';
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="src/assets/Swiper/TTT.png" alt="" />
+                <img src="dist/assets/Swiper/TTT.png" alt="" />
               </div>
               <div className="swiper-name">Tic Tac Toe</div>
 
@@ -281,7 +281,7 @@ import './swiper.css';
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="src/assets/Swiper/Netlify.png" alt="" />
+                <img src="dist/assets/Swiper/Netlify.png" alt="" />
               </div>
               <div className="swiper-name">Netlify Clone</div>
 

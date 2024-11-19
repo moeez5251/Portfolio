@@ -199,7 +199,7 @@ body ::selection {
 }
 
 .circle {
-  background: url("src/assets/number.webp");
+  background: url("dist/assets/number.webp");
   position: absolute;
   bottom: 0;
   background-position: 50% 50%;

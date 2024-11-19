@@ -439,7 +439,7 @@ function App() {
       <div className="footer">
         <div className="left-footer">
           <div className="name">
-            <img className='piclogo' src="src/assets/logo.png" alt="logo" />
+            <img className='piclogo' src="dist/assets/logo.png" alt="logo" />
           </div>
         </div>
         <div className="middle-footer">
