@@ -1,0 +1,68 @@
+.experience-sub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.experience-sub> div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.experience-sub div >div{
+    width: 50%;
+}
+.exp-left{
+    text-align: right;
+    padding: 34px;
+    border-right: dashed 1px #cbbfbf;
+    position: relative;
+    border-width: 2px;
+}
+.exp-left img{
+    width: 40px;
+    border-radius: 100%;
+    background-position: center center;
+}
+.exp-left-name{
+    font-weight: 500;
+    font-size: 19px;
+}
+.exp-timeline{
+    color: #cb2d3e;
+}
+.experience,.qualification{
+    margin: 40px 0;
+}
+.exp-left >*{
+    margin-top: 9px;
+}
+.exp-left::before{
+    content: "";
+    width: 10px;
+    height: 11px;
+    border-radius: 100%;
+    position: absolute;
+    background: #cb2d3e;
+    right: -5px;
+    top: -18px;
+    outline: #afb3b8;
+    outline-style: dashed;
+    outline-offset: 5px;
+    outline-width: 2px;
+
+}
+.exp-right{
+    padding-top: 22px;
+}
+.exp-right-name{
+    font-size: 18px;
+    font-weight: 500;
+}
+.exp-right p{
+    color: #c0c0c0;
+    width: 85%;
+    margin-top: 24px;
+    
+}
