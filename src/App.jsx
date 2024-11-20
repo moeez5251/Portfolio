@@ -21,35 +21,39 @@ function App() {
   const [office, setoffice] = useState("0%")
   const [opa, setopacity] = useState(0)
   useEffect(() => {
+    const listner = () => {
+      if (window.scrollY > 1080 && window.scrollY < 2150) {
+        sethtml("90%")
+        setcss("85%")
+        setjs("83%")
+        setnode("80%")
+        setreact("75%")
+        setvideo("95%")
+        setoffice("100%")
+      }
+      else {
+        sethtml("0%")
+        setcss("0%")
+        setjs("0%")
+        setnode("0%")
+        setreact("0%")
+        setvideo("0%")
+        setoffice("0%")
+
+      }
+
+      if (window.scrollY >= 300) {
+        setopacity(1);
+      }
+      else {
+        setopacity(0);
+      }
+    }
+    window.addEventListener("scroll", listner)
     return () => {
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 1080 && window.scrollY < 2150) {
-          sethtml("90%")
-          setcss("85%")
-          setjs("83%")
-          setnode("80%")
-          setreact("75%")
-          setvideo("95%")
-          setoffice("100%")
-        }
-        else {
-          sethtml("0%")
-          setcss("0%")
-          setjs("0%")
-          setnode("0%")
-          setreact("0%")
-          setvideo("0%")
-          setoffice("0%")
+      window.removeEventListener("scroll", listner)
 
-        }
 
-        if(window.scrollY>=300){
-          setopacity(1);
-        }
-        else{
-          setopacity(0);
-        }
-      })
     }
   }, [])
   const handlefirstclick = () => {
@@ -64,8 +68,8 @@ function App() {
     setsecond("white");
     settruesstate(false)
   }
-  const scrolling=()=>{
-    window.scrollTo(0,0);
+  const scrolling = () => {
+    window.scrollTo(0, 0);
   }
   return (
     <>
@@ -521,7 +525,7 @@ function App() {
           </div>
         </div>
       </div>
-      <button onClick={scrolling} style={{opacity:opa}} className="scrolling-btn">
+      <button onClick={scrolling} style={{ opacity: opa }} className="scrolling-btn">
         <span className="material-symbols-outlined">
           keyboard_arrow_up
         </span>
