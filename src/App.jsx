@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import CustomCursor from "./components/cursor"
 import "./App.css"
+import CustomCursor from "./components/cursor"
 import Navbar from "./components/navbar";
 import Me from "./components/me";
 import About from "./components/about";

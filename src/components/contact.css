@@ -4,7 +4,8 @@
 
 }
 
-.left-contact ,.right-contact {
+.left-contact,
+.right-contact {
     width: 50%;
 }
 
@@ -69,7 +70,8 @@ form {
     align-items: center;
     flex-direction: column;
 }
-form input{
+
+form input {
     border: none;
     outline: navajowhite;
     background: none;
@@ -82,7 +84,8 @@ form input{
 form {
     width: 100%;
 }
-form textarea{
+
+form textarea {
     width: 75%;
     outline: navajowhite;
     background: none;
@@ -92,10 +95,12 @@ form textarea{
     border-radius: 10px;
 
 }
-.red{
+
+.red {
     color: #cb2d3e;
     font-weight: 500;
 }
+
 form button {
     background-color: #cb2d3e;
     color: white;
@@ -107,11 +112,27 @@ form button {
     cursor: pointer;
     transition: all 0.5s;
 }
-form button:hover{
+
+form button:hover {
     background-color: #e20f24;
-    
+
 }
-.green{
+
+.green {
     color: green;
     font-weight: 500;
+}
+
+@media screen and (max-width:1300px) {
+    .right-contact p {
+        font-size: 19px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    form textarea {
+        width: 80%;
+    }
 }

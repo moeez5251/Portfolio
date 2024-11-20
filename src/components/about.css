@@ -27,8 +27,8 @@
 }
 
 .left-border {
-    width: 310px;
-    height: 435px;
+    width: 94%;
+    height: 97%;
     border: 10px solid #e1e1e1;
     position: absolute;
     top: 43px;
@@ -101,6 +101,7 @@
 
 .about-degree-name {
     color: #afb7c3;
+    text-wrap: wrap;
 }
 
 .button {
@@ -151,4 +152,22 @@
     position: relative;
     z-index: 2;
     transition: all .3s ease;
+}
+@media  screen and (max-width:1200px) {
+   .about-left{
+    width: 30%;
+   }
+   .about-right{
+    margin: 5px;
+   }
+   .left-border{
+    height: 93%;
+    left: 32px;
+   }
+   .icons{
+    margin-top: 0; 
+    grid-template-columns: repeat(1, 1fr);
+    gap: 18px 10px;
+   }
+   
 }

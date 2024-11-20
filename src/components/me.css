@@ -98,3 +98,22 @@
     transition: transform 0.2s ease;
 
 }
+@media screen and (max-width:1200px) {
+    .my-image {
+        width: 100%;
+        max-width: 100%;
+    }
+    .right::before {
+        width: 5rem !important;
+        height: 5rem !important;
+        right: 1rem;
+    }
+    .left {
+        margin: 0 0 20px 15px;
+    }
+    .right::after{
+    right: -6rem;
+    width: 9rem;
+    height: 20rem;
+    }
+}

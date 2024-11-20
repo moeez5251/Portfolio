@@ -148,3 +148,22 @@
 .transform{
   transform: translateY(-15px);
 }
+@media screen  and (max-width:1300px) {
+  
+.slide-container{
+  width: 100%;
+  min-height: 50%;
+}
+}
+@media screen  and (max-width:900px) {
+.section{
+  height: 43vh;
+}
+.swiper-name{
+  font-size: 20px;
+  text-align: center;
+}
+.find-more-button{
+  padding: 7px 20px;
+}
+}
