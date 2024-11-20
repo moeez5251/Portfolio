@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import "./Navbar.css";
-
 const Navbar = () => {
   const [bgColor, setBgColor] = useState("");
   const [filter, setfilter] = useState("invert(0)")
@@ -29,7 +28,7 @@ const Navbar = () => {
   return (
     <nav style={{ backgroundColor: bgColor }}>
       <div className="name">
-        <img style={{filter:filter}} className='piclogo' src="dist/assets/logo.png" alt="logo" />
+        <img style={{filter:filter}} className='piclogo' src="assets/logo.png" alt="logo" />
       </div>
       <div className="other">
         <ul>

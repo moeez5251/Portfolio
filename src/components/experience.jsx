@@ -7,7 +7,7 @@ const Experience = () => {
                 <div>
 
                     <div className=" exp-left">
-                        <img src="dist/assets/git.png" alt="" />
+                        <img src="assets/git.png" alt="" />
                         <p className='exp-left-name'>Full Stack Developer</p>
                         <p className='exp-timeline'>2020-now</p>
                     </div>
@@ -19,7 +19,7 @@ const Experience = () => {
                 <div>
 
                     <div className=" exp-left">
-                        <img src="dist/assets/Self.png" alt="" />
+                        <img src="assets/Self.png" alt="" />
                         <p className='exp-left-name'>Self Employed</p>
                         <p className='exp-timeline'>2018-2020</p>
                     </div>
@@ -31,7 +31,7 @@ const Experience = () => {
                 <div>
 
                     <div className=" exp-left">
-                        <img src="dist/assets/react.png" alt="" />
+                        <img src="assets/react.png" alt="" />
                         <p className='exp-left-name'>Envato</p>
                         <p className='exp-timeline'>2018-2020</p>
                     </div>

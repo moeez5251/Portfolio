@@ -28,7 +28,7 @@ const Contact = () => {
 
                 <div className="left-contact">
                     <div className="box">
-                        <img src="dist/assets/contact.webp" alt="" />
+                        <img src="assets/contact.webp" alt="" />
                         <p>I'm also available for freelance work. Get in touch right now.</p>
                         <p><span>Phone: </span>03207349527</p>
                         <p><span>Email: </span>moeez4241@gmail.com</p>

@@ -25,7 +25,7 @@ const Me = () => {
                 </div>
                 <div className="right">
 
-                    <img className='my-image' src="dist/assets/Me-w-bg.png" alt="" />
+                    <img className='my-image' src="assets/Me-w-bg.png" alt="" />
                 </div>
             </div>
         </>
