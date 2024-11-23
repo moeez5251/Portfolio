@@ -601,4 +601,7 @@ body ::selection {
     font-size: 30px;
     left: 7%;
   }
+  .head,.typed-animation{
+    font-size: 15px;
+  }
 }
