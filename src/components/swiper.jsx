@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -7,6 +7,10 @@ import 'swiper/css/navigation';
 import { Pagination, Navigation, Keyboard, Autoplay } from 'swiper/modules';
 import './swiper.css';
 function App() {
+  const [swiper, setswiper] = useState({
+    slidesPerView: 3,
+    spaceBetween: 30,
+  })
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 2847 && window.scrollY < 3500) {
@@ -25,14 +29,29 @@ function App() {
         })
       }
     })
+    const updateSwiperSettings = () => {
+      if (window.innerWidth <= 750) {
+        setswiper({
+          slidesPerView: 2,
+          spaceBetween: 10,
+        });
+      } else {
+        setswiper({
+          slidesPerView: 3,
+          spaceBetween: 30,
+        });
+      }
+    };
+
+    updateSwiperSettings();
   }, [])
 
   return (
     <>
       <section className="section">
         <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
+          slidesPerView={swiper.slidesPerView}
+          spaceBetween={swiper.spaceBetween}
           keyboard={{
             enabled: true,
             onlyInViewport: true,
@@ -65,7 +84,7 @@ function App() {
               <div className="swiper-name">Chat App</div>
 
               <div className="swiper-link">
-                <a href="https://xchatting.netlify.app/" className="find-more-button">
+                <a target='_blank' href="https://xchatting.netlify.app/" className="find-more-button">
                   Live Preview
                   <span className="material-symbols-outlined">
                     open_in_new

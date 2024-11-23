@@ -14,11 +14,13 @@
 .left * {
     width: fit-content;
 }
-.left{
+
+.left {
     margin: 0 0 51px 93px;
     width: 50%;
-    padding-left: 2%;   
+    padding-left: 2%;
 }
+
 .heading {
     color: #cb2d3e;
     font-weight: 500;
@@ -32,7 +34,7 @@
     margin-top: 20px;
 }
 
-.name {
+.my-name {
     font-weight: 600;
     color: white;
     font-size: 42px;
@@ -65,15 +67,17 @@
     filter: drop-shadow(2px 4px 6px rgb(41, 41, 41));
     max-width: 80%;
 }
-.right{
+
+.right {
     position: relative;
     width: 50%;
     overflow: hidden;
 }
-.right::before{
+
+.right::before {
     content: "";
     position: absolute;
-    top:0rem;
+    top: 0rem;
     right: 2rem;
     width: 10rem !important;
     height: 10rem !important;
@@ -82,7 +86,8 @@
     border-radius: 50%;
     background-color: rgba(203, 45, 62, .6);
 }
-.right::after{
+
+.right::after {
     content: "";
     position: absolute;
     bottom: -1rem;
@@ -94,26 +99,109 @@
     background-color: rgba(203, 45, 62, .6);
 
 }
-.my-image{
+
+.my-image {
     transition: transform 0.2s ease;
 
 }
+
 @media screen and (max-width:1200px) {
     .my-image {
         width: 100%;
         max-width: 100%;
     }
+
     .right::before {
         width: 5rem !important;
         height: 5rem !important;
         right: 1rem;
     }
+
     .left {
         margin: 0 0 20px 15px;
     }
-    .right::after{
-    right: -6rem;
-    width: 9rem;
-    height: 20rem;
+
+    .right::after {
+        right: -6rem;
+        width: 9rem;
+        height: 20rem;
     }
+}
+
+@media screen and (max-width:750px) {
+    .name {
+        display: none;
+    }
+
+    .other ul {
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+    }
+
+    .other {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        height: 100%;
+    }
+
+    nav {
+        position: absolute;
+        height: 0;
+        transition: all 1s;
+    }
+
+    .container {
+        top: 30%;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .other ul li a{
+        width: 100%;
+        color: black;
+        text-align: center;
+    }
+
+    .left {
+        width: 100%;
+        margin: 0;
+    }
+
+    .my-name {
+        font-size: 25px;
+    }
+
+    .heading {
+        font-size: 27px;
+    }
+
+    .right {
+        margin: auto;
+        width: 100%;
+    }
+
+    .my-image {
+        width: 54%;
+        max-width: 60%;
+        margin: auto;
+        position: relative;
+        left: 26%;
+    }
+
+    .right::before {
+        right: 2rem;
+        top: -33px;
+
+    }
+
+    .right::after {
+        right: 6rem;
+        width: 18rem;
+        height: 29rem;
+        transform: rotate(89deg);
+        top: 3rem;
+    }
+
 }

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import "./App.css"
+import React, { useEffect, useState, useRef } from "react";
 import CustomCursor from "./components/cursor"
 import Navbar from "./components/navbar";
 import Me from "./components/me";
@@ -8,6 +7,8 @@ import Experience from "./components/experience";
 import Qualification from "./components/qualification"
 import Swiper_animation from "./components/swiper";
 import Contact from "./components/contact";
+import { motion, useInView } from "motion/react"
+import "./App.css"
 function App() {
   const [html, sethtml] = useState("0%")
   const [css, setcss] = useState("0%")
@@ -71,19 +72,103 @@ function App() {
   const scrolling = () => {
     window.scrollTo(0, 0);
   }
+  const handlenavopen = () => {
+    document.querySelector("nav").style.height = "100%"
+    document.querySelector(".nav-open").style.display = "none";
+    document.querySelector(".nav-close").style.display = "block";
+
+  }
+  const handlenavclose = () => {
+    document.querySelector("nav").style.height = "0%"
+    document.querySelector(".nav-open").style.display = "block";
+    document.querySelector(".nav-close").style.display = "none";
+
+  }
+
+  function Section({ children, id, className }) {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
+    return (
+      <section id={id} className={className} ref={ref}>
+        <span
+          style={{
+            transform: isInView ? "scale(1)" : "scale(0.5)",
+            opacity: isInView ? 1 : 0,
+            filter: isInView ? "blur(0px)" : "blur(10px)",
+            transition:
+              "transform 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67), opacity 0.5s ease, filter 0.5s ease",
+          }}
+        >
+          {children}
+        </span>
+      </section>
+    );
+  }
+  function Skill({ children, id, className }) {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
+    return (
+      <section style={{
+        transform: isInView ? "scale(1)" : "scale(0.94)",
+        transition:
+          "transform 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67), opacity 0.2s ease, filter 0.2s ease",
+      }} id={id} className={className} ref={ref}>
+
+        {children}
+      </section>
+    );
+  }
+
+
   return (
     <>
       <CustomCursor />
       <Navbar />
       <Me />
-      <section className="about-section" >
+      <div className="svgs">
+
+        <svg onClick={handlenavopen} className="nav-open"
+          xmlns="http://www.w3.org/2000/svg"
+          width={34}
+          height={34}
+          fill="none"
+          color="#000"
+        >
+          <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M4 5h16M4 12h4m12 0h-9m-3 0 1.5 2 1.5-2m-3 0h3M4 19h16"
+          />
+        </svg>
+        <svg onClick={handlenavclose} className="nav-close"
+          xmlns="http://www.w3.org/2000/svg"
+          width={34}
+          height={34}
+          fill="none"
+          color="#000"
+        >
+          <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M19 5 5 19M5 5l14 14"
+          />
+        </svg>
+      </div>
+      <Section initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }} id="about" className="about-section" >
         <div className="about">
           <h2 className="about-head">About</h2>
           <div className="about-tail">ABOUT</div>
         </div>
         <About />
-      </section>
-      <section className="skills-section">
+      </Section>
+      <Skill id="skills" className="skills-section" >
         <div className="about">
           <h2 className="about-head skill-head">Skills.</h2>
           <div className="about-tail skill-tail">SKILL</div>
@@ -169,9 +254,9 @@ function App() {
             <span className="years">years+ of experience</span>
           </div>
         </div>
-      </section>
+      </Skill>
 
-      <section className="resume">
+      <Skill id="resume" className="resume">
         <div style={{ width: "70%" }} className="about">
           <h2 className="about-head resume-head">My Resume</h2>
           <div className="about-tail resume-tail">Resume</div>
@@ -191,15 +276,15 @@ function App() {
             <Qualification />
           </div>
         }
-      </section>
-      <section className="swiper-section">
-        <div style={{ width: "70%" }} className="about">
-          <h2 className="about-head resume-head">My Portfolio</h2>
-          <div className="about-tail resume-tail">PROJECT</div>
+      </Skill>
+      <section id="swiper" className="swiper-section">
+        <div style={{ width: "70%" }} className="about swiper-about">
+          <h2 className="about-head resume-head swiper-h">My Portfolio</h2>
+          <div className="about-tail resume-tail swiper-t">PROJECT</div>
         </div>
         <Swiper_animation />
       </section>
-      <section className="services">
+      <Skill id="services" className="services">
         <div style={{ width: "70%" }} className="about">
           <h2 className="about-head resume-head">My Services</h2>
           <div className="about-tail resume-tail services-tail">SERVICES</div>
@@ -431,14 +516,14 @@ function App() {
           </div>
 
         </div>
-      </section>
-      <section className="contact-me">
+      </Skill>
+      <Skill id="contact" className="contact-me">
         <div style={{ width: "70%" }} className="about">
           <h2 className="about-head resume-head">Contact</h2>
           <div className="about-tail resume-tail services-tail contact-tail">CONTACT</div>
         </div>
         <Contact />
-      </section>
+      </Skill>
 
       <div className="footer">
         <div className="left-footer">

@@ -199,7 +199,7 @@ body ::selection {
 }
 
 .circle {
-  background: url("../public/assets/num.webp");
+  background: url("../assets/num.webp");
   position: absolute;
   bottom: 0;
   background-position: 50% 50%;
@@ -369,9 +369,11 @@ body ::selection {
   justify-content: space-around;
   height: 90px;
 }
-.left-footer{
+
+.left-footer {
   width: 20%;
 }
+
 .left-footer .name {
   height: 54px;
   width: 40px;
@@ -402,7 +404,8 @@ body ::selection {
 .right-footer div a:hover {
   background-color: #cb2d3e;
 }
-.scrolling-btn{
+
+.scrolling-btn {
   position: fixed;
   background-color: #cb2d3e;
   right: 8px;
@@ -420,32 +423,118 @@ body ::selection {
 
   z-index: 6;
 }
-.scrolling-btn span{
+
+.scrolling-btn span {
   font-size: 23px;
 
 }
-.scrolling-btn:hover{
+
+.scrolling-btn:hover {
   transform: rotate(25deg);
 }
-@media screen  and (max-width:1300px) {
+
+.svgs {
+  position: absolute;
+  top: 0;
+  right: 18px;
+}
+
+.nav-open,
+.nav-close {
+  color: white;
+  display: none;
+  z-index: 10;
+  position: relative;
+  top: 11px;
+}
+
+.nav-close {
+  color: black;
+}
+
+@media screen and (max-width:1300px) {
   .skill {
     width: 64%;
     margin: 0 50px;
-}
-  .circle span{
+  }
+
+  .circle span {
     font-size: 200px;
   }
-  .circle{
-    bottom:90px;
+
+  .circle {
+    bottom: 90px;
   }
-  .years{
+
+  .years {
     bottom: 59px;
     font-size: 26px;
-    left
-    : 3rem;
+    left: 3rem;
   }
-  .cards{
+
+  .cards {
     margin: 20px 14px;
   }
- 
+
+}
+
+@media screen and (max-width:750px) {
+  .cards {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+
+  .nav-open {
+    display: block;
+    color: white;
+
+  }
+
+  .skill {
+    flex-direction: column-reverse;
+    width: 93%;
+    margin: 0 20px;
+  }
+
+  .right-skill {
+    height: 20rem;
+    top: 5rem;
+  }
+
+  .skill-para {
+    width: 93%;
+  }
+
+  .circle,
+  .years {
+    position: relative;
+    text-align: right;
+    display: block;
+    width: 80%;
+  }
+
+  .years {
+    bottom: 50%;
+  }
+
+  .sk {
+    width: 96%;
+  }
+  .width-skills{
+    transform: rotate3d(0,0,0,0deg);
+  }
+  .resume-head{
+    text-wrap: nowrap;
+  }
+  .resume-head{
+    left: 27%;
+  }
+  .resume-tail{
+    left: 22%;
+    top: -15px;
+    font-size: 62px;
+  }
+ .right-footer{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+ } 
 }

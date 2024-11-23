@@ -29,14 +29,17 @@ nav {
 
 .other ul li {
     list-style: none;
-    color: white;
     cursor: pointer;
     position: relative;
     font-size: 15px;
+}
+.other ul li a{
+    text-decoration: none;
+    color: white;
     font-weight: 500;
 }
 
-.other ul li::before {
+.other ul li a::before {
     position: absolute;
     content: '';
     background-color: #cb2d3e;
@@ -48,7 +51,7 @@ nav {
     border-radius: 5px;
 }
 
-.other ul li:hover::before {
+.other ul li a:hover::before {
     width: 100%
     
 }

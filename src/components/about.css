@@ -171,3 +171,25 @@
    }
    
 }
+@media  screen and (max-width:750px) {
+  .flex{
+    flex-direction: column;
+    align-items: center;
+    gap: 39px;
+
+  }
+  .about-right{
+    width: 80%;
+  }
+   .about-left{
+    width: 42%;
+   }
+   .about-tail {
+    font-size: 55px;
+    left: -29px;
+    top: -7px;
+}
+.swiper-t{
+    left:74px
+  }
+}
