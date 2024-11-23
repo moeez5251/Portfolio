@@ -22,7 +22,11 @@ function App() {
   const [office, setoffice] = useState("0%")
   const [opa, setopacity] = useState(0)
   useEffect(() => {
-    const listner = () => {
+    setTimeout(() => {
+      document.querySelector(".loader").style.top="-100%"
+    }, 2000);
+  
+    const handleScroll = () => {
       if (window.scrollY > 1080 && window.scrollY < 2150) {
         sethtml("90%")
         setcss("85%")
@@ -31,8 +35,7 @@ function App() {
         setreact("75%")
         setvideo("95%")
         setoffice("100%")
-      }
-      else {
+      } else {
         sethtml("0%")
         setcss("0%")
         setjs("0%")
@@ -40,23 +43,22 @@ function App() {
         setreact("0%")
         setvideo("0%")
         setoffice("0%")
-
       }
-
+  
       if (window.scrollY >= 300) {
         setopacity(1);
-      }
-      else {
+      } else {
         setopacity(0);
       }
-    }
-    window.addEventListener("scroll", listner)
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+  
     return () => {
-      window.removeEventListener("scroll", listner)
-
-
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
   const handlefirstclick = () => {
     document.querySelector(".red-span").style.left = "0%";
     setfirst("white");
@@ -84,7 +86,7 @@ function App() {
     document.querySelector(".nav-close").style.display = "none";
 
   }
-
+  
   function Section({ children, id, className }) {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
@@ -114,9 +116,9 @@ function App() {
         transform: isInView ? "scale(1)" : "scale(0.94)",
         transition:
           "transform 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67), opacity 0.2s ease, filter 0.2s ease",
-      }}  id={id} className={className} ref={ref}>
-        
-          {children}
+      }} id={id} className={className} ref={ref}>
+
+        {children}
       </section>
     );
   }
@@ -124,6 +126,12 @@ function App() {
 
   return (
     <>
+      <div className="loader">
+        <div className="spinner">
+          <div className="inner">
+          </div>
+        </div>
+      </div>
       <CustomCursor />
       <Navbar />
       <Me />
