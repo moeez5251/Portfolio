@@ -180,33 +180,47 @@
 
   .custom-pagination {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
 
   }
-  .find-more-button{
+
+  .find-more-button {
     padding: 7px;
   }
 }
 
 @media screen and (max-width:450px) {
-  .swiper-about{
+  .swiper-about {
     left: 1%;
   }
-  .about{
+
+  .about {
     left: -1%;
   }
+
   .my-image {
     width: 96%;
     max-width: 1000%;
     margin: auto;
     position: relative;
     left: 9%;
+  }
+
+  .right::after {
+    right: 0rem;
+    width: 18rem;
+    height: 29rem;
+    transform: rotate(89deg);
+    top: 9rem;
+  }
+
+  .about-right {
+    width: 96%;
+  }
+.slide-container{
+  width: 80%;
 }
-.right::after {
-  right: 0rem;
-  width: 18rem;
-  height: 29rem;
-  transform: rotate(89deg);
-  top: 9rem;
-}
+  .swiper-slide{
+    margin-left: 0;
+  }
 }

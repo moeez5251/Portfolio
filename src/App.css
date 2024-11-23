@@ -538,3 +538,18 @@ body ::selection {
   grid-template-columns: repeat(2,1fr);
  } 
 }
+@media screen and (max-width:450px) {
+  
+  .about-tail,
+  .resume-tail,
+  .services-tail {
+    font-size: 50px;
+    left: 5%;
+  }
+  .about-head,
+  .resume-head,
+  .services-head {
+    font-size: 30px;
+    left: 7%;
+  }
+}

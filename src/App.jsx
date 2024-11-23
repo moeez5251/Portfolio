@@ -7,7 +7,7 @@ import Experience from "./components/experience";
 import Qualification from "./components/qualification"
 import Swiper_animation from "./components/swiper";
 import Contact from "./components/contact";
-import { motion, useInView } from "motion/react"
+import { useInView } from "motion/react"
 import "./App.css"
 function App() {
   const [html, sethtml] = useState("0%")
@@ -107,16 +107,16 @@ function App() {
   }
   function Skill({ children, id, className }) {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
+    const isInView = useInView(ref, { once: false });
 
     return (
       <section style={{
         transform: isInView ? "scale(1)" : "scale(0.94)",
         transition:
           "transform 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67), opacity 0.2s ease, filter 0.2s ease",
-      }} id={id} className={className} ref={ref}>
-
-        {children}
+      }}  id={id} className={className} ref={ref}>
+        
+          {children}
       </section>
     );
   }
@@ -256,7 +256,7 @@ function App() {
         </div>
       </Skill>
 
-      <Skill id="resume" className="resume">
+      <section id="resume" className="resume">
         <div style={{ width: "70%" }} className="about">
           <h2 className="about-head resume-head">My Resume</h2>
           <div className="about-tail resume-tail">Resume</div>
@@ -276,7 +276,7 @@ function App() {
             <Qualification />
           </div>
         }
-      </Skill>
+      </section>
       <section id="swiper" className="swiper-section">
         <div style={{ width: "70%" }} className="about swiper-about">
           <h2 className="about-head resume-head swiper-h">My Portfolio</h2>
@@ -284,14 +284,14 @@ function App() {
         </div>
         <Swiper_animation />
       </section>
-      <Skill id="services" className="services">
+      <section id="services" className="services">
         <div style={{ width: "70%" }} className="about">
           <h2 className="about-head resume-head">My Services</h2>
           <div className="about-tail resume-tail services-tail">SERVICES</div>
         </div>
 
         <div className="cards">
-          <div className="card-div">
+          <Skill className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -326,9 +326,9 @@ function App() {
                 </svg>
               </div>
             </div>
-          </div>
+          </Skill>
 
-          <div className="card-div">
+          <Skill className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -365,8 +365,8 @@ function App() {
                 </svg>
               </div>
             </div>
-          </div>
-          <div className="card-div">
+          </Skill>
+          <Skill className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -403,8 +403,8 @@ function App() {
                 </svg>
               </div>
             </div>
-          </div>
-          <div className="card-div">
+          </Skill>
+          <Skill className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -439,8 +439,8 @@ function App() {
                 </svg>
               </div>
             </div>
-          </div>
-          <div className="card-div">
+          </Skill>
+          <Skill className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -477,8 +477,8 @@ function App() {
                 </svg>
               </div>
             </div>
-          </div>
-          <div className="card-div">
+          </Skill>
+          <Skill className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -513,10 +513,10 @@ function App() {
                 </svg>
               </div>
             </div>
-          </div>
+          </Skill>
 
         </div>
-      </Skill>
+      </section>
       <Skill id="contact" className="contact-me">
         <div style={{ width: "70%" }} className="about">
           <h2 className="about-head resume-head">Contact</h2>

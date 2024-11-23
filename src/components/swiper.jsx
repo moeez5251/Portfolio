@@ -41,6 +41,17 @@ function App() {
           spaceBetween: 30,
         });
       }
+      if (window.innerWidth <= 450) {
+        setswiper({
+          slidesPerView: 1,
+          spaceBetween:0,
+        });
+      } else {
+        setswiper({
+          slidesPerView: 3,
+          spaceBetween: 30,
+        });
+      }
     };
 
     updateSwiperSettings();
