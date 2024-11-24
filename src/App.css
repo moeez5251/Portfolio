@@ -493,6 +493,7 @@ body ::selection {
   align-items: center;
   justify-content: center;
   transition: all 0.5s;
+  overflow: hidden;
 }
 @media screen and (max-width:1300px) {
   .skill {
@@ -591,17 +592,22 @@ body ::selection {
   .about-tail,
   .resume-tail,
   .services-tail {
-    font-size: 50px;
+    font-size: 53px;
     left: 5%;
   }
 
   .about-head,
   .resume-head,
   .services-head {
-    font-size: 30px;
-    left: 7%;
+    font-size: 34px;
+    left: 16%;
   }
   .head,.typed-animation{
     font-size: 15px;
+  }
+  .contact-tail{
+    font-size: 44px;
+    top: -7px;
+    left: 3%;
   }
 }

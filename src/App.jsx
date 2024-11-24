@@ -27,7 +27,7 @@ function App() {
     }, 2000);
   
     const handleScroll = () => {
-      if (window.scrollY > 1080 && window.scrollY < 2150) {
+      if (window.scrollY > 1040) {
         sethtml("90%")
         setcss("85%")
         setjs("83%")
@@ -35,16 +35,7 @@ function App() {
         setreact("75%")
         setvideo("95%")
         setoffice("100%")
-      } else {
-        sethtml("0%")
-        setcss("0%")
-        setjs("0%")
-        setnode("0%")
-        setreact("0%")
-        setvideo("0%")
-        setoffice("0%")
-      }
-  
+      } 
       if (window.scrollY >= 300) {
         setopacity(1);
       } else {
@@ -122,7 +113,22 @@ function App() {
       </section>
     );
   }
+ 
+  function Service({ children, id, className }) {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
 
+    return (
+      <div style={{
+        transform: isInView ? "translateY(0px)" : "translateY(20px)",
+        transition:
+          "transform 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67)",
+      }} id={id} className={className} ref={ref}>
+
+        {children}
+      </div>
+    );
+  }
 
   return (
     <>
@@ -299,7 +305,7 @@ function App() {
         </div>
 
         <div className="cards">
-          <Skill className="card-div">
+          <Service className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -334,9 +340,9 @@ function App() {
                 </svg>
               </div>
             </div>
-          </Skill>
+          </Service>
 
-          <Skill className="card-div">
+          <Service className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -373,8 +379,8 @@ function App() {
                 </svg>
               </div>
             </div>
-          </Skill>
-          <Skill className="card-div">
+          </Service>
+          <Service className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -411,8 +417,8 @@ function App() {
                 </svg>
               </div>
             </div>
-          </Skill>
-          <Skill className="card-div">
+          </Service>
+          <Service className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -447,8 +453,8 @@ function App() {
                 </svg>
               </div>
             </div>
-          </Skill>
-          <Skill className="card-div">
+          </Service>
+          <Service className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -485,8 +491,8 @@ function App() {
                 </svg>
               </div>
             </div>
-          </Skill>
-          <Skill className="card-div">
+          </Service>
+          <Service className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -521,7 +527,7 @@ function App() {
                 </svg>
               </div>
             </div>
-          </Skill>
+          </Service>
 
         </div>
       </section>

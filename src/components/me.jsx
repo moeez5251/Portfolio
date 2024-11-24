@@ -35,7 +35,7 @@ const Me = () => {
                     <h2 className='heading'>Hey there,</h2>
                     <h1 className='my-name'>Xheikh Moeez</h1>
                     <p className='para'>I'm a professional web designer, My motive is to build a best web design with my all years of experience and efforts.</p>
-                    <button className='contact-btn'>Contact Me
+                    <button onClick={()=>window.scrollTo(0, 5000)} className='contact-btn'>Contact Me
                         <span className="material-symbols-outlined">
                             chevron_right
                         </span>
