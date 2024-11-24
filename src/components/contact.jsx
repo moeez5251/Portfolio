@@ -11,7 +11,7 @@ const Contact = () => {
         formState: { errors },
     } = useForm()
 
-    const onSubmit = (data) => {
+    const onSubmit = () => {
         emailjs
             .sendForm('service_xpngmsh', 'template_c8sru5i', form.current, {
                 publicKey: 'dUbqxcoqbRr2erSi5',
@@ -19,7 +19,7 @@ const Contact = () => {
         setgreen(true);
         setTimeout(() => {
             setgreen(false);
-        }, 3000);
+        }, 3500);
         document.querySelectorAll(".inputs-form").forEach(e => { e.value = "" })
     }
     return (
@@ -38,7 +38,7 @@ const Contact = () => {
                     <p>Drop A Message ! Let's <span>Work </span>Together</p>
                     <form ref={form} onSubmit={handleSubmit(onSubmit)}>
                         <div className='form-errors'>
-                            {errors.username ? (
+                            {errors.person ? (
                                 <span className="red">Please Enter Your Name</span>
                             ) : errors.email ? (
                                 <span className="red">Pleas Enter Your email</span>
