@@ -4,12 +4,12 @@ Welcome to my portfolio! This is a showcase of my work as a web developer, UI/UX
 
 ## Table of Contents 📚🔍
 
-- [About Me](#about-me) 👤
-- [Technologies Used](#technologies-used) 🛠️
-- [Features](#features) 🌟
-- [Installation](#installation) ⚙️
-- [Usage](#usage) 🖥️
-- [Contact](#contact) 📞✉️
+- About Me 👤
+- Technologies Used 🛠️
+- Features🌟
+- Installation ⚙️
+- Usage 🖥️
+- Contact 📞✉️
 
 ## About Me 👨‍💻
 
