@@ -14,13 +14,13 @@ const About = () => {
 
     return () => {
       typed.destroy();
-    };
+    }; 
   }, []);
   return (
     <>
       <div className='flex' >
         <div className="about-left">
-          <img className='left-image' src="assets/Me-1.jpeg "alt="" />
+          <img className='left-image' src="assets/Me-1.webp "alt="" />
           <div className='left-border'></div>
         </div>
         <div className="about-right">

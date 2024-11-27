@@ -32,9 +32,8 @@
     border-radius: 10px;
 
 }
-
 .box p {
-    color: #8492a6;
+    color: #84888d;
     width: 80%;
 }
 
@@ -93,9 +92,19 @@ form textarea {
     margin: 20px;
     padding: 10px 20px;
     border-radius: 10px;
-
+    
 }
-
+.btn-contact{
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+.btn-contact svg{
+    width: 30px;
+    height: 30px;
+}
 .red {
     color: #cb2d3e;
     font-weight: 500;
@@ -104,7 +113,7 @@ form textarea {
 form button {
     background-color: #cb2d3e;
     color: white;
-    padding: 7px 11px;
+    padding: 9px 12px;
     border: none;
     outline: none;
     font-size: 16px;

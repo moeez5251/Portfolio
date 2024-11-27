@@ -131,7 +131,7 @@ body ::selection {
 }
 
 .skill-para {
-  color: #8492a6;
+  color: #84888d;
   width: 68%;
 }
 
@@ -152,7 +152,7 @@ body ::selection {
 }
 
 .sk-span {
-  color: #8492a6;
+  color: #84888d;
   font-size: 20px;
   font-weight: 500;
 
@@ -520,7 +520,9 @@ body ::selection {
   }
 
 }
-
+.w-70{
+  width: 70%;
+}
 @media screen and (max-width:750px) {
   .cards {
     grid-template-columns: repeat(1, minmax(250px, 1fr));

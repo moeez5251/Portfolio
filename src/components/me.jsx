@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import "./me.css"
 import Bg_1 from './bg-1';
-import { motion, useInView } from "motion/react"
+import {useInView } from "motion/react"
 
 const mousemove = (event) => {
     const x = (window.innerWidth - event.pageX * 1) / 50;
@@ -11,7 +11,7 @@ const mousemove = (event) => {
 }
 function Div({ children, id, className }) {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
+    const isInView = useInView(ref, { once: false });
 
     return (
         <div style={{
@@ -35,7 +35,7 @@ const Me = () => {
                     <h2 className='heading'>Hey there,</h2>
                     <h1 className='my-name'>Xheikh Moeez</h1>
                     <p className='para'>I'm a professional web designer, My motive is to build a best web design with my all years of experience and efforts.</p>
-                    <button onClick={()=>window.scrollTo(0, 5000)} className='contact-btn'>Contact Me
+                    <button onClick={()=>document.querySelectorAll(".other ul li a")[4].click()} className='contact-btn'>Contact Me
                         <span className="material-symbols-outlined">
                             chevron_right
                         </span>
@@ -43,7 +43,7 @@ const Me = () => {
                 </Div>
                 <div className="right">
 
-                    <img className='my-image' src="assets/Me-w-bg.png" alt="" />
+                    <img className='my-image' src="assets/Me-w-bg.webp" alt="" />
                 </div>
             </div>
         </>

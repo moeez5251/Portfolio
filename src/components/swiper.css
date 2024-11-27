@@ -76,15 +76,16 @@
   gap: 15px;
   border: 2px solid #503763;
   border-radius: 10px;
-  box-shadow: 1px 1px 18px 1px #503763;
   cursor: pointer;
   transition: all 0.5s;
   min-height: 78%;
   position: relative;
+  box-shadow: 3px -3px 9px 3px #a9a5a9;
 }
 
 .slide-container:hover {
   transform: translateY(-15px);
+  box-shadow: 1px 1px 18px 1px #503763;
 
 }
 

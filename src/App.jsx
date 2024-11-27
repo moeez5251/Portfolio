@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useMemo } from "react";
 import CustomCursor from "./components/cursor"
 import Navbar from "./components/navbar";
 import Me from "./components/me";
@@ -23,11 +23,11 @@ function App() {
   const [opa, setopacity] = useState(0)
   useEffect(() => {
     setTimeout(() => {
-      document.querySelector(".loader").style.top="-100%"
+      document.querySelector(".loader").style.top = "-100%"
     }, 2000);
-  
+
     const handleScroll = () => {
-      if (window.scrollY > 1040) {
+      if (window.scrollY > 1400) {
         sethtml("90%")
         setcss("85%")
         setjs("83%")
@@ -35,21 +35,21 @@ function App() {
         setreact("75%")
         setvideo("95%")
         setoffice("100%")
-      } 
+      }
       if (window.scrollY >= 300) {
         setopacity(1);
       } else {
         setopacity(0);
       }
     };
-  
+
     window.addEventListener("scroll", handleScroll);
-  
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
+
   const handlefirstclick = () => {
     document.querySelector(".red-span").style.left = "0%";
     setfirst("white");
@@ -77,10 +77,10 @@ function App() {
     document.querySelector(".nav-close").style.display = "none";
 
   }
-  
+
   function Section({ children, id, className }) {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
+    const isInView = useInView(ref, { once: false });
 
     return (
       <section id={id} className={className} ref={ref}>
@@ -113,17 +113,32 @@ function App() {
       </section>
     );
   }
- 
-  function Service({ children, id, className }) {
+  function Heading({ children, id, className }) {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
+
+    return (
+      <div style={{
+        left: isInView ? "9%" : "0%",
+        transition:
+          "all 0.4s ease-in-out",
+      }} id={id} className={className} ref={ref}>
+
+        {children}
+      </div>
+    );
+  }
+
+  function Service({ children, id, className}) {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: false });
 
     return (
       <div style={{
         transform: isInView ? "translateY(0px)" : "translateY(20px)",
         transition:
           "transform 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67)",
-      }} id={id} className={className} ref={ref}>
+      }}  id={id} className={className} ref={ref}>
 
         {children}
       </div>
@@ -176,17 +191,17 @@ function App() {
       </div>
       <Section initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }} id="about" className="about-section" >
-        <div className="about">
+        <Heading className="about">
           <h2 className="about-head">About</h2>
           <div className="about-tail">ABOUT</div>
-        </div>
+        </Heading>
         <About />
       </Section>
-      <Skill id="skills" className="skills-section" >
-        <div className="about">
+      <section id="skills" className="skills-section" >
+        <Heading className="about">
           <h2 className="about-head skill-head">Skills.</h2>
           <div className="about-tail skill-tail">SKILL</div>
-        </div>
+        </Heading>
         <div className="skill">
 
           <div className="left-skill">
@@ -268,10 +283,10 @@ function App() {
             <span className="years">years+ of experience</span>
           </div>
         </div>
-      </Skill>
+      </section>
 
       <section id="resume" className="resume">
-        <div style={{ width: "70%" }} className="about">
+        <div  className="about w-70">
           <h2 className="about-head resume-head">My Resume</h2>
           <div className="about-tail resume-tail">Resume</div>
         </div>
@@ -292,17 +307,17 @@ function App() {
         }
       </section>
       <section id="swiper" className="swiper-section">
-        <div style={{ width: "70%" }} className="about swiper-about">
+        <Heading className="about swiper-about w-70">
           <h2 className="about-head resume-head swiper-h">My Portfolio</h2>
           <div className="about-tail resume-tail swiper-t">PROJECT</div>
-        </div>
+        </Heading>
         <Swiper_animation />
       </section>
       <section id="services" className="services">
-        <div style={{ width: "70%" }} className="about">
+        <Heading className="about w-70">
           <h2 className="about-head resume-head">My Services</h2>
           <div className="about-tail resume-tail services-tail">SERVICES</div>
-        </div>
+        </Heading>
 
         <div className="cards">
           <Service className="card-div">
@@ -532,17 +547,17 @@ function App() {
         </div>
       </section>
       <Skill id="contact" className="contact-me">
-        <div style={{ width: "70%" }} className="about">
+        <Heading className="about w-70">
           <h2 className="about-head resume-head">Contact</h2>
           <div className="about-tail resume-tail services-tail contact-tail">CONTACT</div>
-        </div>
+        </Heading>
         <Contact />
       </Skill>
 
       <div className="footer">
         <div className="left-footer">
           <div className="name">
-            <img className='piclogo' src="assets/logo.png" alt="logo" />
+            <img className='piclogo' src="assets/logo.webp" alt="logo" />
           </div>
         </div>
         <div className="middle-footer">

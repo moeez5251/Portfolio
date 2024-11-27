@@ -47,7 +47,7 @@
     background: #cb2d3e;
     right: -5px;
     top: -18px;
-    outline: #afb3b8;
+    outline: #84888d;
     outline-style: dashed;
     outline-offset: 5px;
     outline-width: 2px;
@@ -61,7 +61,7 @@
     font-weight: 500;
 }
 .exp-right p{
-    color: #c0c0c0;
+    color: #84888d;
     width: 85%;
     margin-top: 24px;
     

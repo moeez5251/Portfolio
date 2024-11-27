@@ -90,7 +90,7 @@ function App() {
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="assets/Swiper/Chat-App.png" alt="" />
+                <img src="assets/Swiper/Chat-App.webp" alt="" />
               </div>
               <div className="swiper-name">Chat App</div>
 
@@ -107,7 +107,7 @@ function App() {
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="assets/Swiper/Todo.png" alt="" />
+                <img src="assets/Swiper/Todo.webp" alt="" />
               </div>
               <div className="swiper-name">Todo App</div>
 
@@ -124,7 +124,7 @@ function App() {
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="assets/Swiper/E.png" alt="" />
+                <img src="assets/Swiper/E.webp" alt="" />
               </div>
               <div className="swiper-name">E-Commerce Website</div>
 
@@ -141,7 +141,7 @@ function App() {
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="assets/Swiper/Calculator.png" alt="" />
+                <img src="assets/Swiper/Calculator.webp" alt="" />
               </div>
               <div className="swiper-name">Calculator</div>
 
@@ -158,7 +158,7 @@ function App() {
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="assets/Swiper/Spotify.png" alt="" />
+                <img src="assets/Swiper/Spotify.webp" alt="" />
               </div>
               <div className="swiper-name">Spotify Clone</div>
 
@@ -175,7 +175,7 @@ function App() {
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="assets/Swiper/X.png" alt="" />
+                <img src="assets/Swiper/X.webp" alt="" />
               </div>
               <div className="swiper-name">X Clone</div>
 
@@ -192,7 +192,7 @@ function App() {
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="assets/Swiper/Snake-Game.png" alt="" />
+                <img src="assets/Swiper/Snake-Game.webp" alt="" />
               </div>
               <div className="swiper-name">Snake Game</div>
 
@@ -209,7 +209,7 @@ function App() {
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="assets/Swiper/Weather.png" alt="" />
+                <img src="assets/Swiper/Weather.webp" alt="" />
               </div>
               <div className="swiper-name">Weather App</div>
 
@@ -226,7 +226,7 @@ function App() {
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="assets/Swiper/Table.png" alt="" />
+                <img src="assets/Swiper/Table.webp" alt="" />
               </div>
               <div className="swiper-name">Table Generator</div>
 
@@ -243,7 +243,7 @@ function App() {
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="assets/Swiper/Recipes.png" alt="" />
+                <img src="assets/Swiper/Recipes.webp" alt="" />
               </div>
               <div className="swiper-name">Recipes Website</div>
 
@@ -260,7 +260,7 @@ function App() {
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="assets/Swiper/AI.png" alt="" />
+                <img src="assets/Swiper/AI.webp" alt="" />
               </div>
               <div className="swiper-name">AI Chat</div>
 
@@ -277,7 +277,7 @@ function App() {
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="assets/Swiper/Clock.png" alt="" />
+                <img src="assets/Swiper/Clock.webp" alt="" />
               </div>
               <div className="swiper-name">Clock</div>
 
@@ -294,7 +294,7 @@ function App() {
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="assets/Swiper/TTT.png" alt="" />
+                <img src="assets/Swiper/TTT.webp" alt="" />
               </div>
               <div className="swiper-name">Tic Tac Toe</div>
 
@@ -311,7 +311,7 @@ function App() {
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">
-                <img src="assets/Swiper/Netlify.png" alt="" />
+                <img src="assets/Swiper/Netlify.webp" alt="" />
               </div>
               <div className="swiper-name">Netlify Clone</div>
 
