@@ -479,7 +479,7 @@ body ::selection {
   bottom: 0;
   width: 90%;
   background-color: #cb2d3e;
-  z-index: 100;
+  z-index: 15;
   border-radius: 15px;
   margin: auto;
   left: 5%;
@@ -810,5 +810,8 @@ button {
 
   .cards {
     width: 90%;
+  }
+  .nav-opt {
+    right: 5%;
   }
 }
