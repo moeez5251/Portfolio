@@ -128,7 +128,7 @@
     }
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:700px) {
     .name {
         display: none;
     }
@@ -153,9 +153,10 @@
     }
 
     .container {
-        top: 30%;
+        top: 32%;
         flex-direction: column;
         align-items: baseline;
+        justify-content: end;
     }
 
     .other ul li a{
@@ -178,8 +179,8 @@
     }
 
     .right {
-        margin: auto;
         width: 100%;
+        margin-bottom: 0;
     }
 
     .my-image {
@@ -192,16 +193,16 @@
 
     .right::before {
         right: 2rem;
-        top: -33px;
 
     }
 
     .right::after {
-        right: 6rem;
-        width: 18rem;
-        height: 29rem;
+        left: 10em;
+        width: 23rem;
+        height: 41rem;
         transform: rotate(89deg);
-        top: 3rem;
+        top: 0rem;
+        
     }
 
 }

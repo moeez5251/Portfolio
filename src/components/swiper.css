@@ -1,6 +1,7 @@
 .section {
   position: relative;
   height: 90vh;
+  padding-top: 4%;
 }
 
 
@@ -153,7 +154,7 @@
 @media screen and (max-width:1300px) {
 
   .slide-container {
-    width: 100%;
+    width: 90%;
     min-height: 50%;
   }
 }
@@ -208,7 +209,7 @@
   }
 
   .right::after {
-    right: 0rem;
+    left: 6rem;
     width: 18rem;
     height: 29rem;
     transform: rotate(89deg);

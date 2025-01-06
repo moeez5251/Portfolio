@@ -22,8 +22,9 @@
     height: 100%;
     justify-content: center;
     gap: 20px;
-    width: 80%;
+    width: 90%;
     margin: auto;
+    align-items: center;
 }
 
 .box img {
@@ -41,11 +42,7 @@
     font-weight: 700;
 }
 
-.contact-tail {
-    font-size: 53px;
-    left: 46%;
-    top: -6px;
-}
+
 
 .right-contact {
     display: flex;
@@ -102,8 +99,8 @@ form textarea {
     justify-content: center;
 }
 .btn-contact svg{
-    width: 30px;
-    height: 30px;
+    width: 16px;
+    height: 23px;
 }
 .red {
     color: #cb2d3e;
@@ -137,9 +134,7 @@ form button:hover {
         font-size: 19px;
     }
 
-    form {
-        width: 90%;
-    }
+  
 
     form textarea {
         width: 80%;

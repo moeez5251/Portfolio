@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, useMemo } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import CustomCursor from "./components/cursor"
 import Navbar from "./components/navbar";
 import Me from "./components/me";
@@ -21,13 +21,17 @@ function App() {
   const [truesstate, settruesstate] = useState(true)
   const [office, setoffice] = useState("0%")
   const [opa, setopacity] = useState(0)
+  const [bottom, setbottom] = useState("-12%")
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
   useEffect(() => {
     setTimeout(() => {
       document.querySelector(".loader").style.top = "-100%"
     }, 2000);
 
     const handleScroll = () => {
-      if (window.scrollY > 1400) {
+      if (isInView) {
+
         sethtml("90%")
         setcss("85%")
         setjs("83%")
@@ -35,6 +39,15 @@ function App() {
         setreact("75%")
         setvideo("95%")
         setoffice("100%")
+      }
+      else {
+        sethtml("0%")
+        setcss("0%")
+        setjs("0%")
+        setnode("0%")
+        setreact("0%")
+        setvideo("0%")
+        setoffice("0%")
       }
       if (window.scrollY >= 300) {
         setopacity(1);
@@ -48,7 +61,7 @@ function App() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isInView]);
 
   const handlefirstclick = () => {
     document.querySelector(".red-span").style.left = "0%";
@@ -62,45 +75,33 @@ function App() {
     setsecond("white");
     settruesstate(false)
   }
-  const scrolling = () => {
-    window.scrollTo(0, 0);
-  }
-  const handlenavopen = () => {
-    document.querySelector("nav").style.height = "100%"
-    document.querySelector(".nav-open").style.display = "none";
-    document.querySelector(".nav-close").style.display = "block";
+ 
 
-  }
-  const handlenavclose = () => {
-    document.querySelector("nav").style.height = "0%"
-    document.querySelector(".nav-open").style.display = "block";
-    document.querySelector(".nav-close").style.display = "none";
-
-  }
 
   function Section({ children, id, className }) {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: false });
+    const isInView = useInView(ref, { once: true });
 
     return (
       <section id={id} className={className} ref={ref}>
-        <span
+        <div
           style={{
-            transform: isInView ? "scale(1)" : "scale(0.5)",
-            opacity: isInView ? 1 : 0,
-            filter: isInView ? "blur(0px)" : "blur(10px)",
+            transform: isInView
+              ? "scale(1) translateY(0)"
+              : "scale(0.9) translateY(30px)",
             transition:
-              "transform 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67), opacity 0.5s ease, filter 0.5s ease",
+              "transform 0.4s ease-out, opacity 0.4s ease-out, filter 0.4s ease-out",
           }}
         >
           {children}
-        </span>
+        </div>
       </section>
     );
   }
+
   function Skill({ children, id, className }) {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: false });
+    const isInView = useInView(ref, { once: true });
 
     return (
       <section style={{
@@ -129,16 +130,17 @@ function App() {
     );
   }
 
-  function Service({ children, id, className}) {
+  function Service({ children, id, className }) {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: false });
 
     return (
       <div style={{
-        transform: isInView ? "translateY(0px)" : "translateY(20px)",
+        transform: isInView ? "translateY(0px)" : "translateY(30px)",
         transition:
-          "transform 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67)",
-      }}  id={id} className={className} ref={ref}>
+          "transform 0.5s ease-out",
+        width: "100%"
+      }} id={id} className={className} ref={ref}>
 
         {children}
       </div>
@@ -156,45 +158,28 @@ function App() {
       <CustomCursor />
       <Navbar />
       <Me />
-      <div className="svgs">
-
-        <svg onClick={handlenavopen} className="nav-open"
-          xmlns="http://www.w3.org/2000/svg"
-          width={34}
-          height={34}
-          fill="none"
-          color="#000"
-        >
-          <path
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={1.5}
-            d="M4 5h16M4 12h4m12 0h-9m-3 0 1.5 2 1.5-2m-3 0h3M4 19h16"
-          />
-        </svg>
-        <svg onClick={handlenavclose} className="nav-close"
-          xmlns="http://www.w3.org/2000/svg"
-          width={34}
-          height={34}
-          fill="none"
-          color="#000"
-        >
-          <path
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={1.5}
-            d="M19 5 5 19M5 5l14 14"
-          />
-        </svg>
+     
+      <div style={{ bottom: bottom }} className="menubar">
+        <div className="img">
+          <img className="menu-img" src="assets/logo.webp" alt="logo" />
+        </div>
+        <button onClick={() => bottom==="-12%"? setbottom("0%"):setbottom("-12%")} className="swallow__icon">
+          <span> </span>
+        </button>
+        <div className="nav-opt">
+          <li ><a href="#home">HOME</a></li>
+          <li ><a  href="#about">ABOUT</a></li>
+          <li ><a  href="#resume">RESUME</a></li>
+          <li ><a  href="#swiper">PROJECTS</a></li>
+          <li ><a  href="#contact">CONTACT</a></li>
+        </div>
       </div>
-      <Section initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }} id="about" className="about-section" >
-        <Heading className="about">
+      <Section
+        id="about" className="about-section" >
+        <div className="about">
           <h2 className="about-head">About</h2>
           <div className="about-tail">ABOUT</div>
-        </Heading>
+        </div>
         <About />
       </Section>
       <section id="skills" className="skills-section" >
@@ -208,7 +193,7 @@ function App() {
             <div className="skill-para">
               I'm a professional web designer, My motive is to build a best web design with my all years of experience and efforts.
             </div>
-            <div className="width-skills">
+            <div ref={ref} className="width-skills">
               <div className="sk">
                 <span className="percentage">{html}</span>
                 <span className="sk-span">HTML</span>
@@ -286,7 +271,7 @@ function App() {
       </section>
 
       <section id="resume" className="resume">
-        <div  className="about w-70">
+        <div className="about w-70">
           <h2 className="about-head resume-head">My Resume</h2>
           <div className="about-tail resume-tail">Resume</div>
         </div>
@@ -639,11 +624,7 @@ function App() {
           </div>
         </div>
       </div>
-      <button onClick={scrolling} style={{ opacity: opa }} className="scrolling-btn">
-        <span className="material-symbols-outlined">
-          keyboard_arrow_up
-        </span>
-      </button>
+      
     </>
   )
 }
