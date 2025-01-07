@@ -1,3 +1,4 @@
+import Lenis from '@studio-freight/lenis';
 import React, { useEffect, useState, useRef } from "react";
 import CustomCursor from "./components/cursor"
 import Navbar from "./components/navbar";
@@ -21,9 +22,27 @@ function App() {
   const [truesstate, settruesstate] = useState(true)
   const [office, setoffice] = useState("0%")
   const [opa, setopacity] = useState(0)
-  const [bottom, setbottom] = useState("-12%")
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smooth: true,
+    });
+
+    const handleAnimationFrame = (time) => {
+      lenis.raf(time);
+      requestAnimationFrame(handleAnimationFrame);
+    };
+
+    requestAnimationFrame(handleAnimationFrame);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
   useEffect(() => {
     setTimeout(() => {
       document.querySelector(".loader").style.top = "-100%"
@@ -75,7 +94,7 @@ function App() {
     setsecond("white");
     settruesstate(false)
   }
- 
+
 
 
   function Section({ children, id, className }) {
@@ -88,7 +107,7 @@ function App() {
           style={{
             transform: isInView
               ? "scale(1) translateY(0)"
-              : "scale(0.9) translateY(30px)",
+              : "scale(0.93) translateY(30px)",
             transition:
               "transform 0.4s ease-out, opacity 0.4s ease-out, filter 0.4s ease-out",
           }}
@@ -158,20 +177,20 @@ function App() {
       <CustomCursor />
       <Navbar />
       <Me />
-     
-      <div style={{ bottom: bottom }} className="menubar">
+
+      <div className="menubar bottom">
         <div className="img">
           <img className="menu-img" src="assets/logo.webp" alt="logo" />
         </div>
-        <button onClick={() => bottom==="-12%"? setbottom("0%"):setbottom("-12%")} className="swallow__icon">
-          <span> </span>
-        </button>
+        <span onClick={() => document.querySelector(".menubar").classList.toggle("bottom")} style={{ color: "white", fontSize: "27px" }} className="material-symbols-outlined">
+          widgets
+        </span>
         <div className="nav-opt">
           <li ><a href="#home">HOME</a></li>
-          <li ><a  href="#about">ABOUT</a></li>
-          <li ><a  href="#resume">RESUME</a></li>
-          <li ><a  href="#swiper">PROJECTS</a></li>
-          <li ><a  href="#contact">CONTACT</a></li>
+          <li ><a href="#about">ABOUT</a></li>
+          <li ><a href="#resume">RESUME</a></li>
+          <li ><a href="#swiper">PROJECTS</a></li>
+          <li ><a href="#contact">CONTACT</a></li>
         </div>
       </div>
       <Section
@@ -624,7 +643,7 @@ function App() {
           </div>
         </div>
       </div>
-      
+
     </>
   )
 }

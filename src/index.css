@@ -9,13 +9,7 @@
     font-style: normal;
 }
 
-body {
-    height: 100%;
-}
 
-html {
-    scroll-behavior: smooth;
-}
 
 ::-webkit-scrollbar {
     width: 12px;
