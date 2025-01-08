@@ -100,15 +100,15 @@ body ::selection {
 }
 
 .about-tail {
-  font-size: 58px;
-  font-weight: bold;
-  opacity: 0.12;
-  position: absolute;
-  left: -25px;
-  z-index: 8;
-  pointer-events: none;
-  top: -12px;
-  color: #716969;
+  font-size: 48px;
+    font-weight: bold;
+    opacity: 0.12;
+    position: absolute;
+    left: -16px;
+    z-index: 8;
+    pointer-events: none;
+    top: -4px;
+    color: #716969;
 }
 
 .skills-section {
@@ -120,8 +120,8 @@ body ::selection {
 }
 
 .skill-tail {
-  font-size: 65px;
-  left: -21px;
+  font-size: 60px;
+    left: -10px;
 }
 
 .skill {
@@ -292,9 +292,9 @@ body ::selection {
 }
 
 .services-tail:nth-child(2) {
-  font-size: 47px;
-  left: 47%;
-  top: -3px;
+  font-size: 53px;
+  left: 49%;
+  top: -8px;
 }
 
 .cards {
