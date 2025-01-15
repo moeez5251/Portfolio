@@ -13,8 +13,8 @@ const Contact = () => {
 
     const onSubmit = () => {
         emailjs
-            .sendForm('service_xwebpmsh', 'template_c8sru5i', form.current, {
-                publicKey: 'dUbqxcoqbRr2erSi5',
+            .sendForm('service_4cldqmj', 'template_c8sru5i', form.current, {
+                publicKey: 'OsnOld423T6zK_QBV',
             })
         setgreen(true);
         setTimeout(() => {
