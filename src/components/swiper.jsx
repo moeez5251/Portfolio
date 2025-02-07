@@ -257,23 +257,7 @@ function App() {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-container">
-              <div className="image-swiper">
-                <img src="assets/Swiper/AI.webp" alt="" />
-              </div>
-              <div className="swiper-name">AI Chat</div>
-
-              <div className="swiper-link">
-                <a target='_blank' href="https://chat-genie.netlify.app/" className="find-more-button">
-                  Live Preview
-                  <span className="material-symbols-outlined">
-                    open_in_new
-                  </span>
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
+      
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">

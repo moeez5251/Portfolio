@@ -37,6 +37,13 @@ function App() {
     };
 
     requestAnimationFrame(handleAnimationFrame);
+    window.lenis = lenis;
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        lenis.scrollTo(this.getAttribute('href'))
+      });
+    })
 
     return () => {
       lenis.destroy();
@@ -107,7 +114,7 @@ function App() {
           style={{
             transform: isInView
               ? "scale(1) translateY(0)"
-              : "scale(0.93) translateY(30px)",
+              : "scale(0.94) translateY(30px)",
             transition:
               "transform 0.4s ease-out, opacity 0.4s ease-out, filter 0.4s ease-out",
           }}
