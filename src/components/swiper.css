@@ -1,13 +1,12 @@
 .section {
   position: relative;
-  height: 90vh;
+  height: 85vh;
   padding-top: 4%;
 }
 
 
 .swiper {
   width: 100%;
-  height: 100%;
 }
 
 .swiper-slide {
@@ -160,9 +159,7 @@
 }
 
 @media screen and (max-width:900px) {
-  .section {
-    height: 56vh;
-  }
+
 
   .swiper-name {
     font-size: 20px;
@@ -177,7 +174,7 @@
 
 @media screen and (max-width:750px) {
   .section {
-    height: 100vh;
+    height: 70vh;
   }
 
   .custom-pagination {
@@ -191,7 +188,7 @@
   }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:750px) {
   .swiper-about {
     left: 1%;
   }
@@ -219,10 +216,12 @@
   .about-right {
     width: 96%;
   }
-.slide-container{
-  width: 80%;
-}
-  .swiper-slide{
+
+  .slide-container {
+    width: 80%;
+  }
+
+  .swiper-slide {
     margin-left: 0;
   }
 }

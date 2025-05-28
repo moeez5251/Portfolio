@@ -297,10 +297,78 @@ function App() {
               <div className="image-swiper">
                 <img src="assets/Swiper/Netlify.webp" alt="" />
               </div>
-              <div className="swiper-name">Netlify Clone</div>
+              <div className="swiper-name">Netflix Clone</div>
 
               <div className="swiper-link">
                 <a target='_blank' href="https://streamnest.netlify.app/" className="find-more-button">
+                  Live Preview
+                  <span className="material-symbols-outlined">
+                    open_in_new
+                  </span>
+                </a>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="slide-container">
+              <div className="image-swiper">
+                <img src="assets/Swiper/AI.webp" alt="" />
+              </div>
+              <div className="swiper-name">AI Chat</div>
+
+              <div className="swiper-link">
+                <a target='_blank' href="https://talkx.netlify.app/" className="find-more-button">
+                  Live Preview
+                  <span className="material-symbols-outlined">
+                    open_in_new
+                  </span>
+                </a>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="slide-container">
+              <div className="image-swiper">
+                <img src="assets/Swiper/FMS.webp" alt="" />
+              </div>
+              <div className="swiper-name">File Management System </div>
+
+              <div className="swiper-link">
+                <a target='_blank' href="https://xfms.netlify.app/" className="find-more-button">
+                  Live Preview
+                  <span className="material-symbols-outlined">
+                    open_in_new
+                  </span>
+                </a>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="slide-container">
+              <div className="image-swiper">
+                <img src="assets/Swiper/URL.webp" alt="" />
+              </div>
+              <div className="swiper-name">URL Shortner</div>
+
+              <div className="swiper-link">
+                <a target='_blank' href="https://linkio.netlify.app/" className="find-more-button">
+                  Live Preview
+                  <span className="material-symbols-outlined">
+                    open_in_new
+                  </span>
+                </a>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="slide-container">
+              <div className="image-swiper">
+                <img src="assets/Swiper/Pass-Manager.webp" alt="" />
+              </div>
+              <div className="swiper-name">Password Manager</div>
+
+              <div className="swiper-link">
+                <a target='_blank' href="https://passup.netlify.app/" className="find-more-button">
                   Live Preview
                   <span className="material-symbols-outlined">
                     open_in_new

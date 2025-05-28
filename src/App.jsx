@@ -146,7 +146,7 @@ function App() {
 
     return (
       <div style={{
-        left: isInView ? "9%" : "0%",
+        left: isInView ? "4%" : "0%",
         transition:
           "all 0.4s ease-in-out",
       }} id={id} className={className} ref={ref}>
@@ -297,9 +297,9 @@ function App() {
       </section>
 
       <section id="resume" className="resume">
-        <div className="about w-70">
-          <h2 className="about-head resume-head">My Resume</h2>
-          <div className="about-tail resume-tail">Resume</div>
+        <div className="resume-main w-70">
+          <h2 className="resume-head">My Resume</h2>
+          <div className="resume-tail">Resume</div>
         </div>
         <div className="options">
           <span onClick={handlefirstclick} style={{ color: first }} >Experience</span>
@@ -318,16 +318,16 @@ function App() {
         }
       </section>
       <section id="swiper" className="swiper-section">
-        <Heading className="about swiper-about w-70">
-          <h2 className="about-head resume-head swiper-h">My Portfolio</h2>
-          <div className="about-tail resume-tail swiper-t">PROJECT</div>
+        <Heading className="resume-main swiper-about w-70">
+          <h2 className=" resume-head">My Portfolio</h2>
+          <div className=" resume-tail  media-text">PROJECT</div>
         </Heading>
         <Swiper_animation />
       </section>
       <section id="services" className="services">
-        <Heading className="about w-70">
-          <h2 className="about-head resume-head">My Services</h2>
-          <div className="about-tail resume-tail services-tail">SERVICES</div>
+        <Heading className="resume-main w-70">
+          <h2 className="resume-head">My Services</h2>
+          <div className=" resume-tail media-text">SERVICES</div>
         </Heading>
 
         <div className="cards">
@@ -559,8 +559,8 @@ function App() {
       </section>
       <Skill id="contact" className="contact-me">
         <Heading className="about w-70">
-          <h2 className="about-head resume-head">Contact</h2>
-          <div className="about-tail resume-tail services-tail contact-tail">CONTACT</div>
+          <h2 className=" about-head">Contact</h2>
+          <div className=" about-tail contact-tail">CONTACT</div>
         </Heading>
         <Contact />
       </Skill>
@@ -648,9 +648,32 @@ function App() {
               </svg>
             </a>
           </div>
+          <div>
+            <a target="_blank" href="https://github.com/moeez5251">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+                fill="none"
+                className="injected-svg"
+                color="white"
+                data-src="https://cdn.hugeicons.com/icons/github-01-solid-sharp.svg"
+              >
+                <path
+                  fill="white"
+                  d="M12 1.25C6.063 1.25 1.25 6.107 1.25 12.1c0 5.28 3.739 9.68 8.691 10.65v-2.936a3.854 3.854 0 0 1-1.014-.3c-.683-.305-1.535-.892-2.36-2.003l1.2-.909c.673.907 1.323 1.33 1.768 1.528.161.073.3.117.406.144v-.446c0-.367.108-.686.283-.974.12-.197.037-.478-.179-.54C8.255 15.801 7 14.977 7 12.241a3.485 3.485 0 0 1 .64-1.995c.082-.122.123-.183.135-.249.012-.066-.005-.138-.04-.282a3.716 3.716 0 0 1-.004-1.868c.053-.195.166-.308.37-.287.266.029.727.156 1.409.6.268.175.402.262.52.282.118.02.276-.022.592-.104A5.39 5.39 0 0 1 12 8.167c.501 0 .946.06 1.378.171.316.082.474.123.592.104.118-.02.252-.107.52-.282.682-.444 1.143-.571 1.408-.6.205-.021.318.092.371.286.16.592.15 1.226.006 1.828l-.01.04c-.035.145-.052.217-.04.283.012.066.053.127.136.249l.022.034c.393.581.617 1.25.617 1.961 0 2.736-1.255 3.56-3.045 4.073-.216.062-.298.343-.179.54.175.288.283.607.283.974v4.922c4.952-.97 8.691-5.37 8.691-10.65 0-5.993-4.813-10.85-10.75-10.85Z"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
-
+      <div style={{opacity:opa}} className="scroll-to-top">
+        <span onClick={() => window.lenis.scrollTo("#home")} className="material-symbols-outlined">
+          arrow_upward
+        </span>
+      </div>
+      
     </>
   )
 }

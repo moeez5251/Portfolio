@@ -128,7 +128,7 @@
     }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:650px) {
     .name {
         display: none;
     }
@@ -153,13 +153,12 @@
     }
 
     .container {
-        top: 32%;
         flex-direction: column;
         align-items: baseline;
         justify-content: end;
     }
 
-    .other ul li a{
+    .other ul li a {
         width: 100%;
         color: black;
         text-align: center;
@@ -197,12 +196,11 @@
     }
 
     .right::after {
-        left: 10em;
-        width: 23rem;
-        height: 41rem;
+        left: 8rem;
+        width: 11rem;
+        height: 33rem;
         transform: rotate(89deg);
-        top: 0rem;
-        
+        top: 1rem;
     }
 
 }

@@ -142,11 +142,7 @@ form button:hover {
 }
 
 @media screen and (max-width:750px) {
-    .contact-tail {
-        font-size: 46px;
-        left: 21%;
-        top: 2px;
-    }
+
     .contact-head{
         flex-direction: column;
         gap: 40px;

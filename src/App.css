@@ -86,29 +86,29 @@ body ::selection {
 
 .about {
   position: relative;
-  left: 9%;
-  width: fit-content;
+  left: 4%;
+  width: 15rem;
   z-index: 9;
   height: 70px;
+  overflow: hidden;
 }
 
 .about-head {
-  position: absolute;
   font-size: 40px;
   font-weight: 600;
-  z-index: 10;
+  text-align: center;
 }
 
 .about-tail {
   font-size: 48px;
-    font-weight: bold;
-    opacity: 0.12;
-    position: absolute;
-    left: -16px;
-    z-index: 8;
-    pointer-events: none;
-    top: -4px;
-    color: #716969;
+  font-weight: bold;
+  opacity: 0.12;
+  position: relative;
+  z-index: 8;
+  pointer-events: none;
+  top: -64px;
+  color: #716969;
+  text-align: center;
 }
 
 .skills-section {
@@ -121,7 +121,9 @@ body ::selection {
 
 .skill-tail {
   font-size: 60px;
-    left: -10px;
+  top: -8px;
+  position: absolute;
+  justify-self: anchor-center;
 }
 
 .skill {
@@ -220,20 +222,31 @@ body ::selection {
   padding-bottom: 3%;
 }
 
-.resume-head,
-.resume-tail {
-  left: 47%;
-
+.resume-main {
+  position: relative;
+  left: 4%;
+  width: 22rem;
+  z-index: 9;
+  height: 70px;
+  overflow: hidden;
 }
 
 .resume-head {
-  left: 50%;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .resume-tail {
-  left: 48%;
-  font-size: 65px;
-  top: -19px;
+  font-size: 59px;
+  font-weight: bold;
+  opacity: 0.12;
+  z-index: 8;
+  pointer-events: none;
+  color: #716969;
+  top: -13px;
+  position: absolute;
+  justify-self: anchor-center;
 }
 
 .options {
@@ -550,7 +563,7 @@ button {
   background-color: black;
   position: fixed;
   top: 0;
-  z-index: 20;
+  z-index: 101;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -585,7 +598,7 @@ button {
 }
 
 .w-70 {
-  width: 70%;
+  margin: auto;
 }
 
 @media screen and (max-width:700px) {
@@ -593,9 +606,7 @@ button {
     grid-template-columns: repeat(1, minmax(250px, 1fr));
   }
 
-  .menubar {
-    display: flex;
-  }
+
 
   .skill {
     flex-direction: column-reverse;
@@ -636,37 +647,41 @@ button {
     text-wrap: nowrap;
   }
 
-  .resume-head {
-    left: 27%;
-  }
 
-  .resume-tail {
-    left: 22%;
-    top: -15px;
-    font-size: 62px;
+
+  .footer {
+    align-items: flex-start;
+    padding: 0px 0;
   }
 
   .right-footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    padding: 5px 0;
   }
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 90px;
+  right: 15px;
+  background: #cb2d3e;
+  color: white;
+  z-index: 100;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 @media screen and (max-width:450px) {
 
-  .about-tail,
-  .resume-tail,
-  .services-tail {
-    font-size: 42px;
-    left: -13px;
-    top: -3px;
+
+  .media-text {
+    font-size: 54px;
   }
 
-  .about-head,
-  .resume-head,
-  .services-head {
-    font-size: 34px;
-    left: 16%;
+  .resume-main {
+    width: 19rem;
   }
 
   .head,
@@ -674,31 +689,6 @@ button {
     font-size: 15px;
   }
 
-  .contact-tail {
-    font-size: 44px;
-    top: -7px;
-    left: 3%;
-  }
-
-  .resume-head {
-    left: 30%;
-  }
-
-  .resume-tail {
-    left: 80px;
-    font-size: 54px;
-    top: -15px;
-  }
-
-  .services-tail:nth-child(2) {
-    left: 27%;
-    top: -7px;
-  }
-
-  .contact-tail {
-    left: 0%;
-    top: -7px;
-  }
 }
 
 @media screen and (max-width:500px) {
@@ -746,13 +736,7 @@ button {
     padding: 16px 17px 11px;
   }
 
-  .resume-head {
-    left: 21%;
-  }
 
-  .resume-tail {
-    left: 30px;
-  }
 
   .services-tail:nth-child(2) {
     left: 17%;
@@ -764,5 +748,11 @@ button {
 
   .nav-opt {
     right: 14%;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .menubar {
+    display: flex;
   }
 }

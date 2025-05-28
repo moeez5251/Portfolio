@@ -93,10 +93,3 @@
   bottom: -59px;
   animation-delay: 35s;
 }
-
-@media screen and (max-width:750px) {
-  .background {
-    height: 116vh;
-  }
-
-}
