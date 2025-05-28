@@ -13,7 +13,7 @@ Welcome to my portfolio! This is a showcase of my work as a web developer, UI/UX
 
 ## About Me 👨‍💻
 
-I'm Xheikh Moeez, a professional web designer with a passion for creating beautiful and functional websites. My motive is to build the best web designs using my years of experience and efforts. I specialize in various fields including web development, UI/UX design, app development, content writing, and more. 🚀
+I'm Xheikh Moeez, a professional web designer with a passion for creating beautiful and functional websites. My motive is to build the best web designs using my years of experience and efforts. I specialize in various fields including web development, app development, content writing, and more. 🚀
 
 ## Technologies Used 🛠️💻
 
@@ -37,3 +37,4 @@ To run this project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/moeez5251/Portfolio
+   ```

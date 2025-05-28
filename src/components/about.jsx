@@ -6,7 +6,7 @@ const About = () => {
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["WEB-DEVELOPER.", "UI/UIX-DESIGNER.", "", "SERVER-TESTER.", "APP-DEVELOPER.", "CONTENT-WRITER.", "VIDEO-EDITOR.", "PROGRAMMER."],
+      strings: ["WEB-DEVELOPER.", "SERVER-TESTER.", "APP-DEVELOPER.", "CONTENT-WRITER.", "VIDEO-EDITOR.", "PROGRAMMER."],
       typeSpeed: 50,
       backSpeed: 20,
       loop: true

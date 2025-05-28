@@ -29,34 +29,37 @@ function App() {
         })
       }
     })
+    
+  }, [])
+  useEffect(() => {
     const updateSwiperSettings = () => {
-      if (window.innerWidth <= 750) {
+      if (window.innerWidth <= 750 && window.innerWidth > 500) {
         setswiper({
           slidesPerView: 2,
           spaceBetween: 10,
         });
-      } else {
-        setswiper({
-          slidesPerView: 3,
-          spaceBetween: 30,
-        });
       }
-      if (window.innerWidth <= 450) {
+      else if (window.innerWidth <= 500) {
         setswiper({
           slidesPerView: 1,
-          spaceBetween:0,
+          spaceBetween: 0,
         });
-      } else {
+      } 
+      else {
         setswiper({
           slidesPerView: 3,
           spaceBetween: 30,
         });
       }
     };
-
-    updateSwiperSettings();
+    updateSwiperSettings()
+    window.addEventListener('resize', updateSwiperSettings);
+  
+    return () => {
+      window.removeEventListener('resize', updateSwiperSettings);
+    }
   }, [])
-
+  
   return (
     <>
       <section className="section">
@@ -257,7 +260,7 @@ function App() {
               </div>
             </div>
           </SwiperSlide>
-      
+
           <SwiperSlide>
             <div className="slide-container">
               <div className="image-swiper">

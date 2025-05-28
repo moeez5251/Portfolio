@@ -6,7 +6,7 @@
 }
 .experience-sub> div{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     gap: 30px;
 }
@@ -15,7 +15,7 @@
 }
 .exp-left{
     text-align: right;
-    padding: 34px;
+    padding: 10px 34px;
     border-right: dashed 1px #cbbfbf;
     position: relative;
     border-width: 2px;

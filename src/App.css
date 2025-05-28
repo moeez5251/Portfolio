@@ -420,8 +420,16 @@ body ::selection {
 
 .right-footer {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #000;
+  z-index: 99;
+  transition: all 0.5s;
+  flex-direction: row;
+  border-radius: 10px;
+  padding: 5px 3px;
+  position: fixed;
+  left: 5px;
+  flex-direction: column;
+  bottom: 90px;
 }
 
 .right-footer div a {
@@ -504,11 +512,37 @@ body ::selection {
   overflow: hidden;
   height: 25%;
   display: none;
+  flex-direction: column;
+}
 
+.menu-div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .menu-img {
   width: 40px;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.menu-items li {
+  list-style: none;
+}
+
+.menu-items li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 button {
@@ -522,7 +556,7 @@ button {
 
 
 .bottom {
-  bottom: -16%;
+  bottom: -14%;
 }
 
 .nav-opt {
@@ -563,7 +597,7 @@ button {
   background-color: black;
   position: fixed;
   top: 0;
-  z-index: 101;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -688,7 +722,15 @@ button {
   .typed-animation {
     font-size: 15px;
   }
-
+  .menu-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-items: start;
+    text-align: center;
+    
+  }
 }
 
 @media screen and (max-width:500px) {

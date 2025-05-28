@@ -75,7 +75,7 @@ function App() {
         setvideo("0%")
         setoffice("0%")
       }
-      if (window.scrollY >= 300) {
+      if (window.scrollY >= 400) {
         setopacity(1);
       } else {
         setopacity(0);
@@ -185,14 +185,16 @@ function App() {
       <Navbar />
       <Me />
 
-      <div className="menubar bottom">
-        <div className="img">
-          <img className="menu-img" src="assets/logo.webp" alt="logo" />
+      <div className="menubar bottom ">
+        <div className='menu-div'>
+          <div className="img">
+            <img className="menu-img" src="assets/logo.webp" alt="logo" />
+          </div>
+          <span onClick={() => document.querySelector(".menubar").classList.toggle("bottom")} style={{ color: "white", fontSize: "27px" }} className="material-symbols-outlined">
+            widgets
+          </span>
         </div>
-        <span onClick={() => document.querySelector(".menubar").classList.toggle("bottom")} style={{ color: "white", fontSize: "27px" }} className="material-symbols-outlined">
-          widgets
-        </span>
-        <div className="nav-opt">
+        <div className="menu-items">
           <li ><a href="#home">HOME</a></li>
           <li ><a href="#about">ABOUT</a></li>
           <li ><a href="#resume">RESUME</a></li>
@@ -574,7 +576,7 @@ function App() {
         <div className="middle-footer">
           Made by Moeez Xheikh © 2024. All right reserved
         </div>
-        <div className="right-footer">
+        <div style={{ opacity: opa }} className="right-footer">
           <div>
             <a target="_blank" href="https://www.facebook.com/profile.php?id=100067653536666&mibextid=ZbWKwL">
 
@@ -668,12 +670,12 @@ function App() {
           </div>
         </div>
       </div>
-      <div style={{opacity:opa}} className="scroll-to-top">
+      <div style={{ opacity: opa }} className="scroll-to-top">
         <span onClick={() => window.lenis.scrollTo("#home")} className="material-symbols-outlined">
           arrow_upward
         </span>
       </div>
-      
+
     </>
   )
 }

@@ -173,9 +173,6 @@
 }
 
 @media screen and (max-width:750px) {
-  .section {
-    height: 70vh;
-  }
 
   .custom-pagination {
     display: grid;
