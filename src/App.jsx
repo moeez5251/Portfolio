@@ -60,10 +60,10 @@ function App() {
 
         sethtml("90%")
         setcss("85%")
-        setjs("83%")
+        setjs("90%")
         setnode("80%")
-        setreact("75%")
-        setvideo("95%")
+        setreact("80%")
+        setvideo("85%")
         setoffice("100%")
       }
       else {
@@ -264,7 +264,7 @@ function App() {
               </div>
               <div className="sk">
                 <span className="percentage">{react}</span>
-                <span className="sk-span">UI Designing</span>
+                <span className="sk-span">MS SQL</span>
                 <div className="progress">
                   <span className="progress-bar"></span>
                   <span style={{ width: react }} className="red-progress"></span>
@@ -272,7 +272,7 @@ function App() {
               </div>
               <div className="sk">
                 <span className="percentage">{video}</span>
-                <span className="sk-span">Video Editing</span>
+                <span className="sk-span">Next JS</span>
                 <div className="progress">
                   <span className="progress-bar"></span>
                   <span style={{ width: video }} className="red-progress"></span>
