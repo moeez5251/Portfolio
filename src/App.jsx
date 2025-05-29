@@ -21,7 +21,10 @@ function App() {
   const [second, setsecond] = useState("#cb2d3e")
   const [truesstate, settruesstate] = useState(true)
   const [office, setoffice] = useState("0%")
-  const [opa, setopacity] = useState(0)
+  const [opa, setopacity] = useState({
+    opacity: 0,
+    pointerevents: "none"
+  })
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
   useEffect(() => {
@@ -76,9 +79,15 @@ function App() {
         setoffice("0%")
       }
       if (window.scrollY >= 400) {
-        setopacity(1);
+        setopacity({
+          opacity: 1,
+          pointerevents: "all"
+        });
       } else {
-        setopacity(0);
+        setopacity({
+          opacity: 0,
+          pointerevents: "none"
+        });
       }
     };
 
@@ -576,7 +585,7 @@ function App() {
         <div className="middle-footer">
           Made by Moeez Xheikh © 2024. All right reserved
         </div>
-        <div style={{ opacity: opa }} className="right-footer">
+        <div style={{ opacity: opa.opacity, pointerEvents: opa.pointerevents }} className="right-footer">
           <div>
             <a target="_blank" href="https://www.facebook.com/profile.php?id=100067653536666&mibextid=ZbWKwL">
 
@@ -674,7 +683,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div style={{ opacity: opa }} className="scroll-to-top">
+      <div style={{ opacity: opa.opacity, pointerEvents: opa.pointerevents }} className="scroll-to-top">
         <span onClick={() => window.lenis.scrollTo("#home")} className="material-symbols-outlined">
           arrow_upward
         </span>
