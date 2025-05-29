@@ -556,7 +556,7 @@ button {
 
 
 .bottom {
-  bottom: -14%;
+  bottom: -17%;
 }
 
 .nav-opt {
@@ -722,18 +722,25 @@ button {
   .typed-animation {
     font-size: 15px;
   }
-  .menu-items{
+
+  .menu-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     align-items: center;
     justify-items: start;
     text-align: center;
-    
+
   }
 }
 
 @media screen and (max-width:500px) {
+
+  .exp-right p {
+    margin-top: 5px;
+    font-size: 13px;
+  }
+
   .heading {
     font-size: 20px;
   }

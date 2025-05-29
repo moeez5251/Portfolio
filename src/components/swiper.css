@@ -151,6 +151,9 @@
 }
 
 @media screen and (max-width:1300px) {
+  .section {
+    height: 65vh;
+  }
 
   .slide-container {
     width: 90%;
@@ -221,4 +224,10 @@
   .swiper-slide {
     margin-left: 0;
   }
+}
+@media screen and (max-width:500px) {
+    .section {
+    height: 77vh;
+  }
+  
 }
