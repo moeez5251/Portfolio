@@ -109,72 +109,16 @@ function App() {
     setfirst("#cb2d3e");
     setsecond("white");
     settruesstate(false)
-  }
-
-
-
-  function Section({ children, id, className }) {
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
-
-    return (
-      <section id={id} className={className} ref={ref}>
-        <div
-          style={{
-            transform: isInView
-              ? "scale(1) translateY(0)"
-              : "scale(0.94) translateY(30px)",
-            transition:
-              "transform 0.4s ease-out, opacity 0.4s ease-out, filter 0.4s ease-out",
-          }}
-        >
-          {children}
-        </div>
-      </section>
-    );
-  }
-
-  function Skill({ children, id, className }) {
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
-
-    return (
-      <section style={{
-        transform: isInView ? "scale(1)" : "scale(0.94)",
-        transition:
-          "transform 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67), opacity 0.2s ease, filter 0.2s ease",
-      }} id={id} className={className} ref={ref}>
-
-        {children}
-      </section>
-    );
-  }
+  } 
   function Heading({ children, id, className }) {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 
     return (
       <div style={{
-        left: isInView ? "4%" : "0%",
+        left: isInView ? "5%" : "0%",
         transition:
           "all 0.4s ease-in-out",
-      }} id={id} className={className} ref={ref}>
-
-        {children}
-      </div>
-    );
-  }
-
-  function Service({ children, id, className }) {
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: false });
-
-    return (
-      <div style={{
-        transform: isInView ? "translateY(0px)" : "translateY(30px)",
-        transition:
-          "transform 0.5s ease-out",
-        width: "100%"
       }} id={id} className={className} ref={ref}>
 
         {children}
@@ -211,14 +155,14 @@ function App() {
           <li ><a href="#contact">CONTACT</a></li>
         </div>
       </div>
-      <Section
+      <section
         id="about" className="about-section" >
         <div className="about">
           <h2 className="about-head">About</h2>
           <div className="about-tail">ABOUT</div>
         </div>
         <About />
-      </Section>
+      </section>
       <section id="skills" className="skills-section" >
         <Heading className="about">
           <h2 className="about-head skill-head">Skills.</h2>
@@ -342,7 +286,7 @@ function App() {
         </Heading>
 
         <div className="cards">
-          <Service className="card-div">
+          <div className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -377,9 +321,9 @@ function App() {
                 </svg>
               </div>
             </div>
-          </Service>
+          </div>
 
-          <Service className="card-div">
+          <div className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -416,8 +360,8 @@ function App() {
                 </svg>
               </div>
             </div>
-          </Service>
-          <Service className="card-div">
+          </div>
+          <div className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -454,8 +398,8 @@ function App() {
                 </svg>
               </div>
             </div>
-          </Service>
-          <Service className="card-div">
+          </div>
+          <div className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -490,8 +434,8 @@ function App() {
                 </svg>
               </div>
             </div>
-          </Service>
-          <Service className="card-div">
+          </div>
+          <div className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -528,8 +472,8 @@ function App() {
                 </svg>
               </div>
             </div>
-          </Service>
-          <Service className="card-div">
+          </div>
+          <div className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -564,17 +508,17 @@ function App() {
                 </svg>
               </div>
             </div>
-          </Service>
+          </div>
 
         </div>
       </section>
-      <Skill id="contact" className="contact-me">
+      <section id="contact" className="contact-me">
         <Heading className="about w-70">
           <h2 className=" about-head">Contact</h2>
           <div className=" about-tail contact-tail">CONTACT</div>
         </Heading>
         <Contact />
-      </Skill>
+      </section>
 
       <div className="footer">
         <div className="left-footer">
