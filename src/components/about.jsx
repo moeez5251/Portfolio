@@ -1,30 +1,27 @@
-import React from 'react'
 import "./about.css"
-import Typed from 'typed.js';
+import RotatingText from './rotatinganimation';
 const About = () => {
-  const el = React.useRef(null);
 
-  React.useEffect(() => {
-    const typed = new Typed(el.current, {
-      strings: ["WEB-DEVELOPER.", "SERVER-TESTER.", "APP-DEVELOPER.", "CONTENT-WRITER.", "VIDEO-EDITOR.", "PROGRAMMER."],
-      typeSpeed: 50,
-      backSpeed: 20,
-      loop: true
-    });
-
-    return () => {
-      typed.destroy();
-    }; 
-  }, []);
   return (
     <>
       <div className='flex' >
         <div className="about-left">
-          <img className='left-image' src="assets/Me-1.webp "alt="" />
+          <img className='left-image' src="assets/Me-1.webp " alt="" />
           <div className='left-border'></div>
         </div>
         <div className="about-right">
-          <div className="head"> I'm Xheikh Moeez an <span className='typed-animation' ref={el}></span></div>
+          <div className="head"> I'm Xheikh Moeez an <RotatingText
+            texts={["WEB-DEVELOPER.", "SERVER-TESTER.", "APP-DEVELOPER.", "CONTENT-WRITER.", "VIDEO-EDITOR.", "PROGRAMMER."]}
+            mainClassName="custom-class"
+            staggerFrom={"last"}
+            initial={{ y: "100%" }}
+            animate={{ y: 0 }}
+            exit={{ y: "-120%" }}
+            staggerDuration={0.025}
+            splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+            transition={{ type: "spring", damping: 30, stiffness: 400 }}
+            rotationInterval={2000}
+          /></div>
           <p className='right-para'>I'm a professional web designer, My motive is to build a best web design with my all years of experience and efforts. and again during the 90s as desktop publishers bundled the text with their software.The purpose of lorem ipsum is to create a natural looking block of text.</p>
           <div className="icons">
             <div className="ic">
