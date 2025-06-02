@@ -232,6 +232,14 @@ function App() {
                 </div>
               </div>
               <div className="sk">
+                <span className="percentage">{react}</span>
+                <span className="sk-span">Python</span>
+                <div className="progress">
+                  <span className="progress-bar"></span>
+                  <span style={{ width: react }} className="red-progress"></span>
+                </div>
+              </div>
+              <div className="sk">
                 <span className="percentage">{office}</span>
                 <span className="sk-span">MS Office</span>
                 <div className="progress">

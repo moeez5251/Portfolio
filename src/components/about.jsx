@@ -22,7 +22,7 @@ const About = () => {
             transition={{ type: "spring", damping: 30, stiffness: 400 }}
             rotationInterval={2000}
           /></div>
-          <p className='right-para'>I'm a professional web designer, My motive is to build a best web design with my all years of experience and efforts. and again during the 90s as desktop publishers bundled the text with their software.The purpose of lorem ipsum is to create a natural looking block of text.</p>
+          <p className='right-para'>I’m a full-stack developer with extensive experience in building scalable, high-performance web applications. I work across both frontend and backend, delivering clean code and seamless user experiences. Proficient in modern frameworks, APIs, and databases, I take a holistic approach to development. My focus is on efficiency, reliability, and continuous improvement.</p>
           <div className="icons">
             <div className="ic">
               <div className="logo-ic">
