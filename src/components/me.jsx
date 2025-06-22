@@ -100,7 +100,7 @@ const Me = () => {
                     viewport={{ once: true }}
                     className="right">
 
-                    <img className='my-image' src="assets/Me-w-bg.webp" alt="" />
+                    <img className='my-image' src="assets/Me-wbg.webp" alt="" />
                 </motion.div>
             </div>
         </>

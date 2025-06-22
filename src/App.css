@@ -766,11 +766,8 @@ button {
   }
 
   .right::after {
-    left: 8rem;
-    width: 11rem;
-    height: 33rem;
-    transform: rotate(89deg);
-    top: 1rem;
+    top: -2rem;
+    left: 7rem;
   }
 
   .my-image {

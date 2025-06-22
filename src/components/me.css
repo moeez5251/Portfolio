@@ -68,14 +68,13 @@
 }
 
 .my-image {
-    width: 80%;
-    filter: drop-shadow(2px 4px 6px rgb(41, 41, 41));
+    width: 60%;
     max-width: 80%;
 }
 
 .right {
     position: relative;
-    width: 50%;
+    width: 42%;
     overflow: hidden;
 }
 
@@ -109,13 +108,14 @@
     transition: transform 0.2s ease;
 
 }
-
-@media screen and (max-width:1200px) {
-    
-    .my-image {
-        width: 100%;
-        max-width: 100%;
+@media screen and (max-width:830px) {
+    .right{
+        width: 60%;
     }
+    
+}
+@media screen and (max-width:1200px) {
+
 
     .right::before {
         width: 5rem !important;
