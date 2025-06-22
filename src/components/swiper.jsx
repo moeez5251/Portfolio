@@ -74,8 +74,8 @@ function App() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <CardContainer className="inter-var">
-              <CardBody>
+            <CardContainer style={{ position: "relative", zIndex: "-10" }} className="inter-var">
+              <CardBody style={{ position: "relative", zIndex: "-10" }}>
                 <CardItem style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                   <div className="slide-container">
                     <div className="image-swiper">
@@ -98,8 +98,8 @@ function App() {
             </CardContainer>
           </SwiperSlide>
           <SwiperSlide>
-            <CardContainer className="inter-var">
-              <CardBody>
+            <CardContainer style={{ position: "relative", zIndex: "-10" }} className="inter-var">
+              <CardBody style={{ position: "relative", zIndex: "-10" }} >
                 <CardItem style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                   <div className="slide-container">
                     <div className="image-swiper">
@@ -121,8 +121,8 @@ function App() {
             </CardContainer>
           </SwiperSlide>
           <SwiperSlide>
-            <CardContainer className="inter-var">
-              <CardBody>
+            <CardContainer style={{ position: "relative", zIndex: "-10" }} className="inter-var">
+              <CardBody style={{ position: "relative", zIndex: "-10" }}>
                 <CardItem style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                   <div className="slide-container">
                     <div className="image-swiper">
@@ -144,8 +144,8 @@ function App() {
             </CardContainer>
           </SwiperSlide>
           <SwiperSlide>
-            <CardContainer className="inter-var">
-              <CardBody>
+            <CardContainer style={{ position: "relative", zIndex: "-10" }} className="inter-var">
+              <CardBody style={{ position: "relative", zIndex: "-10" }}>
                 <CardItem style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                   <div className="slide-container">
                     <div className="image-swiper">
@@ -167,8 +167,8 @@ function App() {
             </CardContainer>
           </SwiperSlide>
           <SwiperSlide>
-            <CardContainer className="inter-var">
-              <CardBody>
+            <CardContainer style={{ position: "relative", zIndex: "-10" }} className="inter-var">
+              <CardBody style={{ position: "relative", zIndex: "-10" }}>
                 <CardItem style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                   <div className="slide-container">
                     <div className="image-swiper">
@@ -190,8 +190,8 @@ function App() {
             </CardContainer>
           </SwiperSlide>
           <SwiperSlide>
-            <CardContainer className="inter-var">
-              <CardBody>
+            <CardContainer style={{ position: "relative", zIndex: "-10" }} className="inter-var">
+              <CardBody style={{ position: "relative", zIndex: "-10" }}>
                 <CardItem style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                   <div className="slide-container">
                     <div className="image-swiper">
@@ -213,8 +213,8 @@ function App() {
             </CardContainer>
           </SwiperSlide>
           <SwiperSlide>
-            <CardContainer className="inter-var">
-              <CardBody>
+            <CardContainer style={{ position: "relative", zIndex: "-10" }} className="inter-var">
+              <CardBody style={{ position: "relative", zIndex: "-10" }}>
                 <CardItem style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                   <div className="slide-container">
                     <div className="image-swiper">
@@ -236,8 +236,8 @@ function App() {
             </CardContainer>
           </SwiperSlide>
           <SwiperSlide>
-            <CardContainer className="inter-var">
-              <CardBody>
+            <CardContainer style={{ position: "relative", zIndex: "-10" }} className="inter-var">
+              <CardBody style={{ position: "relative", zIndex: "-10" }}>
                 <CardItem style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                   <div className="slide-container">
                     <div className="image-swiper">
@@ -259,8 +259,8 @@ function App() {
             </CardContainer>
           </SwiperSlide>
           <SwiperSlide>
-            <CardContainer className="inter-var">
-              <CardBody>
+            <CardContainer style={{ position: "relative", zIndex: "-10" }} className="inter-var">
+              <CardBody style={{ position: "relative", zIndex: "-10" }}>
                 <CardItem style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                   <div className="slide-container">
                     <div className="image-swiper">
@@ -282,8 +282,8 @@ function App() {
             </CardContainer>
           </SwiperSlide>
           <SwiperSlide>
-            <CardContainer className="inter-var">
-              <CardBody>
+            <CardContainer style={{ position: "relative", zIndex: "-10" }} className="inter-var">
+              <CardBody style={{ position: "relative", zIndex: "-10" }}>
                 <CardItem style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                   <div className="slide-container">
                     <div className="image-swiper">
@@ -306,8 +306,8 @@ function App() {
           </SwiperSlide>
 
           <SwiperSlide>
-            <CardContainer className="inter-var">
-              <CardBody>
+            <CardContainer style={{ position: "relative", zIndex: "-10" }} className="inter-var">
+              <CardBody style={{ position: "relative", zIndex: "-10" }}>
                 <CardItem style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                   <div className="slide-container">
                     <div className="image-swiper">
@@ -329,8 +329,8 @@ function App() {
             </CardContainer>
           </SwiperSlide>
           <SwiperSlide>
-            <CardContainer className="inter-var">
-              <CardBody>
+            <CardContainer style={{ position: "relative", zIndex: "-10" }} className="inter-var">
+              <CardBody style={{ position: "relative", zIndex: "-10" }}>
                 <CardItem style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                   <div className="slide-container">
                     <div className="image-swiper">
@@ -352,8 +352,8 @@ function App() {
             </CardContainer>
           </SwiperSlide>
           <SwiperSlide>
-            <CardContainer className="inter-var">
-              <CardBody>
+            <CardContainer style={{ position: "relative", zIndex: "-10" }} className="inter-var">
+              <CardBody style={{ position: "relative", zIndex: "-10" }}>
                 <CardItem style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                   <div className="slide-container">
                     <div className="image-swiper">
@@ -375,8 +375,8 @@ function App() {
             </CardContainer>
           </SwiperSlide>
           <SwiperSlide>
-            <CardContainer className="inter-var">
-              <CardBody>
+            <CardContainer style={{ position: "relative", zIndex: "-10" }} className="inter-var">
+              <CardBody style={{ position: "relative", zIndex: "-10" }}>
                 <CardItem style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                   <div className="slide-container">
                     <div className="image-swiper">
@@ -398,8 +398,8 @@ function App() {
             </CardContainer>
           </SwiperSlide>
           <SwiperSlide>
-            <CardContainer className="inter-var">
-              <CardBody>
+            <CardContainer style={{ position: "relative", zIndex: "-10" }} className="inter-var">
+              <CardBody style={{ position: "relative", zIndex: "-10" }}>
                 <CardItem style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                   <div className="slide-container">
                     <div className="image-swiper">
@@ -421,8 +421,8 @@ function App() {
             </CardContainer>
           </SwiperSlide>
           <SwiperSlide>
-            <CardContainer className="inter-var">
-              <CardBody>
+            <CardContainer style={{ position: "relative", zIndex: "-10" }} className="inter-var">
+              <CardBody style={{ position: "relative", zIndex: "-10" }}>
                 <CardItem style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                   <div className="slide-container">
                     <div className="image-swiper">
@@ -444,8 +444,8 @@ function App() {
             </CardContainer>
           </SwiperSlide>
           <SwiperSlide>
-            <CardContainer className="inter-var">
-              <CardBody>
+            <CardContainer style={{ position: "relative", zIndex: "-10" }} className="inter-var">
+              <CardBody style={{ position: "relative", zIndex: "-10" }}>
                 <CardItem style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                   <div className="slide-container">
                     <div className="image-swiper">

@@ -67,14 +67,16 @@ export const CardContainer = ({
 
 export const CardBody = ({
   children,
-  className
+  className,style
 }) => {
   return (
     <div
       className={cn(
         "h-96 w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
         className
-      )}>
+      )}
+      style={style}
+      >
       {children}
     </div>
   );
