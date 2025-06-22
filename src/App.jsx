@@ -8,7 +8,8 @@ import Experience from "./components/experience";
 import Qualification from "./components/qualification"
 import Swiper_animation from "./components/swiper";
 import Contact from "./components/contact";
-import { useInView } from "motion/react"
+import { motion, useInView } from "motion/react"
+motion
 import "./App.css"
 function App() {
   const [html, sethtml] = useState("0%")
@@ -56,7 +57,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       document.querySelector(".loader").style.top = "-100%"
-    }, 2000);
+    }, 0);
 
     const handleScroll = () => {
       if (isInView) {
@@ -65,7 +66,7 @@ function App() {
         setcss("85%")
         setjs("90%")
         setnode("80%")
-        setreact("80%")
+        setreact("85%")
         setvideo("85%")
         setoffice("100%")
       }
@@ -109,21 +110,6 @@ function App() {
     setfirst("#cb2d3e");
     setsecond("white");
     settruesstate(false)
-  } 
-  function Heading({ children, id, className }) {
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
-
-    return (
-      <div style={{
-        left: isInView ? "5%" : "0%",
-        transition:
-          "all 0.4s ease-in-out",
-      }} id={id} className={className} ref={ref}>
-
-        {children}
-      </div>
-    );
   }
 
   return (
@@ -157,25 +143,51 @@ function App() {
       </div>
       <section
         id="about" className="about-section" >
-        <div className="about">
+        <motion.div
+          initial={{
+            opacity: 0,
+
+            x: -50
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 1
+            }
+          }}
+          viewport={{ once: true }}
+          className="about">
           <h2 className="about-head">About</h2>
           <div className="about-tail">ABOUT</div>
-        </div>
+        </motion.div>
         <About />
       </section>
       <section id="skills" className="skills-section" >
-        <Heading className="about">
+        <motion.div initial={{
+          opacity: 0,
+
+          x: -50
+        }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 1
+            }
+          }}
+          viewport={{ once: true }} className="about">
           <h2 className="about-head skill-head">Skills.</h2>
           <div className="about-tail skill-tail">SKILL</div>
-        </Heading>
+        </motion.div>
         <div className="skill">
 
           <div className="left-skill">
-            <div className="skill-para">
+            <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="skill-para">
               I'm a professional web designer, My motive is to build a best web design with my all years of experience and efforts.
             </div>
             <div ref={ref} className="width-skills">
-              <div className="sk">
+              <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="sk">
                 <span className="percentage">{html}</span>
                 <span className="sk-span">HTML</span>
                 <div className="progress">
@@ -183,7 +195,7 @@ function App() {
                   <span style={{ width: html }} className="red-progress"></span>
                 </div>
               </div>
-              <div className="sk">
+              <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="sk">
                 <span className="percentage">{css}</span>
                 <span className="sk-span">CSS</span>
                 <div className="progress">
@@ -191,7 +203,7 @@ function App() {
                   <span style={{ width: css }} className="red-progress"></span>
                 </div>
               </div>
-              <div className="sk">
+              <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="sk">
                 <span className="percentage">{js}</span>
                 <span className="sk-span">JS</span>
                 <div className="progress">
@@ -199,15 +211,7 @@ function App() {
                   <span style={{ width: js }} className="red-progress"></span>
                 </div>
               </div>
-              <div className="sk">
-                <span className="percentage">{node}</span>
-                <span className="sk-span">Node JS</span>
-                <div className="progress">
-                  <span className="progress-bar"></span>
-                  <span style={{ width: node }} className="red-progress"></span>
-                </div>
-              </div>
-              <div className="sk">
+              <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="sk">
                 <span className="percentage">{react}</span>
                 <span className="sk-span">React JS</span>
                 <div className="progress">
@@ -215,15 +219,7 @@ function App() {
                   <span style={{ width: react }} className="red-progress"></span>
                 </div>
               </div>
-              <div className="sk">
-                <span className="percentage">{react}</span>
-                <span className="sk-span">MS SQL</span>
-                <div className="progress">
-                  <span className="progress-bar"></span>
-                  <span style={{ width: react }} className="red-progress"></span>
-                </div>
-              </div>
-              <div className="sk">
+              <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="sk">
                 <span className="percentage">{video}</span>
                 <span className="sk-span">Next JS</span>
                 <div className="progress">
@@ -231,7 +227,24 @@ function App() {
                   <span style={{ width: video }} className="red-progress"></span>
                 </div>
               </div>
-              <div className="sk">
+              <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="sk">
+                <span className="percentage">{node}</span>
+                <span className="sk-span">Node JS</span>
+                <div className="progress">
+                  <span className="progress-bar"></span>
+                  <span style={{ width: node }} className="red-progress"></span>
+                </div>
+              </div>
+              <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="sk">
+                <span className="percentage">{node}</span>
+                <span className="sk-span">Express JS</span>
+                <div className="progress">
+                  <span className="progress-bar"></span>
+                  <span style={{ width: node }} className="red-progress"></span>
+                </div>
+              </div>
+
+              <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="sk">
                 <span className="percentage">{react}</span>
                 <span className="sk-span">Python</span>
                 <div className="progress">
@@ -239,7 +252,23 @@ function App() {
                   <span style={{ width: react }} className="red-progress"></span>
                 </div>
               </div>
-              <div className="sk">
+              <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="sk">
+                <span className="percentage">{js}</span>
+                <span className="sk-span">C++</span>
+                <div className="progress">
+                  <span className="progress-bar"></span>
+                  <span style={{ width: js }} className="red-progress"></span>
+                </div>
+              </div>
+              <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="sk">
+                <span className="percentage">{react}</span>
+                <span className="sk-span">MS SQL</span>
+                <div className="progress">
+                  <span className="progress-bar"></span>
+                  <span style={{ width: react }} className="red-progress"></span>
+                </div>
+              </div>
+              <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="sk">
                 <span className="percentage">{office}</span>
                 <span className="sk-span">MS Office</span>
                 <div className="progress">
@@ -250,20 +279,32 @@ function App() {
             </div>
           </div>
           <div className="right-skill">
-            <div className="circle">
-              <span>5</span>
+            <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="circle">
+              <span>6</span>
               <span>.</span>
             </div>
-            <span className="years">years+ of experience</span>
+            <span data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="years">years+ of experience</span>
           </div>
         </div>
       </section>
 
       <section id="resume" className="resume">
-        <div className="resume-main w-70">
+        <motion.div initial={{
+          opacity: 0,
+
+          x: -50
+        }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 1
+            }
+          }}
+          viewport={{ once: true }} className="resume-main w-70">
           <h2 className="resume-head">My Resume</h2>
           <div className="resume-tail">Resume</div>
-        </div>
+        </motion.div>
         <div className="options">
           <span onClick={handlefirstclick} style={{ color: first }} >Experience</span>
           <span onClick={handlesecondclick} style={{ color: second }} >Qualification</span>
@@ -281,20 +322,44 @@ function App() {
         }
       </section>
       <section id="swiper" className="swiper-section">
-        <Heading className="resume-main swiper-about w-70">
+        <motion.div initial={{
+          opacity: 0,
+
+          x: -50
+        }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 1
+            }
+          }}
+          viewport={{ once: true }} className="resume-main swiper-about w-70">
           <h2 className=" resume-head">My Portfolio</h2>
           <div className=" resume-tail  media-text">PROJECT</div>
-        </Heading>
+        </motion.div>
         <Swiper_animation />
       </section>
       <section id="services" className="services">
-        <Heading className="resume-main w-70">
+        <motion.div initial={{
+          opacity: 0,
+
+          x: -50
+        }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 1
+            }
+          }}
+          viewport={{ once: true }} className="resume-main w-70">
           <h2 className="resume-head">My Services</h2>
           <div className=" resume-tail media-text">SERVICES</div>
-        </Heading>
+        </motion.div>
 
         <div className="cards">
-          <div className="card-div">
+          <div data-aos="zoom-in" data-aos-duration="500" className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -331,7 +396,7 @@ function App() {
             </div>
           </div>
 
-          <div className="card-div">
+          <div data-aos="zoom-in" data-aos-duration="500" className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -369,7 +434,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="card-div">
+          <div data-aos="zoom-in" data-aos-duration="500" className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -407,7 +472,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="card-div">
+          <div data-aos="zoom-in" data-aos-duration="500" className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -443,7 +508,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="card-div">
+          <div data-aos="zoom-in" data-aos-duration="500" className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -481,7 +546,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="card-div">
+          <div data-aos="zoom-in" data-aos-duration="500" className="card-div">
             <div className="logo-card">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -521,10 +586,22 @@ function App() {
         </div>
       </section>
       <section id="contact" className="contact-me">
-        <Heading className="about w-70">
+        <motion.div initial={{
+          opacity: 0,
+
+          x: -50
+        }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 1
+            }
+          }}
+          viewport={{ once: true }} className="about w-70">
           <h2 className=" about-head">Contact</h2>
           <div className=" about-tail contact-tail">CONTACT</div>
-        </Heading>
+        </motion.div>
         <Contact />
       </section>
 
@@ -535,7 +612,7 @@ function App() {
           </div>
         </div>
         <div className="middle-footer">
-          Made by Moeez Xheikh © 2024. All right reserved
+          Made by Moeez Xheikh © 2025. All right reserved
         </div>
         <div style={{ opacity: opa.opacity, pointerEvents: opa.pointerevents }} className="right-footer">
           <div>

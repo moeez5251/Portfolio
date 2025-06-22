@@ -1,17 +1,43 @@
 import "./about.css"
+import { CardBody, CardContainer, CardItem } from "./3d-card";
 import RotatingText from './rotatinganimation';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+// ..
+AOS.init({
+  once: true
+});
 const About = () => {
 
   return (
     <>
       <div className='flex' >
         <div className="about-left">
-          <img className='left-image' src="assets/Me-1.webp " alt="" />
-          <div className='left-border'></div>
+          <CardContainer className="inter-var">
+            <CardBody>
+              <CardItem>
+
+                <img className='left-image' src="assets/Me-1.webp " alt="" />
+                <div className='left-border'></div>
+              </CardItem>
+            </CardBody>
+
+          </CardContainer>
         </div>
         <div className="about-right">
-          <div className="head"> I'm Xheikh Moeez an <RotatingText
-            texts={["WEB-DEVELOPER.", "SERVER-TESTER.", "APP-DEVELOPER.", "CONTENT-WRITER.", "VIDEO-EDITOR.", "PROGRAMMER."]}
+          <div data-aos="zoom-in" data-aos-duration="800" data-aos-once="true" className="head"> I'm Xheikh Moeez an <RotatingText
+            texts={[
+              "FULL-STACK-DEVELOPER.",
+              "API-DEVELOPER.",
+              "APP-DEVELOPER.",
+              "PROGRAMMER.",
+              "SERVER-TESTER.",
+              "UI/UX-DESIGNER.",
+              "WEB-DEVELOPER.",
+              "DB-MANAGER.",
+
+            ]
+            }
             mainClassName="custom-class"
             staggerFrom={"last"}
             initial={{ y: "100%" }}
@@ -22,8 +48,8 @@ const About = () => {
             transition={{ type: "spring", damping: 30, stiffness: 400 }}
             rotationInterval={2000}
           /></div>
-          <p className='right-para'>I’m a full-stack developer with extensive experience in building scalable, high-performance web applications. I work across both frontend and backend, delivering clean code and seamless user experiences. Proficient in modern frameworks, APIs, and databases, I take a holistic approach to development. My focus is on efficiency, reliability, and continuous improvement.</p>
-          <div className="icons">
+          <p data-aos="zoom-in" data-aos-duration="800" data-aos-once="true" className='right-para'>I’m a full-stack developer with extensive experience in building scalable, high-performance web applications. I work across both frontend and backend, delivering clean code and seamless user experiences. Proficient in modern frameworks, APIs, and databases, I take a holistic approach to development. My focus is on efficiency, reliability, and continuous improvement.</p>
+          <div data-aos="zoom-in" data-aos-duration="800" data-aos-once="true" className="icons">
             <div className="ic">
               <div className="logo-ic">
                 <span className="material-symbols-outlined icons-about">
@@ -61,7 +87,7 @@ const About = () => {
               <p className='about-degree-name' >Lahore,Pakistan</p>
             </div>
           </div>
-          <div className="button">
+          <div data-aos="zoom-in" data-aos-duration="800" data-aos-once="true" className="button">
             <a download="Xheikh Moeez CV" href="assets/files/My CV.pdf" className="anchor">
               <span>Download CV</span>
             </a>

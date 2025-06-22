@@ -224,7 +224,6 @@ body ::selection {
 
 .resume-main {
   position: relative;
-  left: 4%;
   width: 22rem;
   z-index: 9;
   height: 70px;
@@ -748,7 +747,9 @@ button {
   .my-name {
     font-size: 23px;
   }
-
+  .my-name-me {
+    font-size: 30px;
+  }
   .para {
     font-size: 14px;
   }

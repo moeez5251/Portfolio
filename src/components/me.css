@@ -37,7 +37,12 @@
 .my-name {
     font-weight: 600;
     color: white;
-    font-size: 42px;
+    font-size: 48px;
+}
+.my-name-me{
+    font-weight: 500;
+    color: white;
+    font-size: 50px;
 }
 
 .contact-btn {
