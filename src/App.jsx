@@ -280,7 +280,7 @@ function App() {
           </div>
           <div className="right-skill">
             <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="circle">
-              <span>6</span>
+              <span>5</span>
               <span>.</span>
             </div>
             <span data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="years">years+ of experience</span>
