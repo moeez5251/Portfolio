@@ -4,7 +4,7 @@ const Qualification = () => {
   return (
     <>
       <div className="experience-sub">
-        <div>
+        <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true">
 
           <div className=" exp-left">
             <span className="material-symbols-outlined quali-span">
@@ -18,7 +18,7 @@ const Qualification = () => {
             <p>I'm a professional full-stack developer and React specialist. My aim is to build exceptional web applications by utilizing my years of expertise, covering both frontend and backend development with precision and care.</p>
           </div>
         </div>
-        <div>
+        <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true">
 
           <div className=" exp-left">
             <span className="material-symbols-outlined quali-span">
@@ -32,7 +32,7 @@ const Qualification = () => {
             <p>I'm a professional web designer, My motive is to build a best web design with my all years of experience and efforts again during the as desktop publishers bundled the text with their software.</p>
           </div>
         </div>
-        <div>
+        <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true">
 
           <div className=" exp-left">
             <span className="material-symbols-outlined quali-span">

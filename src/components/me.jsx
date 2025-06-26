@@ -38,7 +38,8 @@ const Me = () => {
                         whileInView={{
                             x: 0,
                             transition: {
-                                duration: 1.5
+                                duration: 1.5,
+                                delay:2
                             }
                         }}
                         viewport={{ once: true }} className='heading'>Hey there,</motion.h2>
@@ -50,7 +51,8 @@ const Me = () => {
                         whileInView={{
                             y: 0,
                             transition: {
-                                duration: 1.5
+                                duration: 1.5,
+                                delay: 2
                             }
                         }}
                         viewport={{ once: true }}
@@ -63,7 +65,8 @@ const Me = () => {
                         whileInView={{
                             y: 0,
                             transition: {
-                                duration: 1.5
+                                duration: 1.5,
+                                delay: 2
                             }
                         }}
                         viewport={{ once: true }}
@@ -76,7 +79,8 @@ const Me = () => {
                         whileInView={{
                             x: 0,
                             transition: {
-                                duration: 1.5
+                                duration: 1.5,
+                                delay: 2
                             }
                         }}
                         viewport={{ once: true }}
@@ -94,10 +98,12 @@ const Me = () => {
                     whileInView={{
                         x: 0,
                         transition: {
-                            duration: 1.5
+                            duration: 1.5,
+                            delay: 2
                         }
                     }}
                     viewport={{ once: true }}
+                    
                     className="right">
 
                     <img className='my-image' src="assets/Me-wbg.webp" alt="" />

@@ -4,7 +4,7 @@ const Experience = () => {
     return (
         <>
             <div className="experience-sub">
-                <div data-aos="zoom-in" data-aos-duration="500"    data-aos-once="true">
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true">
 
                     <div className=" exp-left">
                         <img src="assets/git.webp" alt="" />
