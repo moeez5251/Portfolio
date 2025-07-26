@@ -30,11 +30,18 @@ I'm Xheikh Moeez, a professional web designer with a passion for creating beauti
 - **Downloadable CV**: Users can download my CV directly from the portfolio. 📄⬇️
 - **Interactive Elements**: Includes buttons and hover effects to enhance user engagement. 🔘🤹‍♂️
 
-## Installation ⚙️🔧
+## 🌐 Live Demo
 
-To run this project locally, follow these steps:
+   Take a look at the live version of my portfolio:
+👉 [moeez5251.netlify.app](https://moeez5251.netlify.app/)
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/moeez5251/Portfolio
-   ```
+## 💌 Contact Me
+
+I’d love to hear from you! Feel free to reach out for collaborations or inquiries:
+
+💼 LinkedIn – [MoeezSheikh](https://linkedin.com/in/moeez-sheikh)
+
+🐙 GitHub – [MoeezSheikh](https://github.com/moeez5251)
+
+Thanks for visiting my portfolio! 🎉
+Feel free to ⭐ star the repo if you like it!
