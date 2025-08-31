@@ -330,6 +330,7 @@ body ::selection {
   position: relative;
   z-index: 2;
   overflow: hidden;
+
 }
 
 .card-div svg {
@@ -374,8 +375,6 @@ body ::selection {
 
 .card-div:hover {
   transform: scale(1.03);
-  border: none;
-  box-shadow: 1px 1px 5px 0px rgb(41, 39, 39);
 
   .big-icon svg {
     width: 36%;
@@ -747,9 +746,11 @@ button {
   .my-name {
     font-size: 23px;
   }
+
   .my-name-me {
     font-size: 30px;
   }
+
   .para {
     font-size: 14px;
   }
@@ -766,8 +767,11 @@ button {
   }
 
   .right::after {
-    top: -2rem;
-    left: 7rem;
+    left: 2rem;
+    width: 25rem;
+    height: 45rem;
+    transform: rotate(89deg);
+    top: 4rem;
   }
 
   .my-image {

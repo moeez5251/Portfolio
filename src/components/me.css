@@ -39,7 +39,8 @@
     color: white;
     font-size: 48px;
 }
-.my-name-me{
+
+.my-name-me {
     font-weight: 500;
     color: white;
     font-size: 50px;
@@ -108,12 +109,14 @@
     transition: transform 0.2s ease;
 
 }
+
 @media screen and (max-width:830px) {
-    .right{
+    .right {
         width: 60%;
     }
-    
+
 }
+
 @media screen and (max-width:1200px) {
 
 
@@ -202,11 +205,11 @@
     }
 
     .right::after {
-        left: 8rem;
-        width: 11rem;
-        height: 33rem;
+        left: 0rem;
+        width: 40rem;
+        height: 59rem;
         transform: rotate(89deg);
-        top: 1rem;
+        top: 4rem;
     }
 
 }

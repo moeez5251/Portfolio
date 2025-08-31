@@ -1,7 +1,7 @@
 .section {
   position: relative;
-  height: 85vh;
-  padding-top: 4%;
+  padding: 4% 0;
+  margin: 0 20px;
 }
 
 
@@ -9,22 +9,6 @@
   width: 100%;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 20px;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 .swiper-container {
   width: 100%;
@@ -58,7 +42,7 @@
 }
 
 .custom-pagination .swiper-pagination-bullet-active {
-  background-color: #503763;
+  background-color: #cb2d3e;
   color: white;
 }
 
@@ -67,158 +51,114 @@
   cursor: pointer;
 }
 
-.slide-container {
-  width: 85%;
+.slides {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
   justify-content: center;
-  gap: 15px;
-  border: 2px solid #503763;
+  width: 30vw;
+  margin: 5px 0;
   border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.5s;
-  min-height: 78%;
-  position: relative;
-  box-shadow: 3px -3px 9px 3px #a9a5a9;
-}
-
-
-
-.image-swiper {
   width: 100%;
-  height: auto;
-  max-height: 80%;
 }
 
-.image-swiper img {
+.slides-image {
+  width: 100%;
+
+}
+
+.slides-image>img {
+  display: block;
+  width: 100%;
   height: 100%;
-  width: 100%;
-  object-fit: contain;
-  border-radius: 29px;
-  padding: 17px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+
 }
 
-.swiper-name {
-  font-size: 24px;
+.slides-content {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 6px 25px;
+}
+
+.slides-name {
+  font-size: 20px;
   font-weight: 600;
+
 }
 
-.find-more-button {
-  background: linear-gradient(to right, #1d0430, #9c83af);
-  color: #ffffff;
-  font-size: 16px;
+.slides-para {
+  color: #77818d;
+  font-size: 15px;
+}
+
+.tech-stacks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 25px;
+}
+
+.tech-stacks>div {
+  background-color: #ffeaec;
+  color: #cb2d3e;
+  padding: 3px 6px;
+  font-size: 13.5px;
+  border-radius: 10px;
   font-weight: 500;
-  padding: 11px 33px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 14px;
-  text-decoration: none;
 }
 
-.find-more-button:hover,
-.find-more-button:focus {
-  background: linear-gradient(to right, #1d0430 60%, #9c83af);
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.find-more-button:active {
-  transform: translateY(0);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.slides-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
 }
 
 .swiper-link {
-  height: 50px;
-}
-
-.swiper-link a {
+  text-decoration: none;
   display: flex;
-  width: fit-content;
   align-items: center;
-  margin: auto;
+  font-size: 15px;
+  color: #cb2d3e;
+  font-weight: 500;
+  gap: 5px;
 }
 
-.transform {
-  transform: translateY(-15px);
+.github-link {
+  background-color: #868c98;
+  border-radius: 100%;
+  padding: 6px 6px 0px 6px;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
-@media screen and (max-width:1300px) {
+.github-link:hover {
+  background-color: #cb2d3e;
+
+  & svg {
+    fill: white;
+  }
+}
+
+@media screen and (max-width: 1000px) {
   .section {
-    height: 65vh;
-  }
-
-  .slide-container {
-    width: 90%;
-    min-height: 50%;
-  }
-}
-
-@media screen and (max-width:900px) {
-
-
-  .swiper-name {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .find-more-button {
-    padding: 7px 20px;
+    padding: 10% 0;
   }
 
 }
 
-@media screen and (max-width:750px) {
-
+@media screen and (max-width:450px) {
   .custom-pagination {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    justify-items: center;
   }
 
-  .find-more-button {
-    padding: 7px;
-  }
-}
-
-@media screen and (max-width:750px) {
-  .swiper-about {
-    left: 1%;
-  }
-
-  .about {
-    left: -1%;
-  }
-
-
-
-  .right::after {
-    left: 14rem;
-    width: 10rem;
-    height: 47rem;
-    transform: rotate(89deg);
-    top: -2rem;
-  }
-
-  .about-right {
-    width: 96%;
-  }
-
-  .slide-container {
-    width: 80%;
-  }
-
-  .swiper-slide {
-    margin-left: 0;
-  }
-}
-
-@media screen and (max-width:500px) {
   .section {
-    height: 77vh;
+    padding-bottom: 40%;
   }
-
 }

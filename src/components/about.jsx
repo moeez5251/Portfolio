@@ -33,8 +33,6 @@ const About = () => {
               "SERVER-TESTER.",
               "UI/UX-DESIGNER.",
               "WEB-DEVELOPER.",
-              "DB-MANAGER.",
-
             ]
             }
             mainClassName="custom-class"

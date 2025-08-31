@@ -43,4 +43,12 @@
     display: flex;
     justify-content: center;
     border-radius: 0.5rem;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 400px) {
+    .custom-class {
+        font-size: 13px;
+    }
+    
 }

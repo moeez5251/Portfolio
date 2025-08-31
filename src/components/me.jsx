@@ -39,7 +39,7 @@ const Me = () => {
                             x: 0,
                             transition: {
                                 duration: 1.5,
-                                delay:2
+                                delay: 2
                             }
                         }}
                         viewport={{ once: true }} className='heading'>Hey there,</motion.h2>
@@ -85,9 +85,20 @@ const Me = () => {
                         }}
                         viewport={{ once: true }}
                         onClick={() => document.querySelectorAll(".other ul li a")[4].click()} className='contact-btn'>Contact Me
-                        <span className="material-symbols-outlined">
-                            chevron_right
-                        </span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width={20}
+                            height={20}
+                            fill="none"
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            className="lucide lucide-chevron-right-icon lucide-chevron-right"
+                            viewBox="0 0 24 24"
+                        >
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
                     </motion.button>
                 </div>
                 <motion.div
@@ -103,7 +114,7 @@ const Me = () => {
                         }
                     }}
                     viewport={{ once: true }}
-                    
+
                     className="right">
 
                     <img className='my-image' src="assets/Me-wbg.webp" alt="" />
