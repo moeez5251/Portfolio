@@ -55,9 +55,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    setTimeout(() => {
-      document.querySelector(".loader").style.top = "-100%"
-    }, 2000);
+    document.querySelector(".loader").style.top = "-100%"
 
     const handleScroll = () => {
       if (isInView) {
@@ -616,20 +614,22 @@ function App() {
         </div>
         <div style={{ opacity: opa.opacity, pointerEvents: opa.pointerevents }} className="right-footer">
           <div>
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=100067653536666&mibextid=ZbWKwL">
-
+            <a target="_blank" href="https://www.upwork.com/freelancers/~01e9148e1b6fb129a3?mp_source=share">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
                 fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                className="feather feather-facebook fea icon-sm"
+                className="injected-svg"
+                color="#fff"
+                data-src="https://cdn.hugeicons.com/icons/upwork-solid-standard.svg?v=2.0"
               >
-                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                <path
+                  fill="#fff"
+                  fillRule="evenodd"
+                  d="M10.428 4.129A1 1 0 0 0 8.5 4.5v6.25c0 1.49-1.26 2.75-2.75 2.75S3 12.24 3 10.75V4.5a1 1 0 1 0-2 0v6.25c0 2.595 2.155 4.75 4.75 4.75s4.75-2.155 4.75-4.75V9.42c.3.603.627 1.205.983 1.78.108.173.22.348.337.52a4259.413 4259.413 0 0 1-1.177 6.266l-.25 1.329a1 1 0 1 0 1.965.37l.25-1.328.574-3.049.3-1.595C14.6 14.76 15.967 15.5 17.625 15.5 20.56 15.5 23 13.06 23 10.125S20.56 4.75 17.625 4.75c-2.864 0-4.633 1.96-5.224 4-.686-1.345-1.232-2.736-1.681-3.883-.102-.26-.199-.507-.292-.738Zm7.197 9.371c-1.378 0-2.594-.847-3.682-2.252.13-.695.233-1.252.291-1.569.277-1.52 1.454-2.929 3.391-2.929 1.83 0 3.375 1.544 3.375 3.375 0 1.83-1.544 3.375-3.375 3.375Z"
+                  clipRule="evenodd"
+                />
               </svg>
             </a>
           </div>
@@ -713,8 +713,20 @@ function App() {
         </div>
       </div>
       <div style={{ opacity: opa.opacity, pointerEvents: opa.pointerevents }} className="scroll-to-top">
-        <span onClick={() => window.lenis.scrollTo("#home")} className="material-symbols-outlined">
-          arrow_upward
+        <span onClick={() => window.lenis.scrollTo("#home")}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={24}
+            height={24}
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            className="lucide lucide-arrow-up-icon lucide-arrow-up"
+          >
+            <path d="m5 12 7-7 7 7M12 19V5" />
+          </svg>
         </span>
       </div>
 

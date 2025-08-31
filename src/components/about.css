@@ -17,7 +17,9 @@
     height: 100%;
     object-fit: contain;
     border-radius: 10px;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 85% 100%, 15% 100%, 0 90%);
+    
+
         
 }
 
@@ -185,7 +187,7 @@
     }
 
     .about-right {
-        width: 80%;
+        width: 90%;
     }
 
     .about-left {

@@ -48,7 +48,7 @@ const swiperdata = [
     imgsrc: "/assets/Swiper/Weather.webp",
     alt: "Weather",
     name: "Weather App",
-    description: "A web application that provides real-time weather information based on user location or searched cities. Displays temperature, humidity, wind speed, and weather conditions with a clean interface. Built using HTML, CSS, and JavaScript.",
+    description: "A web application that provides real-time weather information based on user  searched cities. Displays temperature, humidity, wind speed, and weather conditions with a clean interface. Built using HTML, CSS, and JavaScript.",
     techs: ["HTML", "CSS", "JavaScript"],
     livehref: "https://stormix.netlify.app",
     git_href: "https://github.com/moeez5251/Weather"
@@ -57,7 +57,7 @@ const swiperdata = [
     imgsrc: "/assets/Swiper/Netflix.webp",
     alt: "Netflix",
     name: "Netflix Clone",
-    description: "A web-based replica of Netflix's homepage showcasing featured movies and series with a responsive, visually appealing layout. Includes interactive carousels  for a dynamic browsing experience. Built using HTML, CSS, and JavaScript.",
+    description: "A web-based replica of Netflix's homepage showcasing featured movies and series with a responsive layout. Includes interactive carousels  for a dynamic browsing experience. Built using HTML, CSS, and JavaScript.",
     techs: ["HTML", "CSS", "JavaScript"],
     livehref: "https://streamnest.netlify.app",
     git_href: "https://github.com/moeez5251/Netflix-Clone"
@@ -94,7 +94,7 @@ const swiperdata = [
 function App() {
   const [swiper, setswiper] = useState({
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 40,
   })
 
   useEffect(() => {
@@ -102,19 +102,19 @@ function App() {
       if (window.innerWidth <= 900 && window.innerWidth > 670) {
         setswiper({
           slidesPerView: 2,
-          spaceBetween: 10,
+          spaceBetween: 30,
         });
       }
       else if (window.innerWidth <= 670) {
         setswiper({
           slidesPerView: 1,
-          spaceBetween: 0,
+          spaceBetween: 50,
         });
       }
       else {
         setswiper({
           slidesPerView: 3,
-          spaceBetween: 30,
+          spaceBetween: 40,
         });
       }
     };

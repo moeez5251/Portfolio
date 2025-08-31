@@ -423,7 +423,6 @@ body ::selection {
   transition: all 0.5s;
   flex-direction: row;
   border-radius: 10px;
-  padding: 5px 3px;
   position: fixed;
   left: 5px;
   flex-direction: column;

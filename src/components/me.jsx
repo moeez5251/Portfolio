@@ -2,26 +2,13 @@ import React, { useRef } from 'react'
 import "./me.css"
 import Bg_1 from './bg-1';
 import { motion, useInView } from "motion/react"
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 const mousemove = (event) => {
     const x = (window.innerWidth - event.pageX * 1) / 50;
     const y = (window.innerHeight - event.pageY * 1) / 50;
     document.querySelector(".right").style.transform = `translateX(${x}px) translateY(${y}px)`
 
-}
-function Div({ children, id, className }) {
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: false });
-
-    return (
-        <div style={{
-            transform: isInView ? "translateY(0px)" : "translateY(54px)",
-            transition:
-                "transform 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67), opacity 0.5s ease, filter 0.5s ease",
-        }} id={id} className={className} ref={ref}>
-
-            {children}
-        </div>
-    );
 }
 
 const Me = () => {
@@ -39,7 +26,6 @@ const Me = () => {
                             x: 0,
                             transition: {
                                 duration: 1.5,
-                                delay: 2
                             }
                         }}
                         viewport={{ once: true }} className='heading'>Hey there,</motion.h2>
@@ -52,7 +38,6 @@ const Me = () => {
                             y: 0,
                             transition: {
                                 duration: 1.5,
-                                delay: 2
                             }
                         }}
                         viewport={{ once: true }}
@@ -66,11 +51,10 @@ const Me = () => {
                             y: 0,
                             transition: {
                                 duration: 1.5,
-                                delay: 2
                             }
                         }}
                         viewport={{ once: true }}
-                        className='para'>I'm a professional web designer, My motive is to build a best web design with my all years of experience and efforts.</motion.p>
+                        className='para'>I'm a professional Web Develoepr , I'm passionate about building exceptional web applications.</motion.p>
                     <motion.button
                         initial={{
 
@@ -80,7 +64,6 @@ const Me = () => {
                             x: 0,
                             transition: {
                                 duration: 1.5,
-                                delay: 2
                             }
                         }}
                         viewport={{ once: true }}
@@ -110,14 +93,13 @@ const Me = () => {
                         x: 0,
                         transition: {
                             duration: 1.5,
-                            delay: 2
                         }
                     }}
                     viewport={{ once: true }}
 
                     className="right">
 
-                    <img className='my-image' src="assets/Me-wbg.webp" alt="" />
+                    <LazyLoadImage effect='blur' className='my-image' src="assets/Me-wbg.webp" alt="" />
                 </motion.div>
             </div>
         </>
