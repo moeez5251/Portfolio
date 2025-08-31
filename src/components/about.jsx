@@ -81,7 +81,7 @@ const About = () => {
                 </span>
                 <span className='degree' >Country:</span>
               </div>
-              <p className='about-degree-name' >Lahore,Pakistan</p>
+              <p className='about-degree-name' >Lahore, Pakistan</p>
             </div>
           </div>
           <div data-aos="zoom-in" data-aos-duration="800" data-aos-once="true" className="button">
