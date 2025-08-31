@@ -55,7 +55,10 @@ function App() {
   }, []);
 
   useEffect(() => {
-    document.querySelector(".loader").style.top = "-100%"
+    setTimeout(() => {
+
+      document.querySelector(".loader").style.top = "-100%"
+    }, 2000);
 
     const handleScroll = () => {
       if (isInView) {

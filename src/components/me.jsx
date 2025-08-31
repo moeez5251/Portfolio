@@ -26,6 +26,7 @@ const Me = () => {
                             x: 0,
                             transition: {
                                 duration: 1.5,
+                                delay: 2
                             }
                         }}
                         viewport={{ once: true }} className='heading'>Hey there,</motion.h2>
@@ -38,6 +39,8 @@ const Me = () => {
                             y: 0,
                             transition: {
                                 duration: 1.5,
+                                delay: 2
+
                             }
                         }}
                         viewport={{ once: true }}
@@ -51,6 +54,8 @@ const Me = () => {
                             y: 0,
                             transition: {
                                 duration: 1.5,
+                                delay: 2
+
                             }
                         }}
                         viewport={{ once: true }}
@@ -64,6 +69,8 @@ const Me = () => {
                             x: 0,
                             transition: {
                                 duration: 1.5,
+                                delay: 2
+
                             }
                         }}
                         viewport={{ once: true }}
@@ -93,6 +100,8 @@ const Me = () => {
                         x: 0,
                         transition: {
                             duration: 1.5,
+                            delay: 2
+
                         }
                     }}
                     viewport={{ once: true }}
