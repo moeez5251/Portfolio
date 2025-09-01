@@ -9,7 +9,7 @@ import Qualification from "./components/qualification"
 import Swiper_animation from "./components/swiper";
 import Contact from "./components/contact";
 import { motion, useInView } from "motion/react"
-motion
+import { Helmet } from "react-helmet-async";
 import "./App.css"
 function App() {
   const [html, sethtml] = useState("0%")
@@ -115,6 +115,18 @@ function App() {
 
   return (
     <>
+        <Helmet>
+        <title>Xheikh Moeez | Portfolio</title>
+        <meta
+          name="description"
+          content="Welcome to Xheikh Moeez's personal portfolio. Explore my projects, skills, and experience in web development."
+        />
+        <meta
+          name="keywords"
+          content="Xheikh Moeez, Portfolio, Web Developer, React Developer, Projects, Skills, Programming"
+        />
+        <meta name="author" content="Xheikh Moeez" />
+      </Helmet>
       <div className="loader">
         <div className="spinner">
           <div className="inner">
