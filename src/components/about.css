@@ -18,9 +18,9 @@
     object-fit: contain;
     border-radius: 10px;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 85% 100%, 15% 100%, 0 90%);
-    
 
-        
+
+
 }
 
 
@@ -156,7 +156,7 @@
 }
 
 @media screen and (max-width:1200px) {
-    
+
     .about-left {
         width: 30%;
     }
@@ -187,7 +187,7 @@
     }
 
     .about-right {
-        width: 90%;
+        width: 85%;
     }
 
     .about-left {
@@ -198,4 +198,10 @@
         left: 74px
     }
 
+}
+
+@media screen and (max-width:450px) {
+    .about-right {
+        width: 95%;
+    }
 }
