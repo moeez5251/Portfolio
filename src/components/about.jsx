@@ -72,7 +72,9 @@ const About = () => {
                 </span>
                 <span className='degree'>Age:</span>
               </div>
-              <p className='about-degree-name' >19</p>
+              <p className='about-degree-name' >{
+                new Date().getFullYear() - 2005 - (new Date() < new Date(new Date().getFullYear(), 9, 2) ? 1 : 0)
+              }</p>
             </div>
             <div className="ic">
               <div className="logo-ic">
@@ -85,7 +87,7 @@ const About = () => {
             </div>
           </div>
           <div data-aos="zoom-in" data-aos-duration="800" data-aos-once="true" className="button">
-            <a download="Xheikh Moeez CV" href="assets/files/My CV.pdf" className="anchor">
+            <a  download="Xheikh Moeez CV" href="assets/files/My CV.pdf" className="anchor">
               <span>Download CV</span>
             </a>
           </div>

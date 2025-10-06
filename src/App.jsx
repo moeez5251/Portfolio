@@ -116,7 +116,7 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>Xheikh Moeez | Portfolio</title>
+        <title>XHEIKH-MOEEZ  PORTFOLIO</title>
         <meta
           name="description"
           content="Welcome to Xheikh Moeez's personal portfolio. Explore my projects, skills, and experience in web development."
