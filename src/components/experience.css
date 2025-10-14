@@ -1,68 +1,80 @@
-.experience-sub{
+.experience-sub {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.experience-sub> div{
+
+.experience-sub>div {
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     gap: 30px;
+    align-items: flex-start;
+    height: 35vh;
 }
-.experience-sub div >div{
+
+.experience-sub div>div {
     width: 50%;
+    height: 100%;
+    position: relative;
 }
-.exp-left{
+
+.exp-left {
     text-align: right;
-    padding: 10px 34px;
+    padding: 0px 34px;
     border-right: dashed 1px #cbbfbf;
     position: relative;
     border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
 }
-.exp-left img{
+
+.exp-left img {
     width: 40px;
     border-radius: 100%;
     background-position: center center;
 }
-.exp-left-name{
+
+.exp-left-name {
     font-weight: 500;
     font-size: 19px;
 }
-.exp-timeline{
+
+.exp-timeline {
     color: #cb2d3e;
 }
-.experience,.qualification{
+
+.experience,
+.qualification {
     margin: 40px 0;
 }
-.exp-left >*{
-    margin-top: 9px;
-}
-.exp-left::before{
+
+
+.exp-left::before {
     content: "";
-    width: 10px;
-    height: 11px;
-    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
     position: absolute;
     background: #cb2d3e;
-    right: -5px;
-    top: -18px;
-    outline: #84888d;
-    outline-style: dashed;
+    right: -7px;
+    outline: 2px dashed #84888d;
     outline-offset: 5px;
-    outline-width: 2px;
+    top: 0;
+}
 
-}
-.exp-right{
-    padding-top: 22px;
-}
-.exp-right-name{
+
+
+.exp-right-name {
     font-size: 18px;
     font-weight: 500;
 }
-.exp-right p{
+
+.exp-right p {
     color: #84888d;
     width: 85%;
     margin-top: 24px;
-    
+
 }

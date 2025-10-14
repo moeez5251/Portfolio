@@ -268,6 +268,14 @@ function App() {
                 </div>
               </div>
               <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="sk">
+                <span className="percentage">{react}</span>
+                <span className="sk-span">MS SQL , Mongo DB</span>
+                <div className="progress">
+                  <span className="progress-bar"></span>
+                  <span style={{ width: react }} className="red-progress"></span>
+                </div>
+              </div>
+              <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="sk">
                 <span className="percentage">{js}</span>
                 <span className="sk-span">C++</span>
                 <div className="progress">
@@ -275,14 +283,7 @@ function App() {
                   <span style={{ width: js }} className="red-progress"></span>
                 </div>
               </div>
-              <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="sk">
-                <span className="percentage">{react}</span>
-                <span className="sk-span">MS SQL</span>
-                <div className="progress">
-                  <span className="progress-bar"></span>
-                  <span style={{ width: react }} className="red-progress"></span>
-                </div>
-              </div>
+
               <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="sk">
                 <span className="percentage">{office}</span>
                 <span className="sk-span">MS Office</span>

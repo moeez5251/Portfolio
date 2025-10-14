@@ -1,51 +1,61 @@
 import React from 'react'
 import "./qualification.css"
+
 const Qualification = () => {
   return (
     <>
       <div className="experience-sub">
-        <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true">
 
-          <div className=" exp-left">
+        <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true">
+          <div className="exp-left">
             <span className="material-symbols-outlined quali-span">
               school
             </span>
-            <p className='exp-left-name'>Superior University</p>
-            <p className='exp-timeline'>2023-2027</p>
+            <p className="exp-left-name">Superior University</p>
+            <p className="exp-timeline">2023 - 2027</p>
           </div>
-          <div className=" exp-right">
-            <h2 className='exp-right-name'>BS Computer Science</h2>
-            <p>I'm a professional full-stack developer and React specialist. My aim is to build exceptional web applications by utilizing my years of expertise, covering both frontend and backend development with precision and care.</p>
+          <div className="exp-right">
+            <h2 className="exp-right-name">BS Computer Science</h2>
+            <p>
+              Pursuing a Bachelor's degree in Computer Science with a strong focus on software development,
+              web technologies, and data structures.
+            </p>
+          </div>
+        </div>
+
+        <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true">
+          <div className="exp-left">
+            <span className="material-symbols-outlined quali-span">
+              code
+            </span>
+            <p className="exp-left-name">Udemy</p>
+            <p className="exp-timeline">2024</p>
+          </div>
+          <div className="exp-right">
+            <h2 className="exp-right-name">MERN Stack Development</h2>
+            <p>
+              Completed an in-depth MERN Stack certification covering MongoDB, Express.js, React, and Node.js.
+              Built multiple full-stack projects.
+            </p>
           </div>
         </div>
         <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true">
-
-          <div className=" exp-left">
+          <div className="exp-left">
             <span className="material-symbols-outlined quali-span">
-              design_services
+              cloud
             </span>
-            <p className='exp-left-name'>PNY Training</p>
-            <p className='exp-timeline'>2020-2021</p>
+            <p className="exp-left-name">Coursera</p>
+            <p className="exp-timeline">2024</p>
           </div>
-          <div className=" exp-right">
-            <h2 className='exp-right-name'>Video Editing</h2>
-            <p>I'm a professional web designer, My motive is to build a best web design with my all years of experience and efforts again during the as desktop publishers bundled the text with their software.</p>
+          <div className="exp-right">
+            <h2 className="exp-right-name">Cloud & Database Fundamentals</h2>
+            <p>
+              Learned how to manage and deploy cloud-based web applications using services like MongoDB Atlas and
+              Vercel. Gained hands-on experience with database optimization, API hosting, and CI/CD workflows.
+            </p>
           </div>
         </div>
-        <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true">
 
-          <div className=" exp-left">
-            <span className="material-symbols-outlined quali-span">
-              devices
-            </span>
-            <p className='exp-left-name'>Microsoft</p>
-            <p className='exp-timeline'>2018-2020</p>
-          </div>
-          <div className=" exp-right">
-            <h2 className='exp-right-name'>MS Office</h2>
-            <p>I'm a professional web designer, My motive is to build a best web design with my all years of experience and efforts again during the as desktop publishers bundled the text with their software.</p>
-          </div>
-        </div>
       </div>
     </>
   )

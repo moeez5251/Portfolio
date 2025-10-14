@@ -637,7 +637,9 @@ button {
     grid-template-columns: repeat(1, minmax(250px, 1fr));
   }
 
-
+  .experience-sub>div {
+    height: 40vh;
+  }
 
   .skill {
     flex-direction: column-reverse;
@@ -685,9 +687,7 @@ button {
     padding: 0px 0;
   }
 
-  .right-footer {
-    padding: 5px 0;
-  }
+
 }
 
 .scroll-to-top {
@@ -798,6 +798,11 @@ button {
 
   .nav-opt {
     right: 14%;
+  }
+
+  .experience,
+  .qualification {
+    height: 130vh;
   }
 }
 
