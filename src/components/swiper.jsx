@@ -140,7 +140,7 @@ function App() {
       <section className="section">
         <Swiper
           slidesPerView={swiper.slidesPerView}
-          // autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 3000 }}
           spaceBetween={swiper.spaceBetween}
           keyboard={{
             enabled: true,
