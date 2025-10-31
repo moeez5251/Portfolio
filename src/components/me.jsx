@@ -2,8 +2,6 @@ import React, { useRef } from 'react'
 import "./me.css"
 import Bg_1 from './bg-1';
 import { motion, useInView } from "motion/react"
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 const mousemove = (event) => {
     const x = (window.innerWidth - event.pageX * 1) / 50;
     const y = (window.innerHeight - event.pageY * 1) / 50;
@@ -108,7 +106,14 @@ const Me = () => {
 
                     className="right">
 
-                    <LazyLoadImage effect='blur' className='my-image' src="assets/Me-wbg.webp" alt="" />
+                    <img
+                        src="assets/Me-wbg.webp"
+                        alt="My profile"
+                        className="my-image"
+                        loading="eager"
+                        fetchpriority="high"
+                    />
+
                 </motion.div>
             </div>
         </>

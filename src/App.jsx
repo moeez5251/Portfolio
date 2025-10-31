@@ -123,7 +123,7 @@ function App() {
         />
         <meta
           name="keywords"
-          content="Xheikh Moeez, Portfolio, Web Developer, React Developer, Projects, Skills, Programming"
+          content="Xheikh Moeez, Portfolio, Web Developer, React Developer, Projects, Skills, Programming, Xheikh Moeez Portfolio"
         />
         <meta name="author" content="Xheikh Moeez" />
         <meta name="google-site-verification" content="o67PCilh0c_X6cE6fU1uklcWQGbAo6hRGuPT4minHxM" />
