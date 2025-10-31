@@ -9,13 +9,22 @@ import './swiper.css';
 import { CardBody, CardContainer, CardItem } from "./3d-card";
 const swiperdata = [
   {
-    imgsrc: "/assets/Swiper/XLMS.webp",
-    alt: "XLMS",
-    name: "Library Management System",
-    description: "A web-based dashboard for librarians to manage books, users, and transactions with features like book catalog management, borrow/return tracking, and reports. Built using React, Next.js, Express.js, Node.js, and MS SQL.",
+    imgsrc: "/assets/Swiper/XLMS-Admin.webp",
+    alt: "XLMS Admin Dashboard",
+    name: "LMS Admin Dashboard",
+    description: "A web-based dashboard for admins to manage library resources, users, and transactions. Provides a user-friendly interface for managing library resources, users, and transactions.",
     techs: ["Next.js", "Express.js", "MS SQL"],
     livehref: "https://xlms-admin.netlify.app",
     git_href: "https://github.com/moeez5251/Library-Management-System-Admin"
+  },
+  {
+    imgsrc: "/assets/Swiper/XLMS-Client.webp",
+    alt: "XLMS Client Dashboard",
+    name: "LMS Client Dashboard",
+    description: "A web-based dashboard for users to access library resources and manage their profile. Provides a user-friendly interface for accessing library resources and managing user profile. Built using Next.js, Express.js, and MS SQL.",
+    techs: ["Next.js", "Express.js", "MS SQL"],
+    livehref: "https://xlms-client.netlify.app",
+    git_href: "https://github.com/moeez5251/Library-Management-System-Client"
   },
   {
     imgsrc: "/assets/Swiper/XFMS.webp",
@@ -131,7 +140,7 @@ function App() {
       <section className="section">
         <Swiper
           slidesPerView={swiper.slidesPerView}
-          autoplay={{ delay: 3000 }}
+          // autoplay={{ delay: 3000 }}
           spaceBetween={swiper.spaceBetween}
           keyboard={{
             enabled: true,
