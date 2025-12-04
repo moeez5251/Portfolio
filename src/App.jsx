@@ -116,19 +116,63 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>XHEIKH-MOEEZ  PORTFOLIO</title>
+        <title>XHEIKH-MOEEZ PORTFOLIO</title>
+
         <meta
           name="description"
-          content="Welcome to Xheikh Moeez's personal portfolio. Explore my projects, skills, and experience in web development."
+          content="Explore the portfolio of Xheikh Moeez — a skilled full-stack developer specializing in MERN, React, Next.js, Node.js, Python, and modern API engineering. Discover professional GitHub projects, scalable web applications, database-driven systems, and high-performance solutions built with clean, efficient, and industry-standard development practices."
         />
         <meta
           name="keywords"
-          content="Xheikh Moeez, Portfolio, Web Developer, React Developer, Projects, Skills, Programming, Xheikh Moeez Portfolio"
+          content="Xheikh Moeez, Portfolio, Web Developer, MERN Developer, React Developer, GitHub Projects, Open Source, moeez5251, xheikh-moeez github, Programming, Software Developer"
         />
         <meta name="author" content="Xheikh Moeez" />
-        <meta name="google-site-verification" content="o67PCilh0c_X6cE6fU1uklcWQGbAo6hRGuPT4minHxM" />
 
+        <meta name="github:username" content="moeez5251" />
+        <meta name="github:profile" content="https://github.com/moeez5251" />
+        <meta
+          name="github:projects"
+          content="Open-source MERN projects, full-stack apps, Next.js apps, React projects"
+        />
+
+        <meta
+          name="google-site-verification"
+          content="o67PCilh0c_X6cE6fU1uklcWQGbAo6hRGuPT4minHxM"
+        />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+       <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Xheikh Moeez",
+            "url": "https://moeez5251.netlify.app",
+            "image": "https://moeez5251.netlify.app/assets/Me-11.webp",
+            "jobTitle": "MERN Web Developer",
+            "sameAs": [
+              "https://github.com/moeez5251",
+              "https://www.linkedin.com/in/moeez-sheikh/",
+              "https://moeez5251.netlify.app"
+            ],
+            "description": "Full Stack Developer specializing in MERN, React, Next.js, Node.js, APIs, and high-performance GitHub projects.",
+            "skills": [
+              "MERN Stack",
+              "React",
+              "Next.js",
+              "Node.js",
+              "JavaScript",
+              "Python",
+              "API Development",
+              "SQL/NoSQL",
+              "Frontend Development",
+              "Backend Development"
+            ]
+          }
+        `}
+      </script>
       </Helmet>
+
       <div className="loader">
         <div className="spinner">
           <div className="inner">
