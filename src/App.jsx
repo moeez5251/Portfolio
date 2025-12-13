@@ -140,9 +140,10 @@ function App() {
           content="o67PCilh0c_X6cE6fU1uklcWQGbAo6hRGuPT4minHxM"
         />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-       <script type="application/ld+json">
-        {`
+        <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+        <script type="application/ld+json">
+          {`
           {
             "@context": "https://schema.org",
             "@type": "Person",
@@ -170,7 +171,7 @@ function App() {
             ]
           }
         `}
-      </script>
+        </script>
       </Helmet>
 
       <div className="loader">
