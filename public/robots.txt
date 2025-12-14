@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://moeez5251.netlify.app/sitemap.xml
+Sitemap: https://moeez5251.netlify.app/sitemap1.xml
