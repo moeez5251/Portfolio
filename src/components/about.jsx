@@ -17,7 +17,7 @@ const About = () => {
             <CardBody>
               <CardItem>
 
-                <img data-aos="zoom-in" data-aos-duration="800" className='left-image' src="assets/Me-11.webp " alt="" />
+                <img data-aos="zoom-in" data-aos-duration="800" className='left-image' src="assets/Me-11.webp " alt="My Image" loading="eager"  />
               </CardItem>
             </CardBody>
 
