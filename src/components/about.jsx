@@ -26,13 +26,12 @@ const About = () => {
         <div className="about-right">
           <div data-aos="zoom-in" data-aos-duration="800" data-aos-once="true" className="head"> I'm Xheikh Moeez an <RotatingText
             texts={[
-              "FULL-STACK-DEVELOPER.",
+              "MERN-WEB-DEVELOPER.",
               "API-DEVELOPER.",
               "APP-DEVELOPER.",
-              "PROGRAMMER.",
               "SERVER-TESTER.",
-              "UI/UX-DESIGNER.",
-              "WEB-DEVELOPER.",
+              "BACKEND-DEVELOPER.",
+              "DB-DEVELOPER."
             ]
             }
             mainClassName="custom-class"

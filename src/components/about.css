@@ -187,7 +187,7 @@
     }
 
     .about-right {
-        width: 85%;
+        width: 95%;
     }
 
     .about-left {
@@ -204,4 +204,9 @@
     .about-right {
         width: 95%;
     }
+    
+  .head,
+  .typed-animation {
+    font-size: 15px;
+  }
 }

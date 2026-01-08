@@ -27,7 +27,7 @@ const Me = () => {
                                 delay: 2
                             }
                         }}
-                        viewport={{ once: true }} className='heading'>Hey there,</motion.h2>
+                        viewport={{ once: true }} className='heading'>Hey there, I'm</motion.h2>
                     <motion.h1
                         initial={{
 

@@ -715,10 +715,6 @@ button {
     width: 19rem;
   }
 
-  .head,
-  .typed-animation {
-    font-size: 15px;
-  }
 
   .menu-items {
     display: grid;
@@ -726,8 +722,7 @@ button {
     gap: 10px;
     align-items: center;
     justify-items: start;
-    text-align: center;
-
+    justify-content: space-between;
   }
 }
 

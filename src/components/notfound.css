@@ -1,0 +1,76 @@
+.nf-pro-container {
+  height: 100vh;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+  color: #111;
+}
+
+/* --- Animated blobs --- */
+.nf-blob {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  filter: blur(90px);
+  opacity: 0.45;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.nf-blob-1 {
+  background: radial-gradient(circle, #cb2d3e 0%, transparent 70%);
+  top: 15%;
+  left: 20%;
+}
+
+.nf-blob-2 {
+  background: radial-gradient(circle, #ff8a8a 0%, transparent 70%);
+  bottom: 20%;
+  right: 25%;
+}
+
+/* --- Title --- */
+.nf-pro-title {
+  font-size: clamp(6rem, 18vw, 13rem);
+  font-weight: 900;
+  letter-spacing: 10px;
+  margin: 0;
+  z-index: 1;
+  background: linear-gradient(135deg, #cb2d3e, #ff6a6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --- Quote --- */
+.nf-pro-quote {
+  margin-top: 28px;
+  font-size: 1.15rem;
+  opacity: 0.8;
+  max-width: 520px;
+  text-align: center;
+  z-index: 1;
+}
+
+/* --- Button --- */
+.nf-pro-button {
+  margin-top: 44px;
+  padding: 14px 40px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #cb2d3e, #ff6a6a);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+}
+
+.nf-pro-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(203, 45, 62, 0.35);
+}
