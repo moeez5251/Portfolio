@@ -12,7 +12,7 @@ const swiperdata = [
     imgsrc: "/assets/Swiper/XLMS-Admin.webp",
     alt: "XLMS Admin Dashboard",
     name: "LMS Admin Dashboard",
-    description: "A web-based dashboard for admins to manage library resources, users, and transactions. Provides a user-friendly interface for managing library resources, users, and transactions.",
+    description: "A web-based dashboard for admins to manage library resources, users, and transactions. Provides a user-friendly interface for managing library resources, users, and transactions. Built using Next.js, Express.js, and MS SQL.",
     techs: ["Next.js", "Express.js", "MS SQL"],
     livehref: "https://xlms-admin.netlify.app",
     git_href: "https://github.com/moeez5251/Library-Management-System-Admin"
@@ -39,7 +39,7 @@ const swiperdata = [
     imgsrc: "/assets/Swiper/URL.webp",
     alt: "URL Shortener",
     name: "URL Shortener",
-    description: "A web-based tool for shortening long URLs, making them easy to share and manage. Provides quick link generation and copy functionality for users. Built using React, Next.js, and Appwrite.",
+    description: "A web-based tool for shortening long URLs, providing a user-friendly interface for URL management. Users can input long URLs and receive short, easy-to-remember links. Built using React, Next.js, and Appwrite.",
     techs: ["React", "Next.js", "Appwrite"],
     livehref: "https://linkio.netlify.app",
     git_href: "https://github.com/moeez5251/URL-Shortner"

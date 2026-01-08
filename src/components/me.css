@@ -213,3 +213,9 @@
     }
 
 }
+@media screen and (max-width:500px) {
+   .my-name-me {
+    font-size: 30px;
+  }
+    
+}

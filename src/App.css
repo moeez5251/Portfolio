@@ -637,10 +637,7 @@ button {
     grid-template-columns: repeat(1, minmax(250px, 1fr));
   }
 
-  .experience-sub>div {
-    height: 40vh;
-  }
-
+ 
   .skill {
     flex-direction: column-reverse;
     width: 93%;
@@ -722,16 +719,14 @@ button {
     gap: 10px;
     align-items: center;
     justify-items: start;
+    text-align: center;
     justify-content: space-between;
   }
 }
 
 @media screen and (max-width:500px) {
 
-  .exp-right p {
-    margin-top: 5px;
-    font-size: 13px;
-  }
+
 
   .heading {
     font-size: 20px;
@@ -795,10 +790,6 @@ button {
     right: 14%;
   }
 
-  .experience,
-  .qualification {
-    height: 130vh;
-  }
 }
 
 @media screen and (max-width:650px) {
