@@ -1,4 +1,4 @@
-name: Deploy Vite React App
+name: Deploy React Vite App
 
 on:
   push:
@@ -6,53 +6,34 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      # 1. Checkout code
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      # 2. Setup Node.js
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      # 3. Install dependencies
-      - name: Install dependencies
-        run: npm install
+      - run: npm install
+      - run: npm run build   # outputs to dist/
 
-      # 4. Build the Vite app
-      - name: Build project
-        run: npm run build   # outputs to dist/
-
-      # 5. Upload build folder as artifact
-      - name: Upload production-ready build files
-        uses: actions/upload-artifact@v4
+      - uses: actions/upload-pages-artifact@v3
         with:
-          name: production-files
-          path: ./dist   # Vite build output
+          path: dist
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-
     steps:
-      # 6. Download artifact
-      - name: Download artifact
-        uses: actions/download-artifact@v4
+      - uses: actions/deploy-pages@v4
         with:
-          name: production-files
-          path: ./dist
-
-      # 7. Deploy to GitHub Pages using PAT
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3 
-        with:
-          github_token: ${{ secrets.GH_TOKEN }}   # Your PAT
-          publish_dir: ./dist                     # Must match artifact path
+          artifact-path: dist
