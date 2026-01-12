@@ -1,0 +1,57 @@
+name: Deploy Static Site to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]  # runs on pushes to main
+  workflow_dispatch:      # allows manual run
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout the repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Set up Node.js (for building React/Vue/JS project)
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # 4. Build the project
+      - name: Build project
+        run: npm run build   # assumes build output goes to "dist" folder
+
+      # 5. Upload the build artifact (dist folder)
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # 6. Deploy the uploaded artifact to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+        with:
+          artifact-path: dist
