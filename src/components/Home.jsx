@@ -139,9 +139,23 @@ function Home() {
           name="google-site-verification"
           content="o67PCilh0c_X6cE6fU1uklcWQGbAo6hRGuPT4minHxM"
         />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+        <link
+          rel="icon"
+          type="image/x-icon"
+          href={`${import.meta.env.BASE_URL}favicon.ico`}
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="48x48"
+          href={`${import.meta.env.BASE_URL}favicon-48.png`}
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="96x96"
+          href={`${import.meta.env.BASE_URL}favicon-96.png`}
+        />
         <script type="application/ld+json">
           {`
           {
@@ -673,7 +687,7 @@ function Home() {
           </div>
         </div>
         <div className="middle-footer">
-          Made by Moeez Xheikh © { new Date().getFullYear()}. All right reserved
+          Made by Moeez Xheikh © {new Date().getFullYear()}. All right reserved
         </div>
         <div style={{ opacity: opa.opacity, pointerEvents: opa.pointerevents }} className="right-footer">
           <div>

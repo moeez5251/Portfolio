@@ -3,7 +3,7 @@ name: Deploy Vite React App
 on:
   push:
     branches:
-      - github-pages
+      - main  
 
 permissions:
   contents: write
