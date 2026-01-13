@@ -36,7 +36,7 @@ const Navbar = () => {
     <nav style={{ backgroundColor: bgColor }}>
 
       <div className="name">
-        <img style={{ filter: filter }} className='piclogo' src="assets/logo.webp" alt="logo" />
+        <img style={{ filter: filter }} className='piclogo' src={`${import.meta.env.BASE_URL}assets/logo.webp`} alt="logo" />
       </div>
       <div className="other">
         <ul>

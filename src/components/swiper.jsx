@@ -174,7 +174,7 @@ function App() {
                       <CardBody style={{ position: "relative", zIndex: "-10" }} >
                         <CardItem style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                           <div className='slides-image'>
-                            <img loading='lazy' src={data.imgsrc} alt={data.alt} />
+                            <img loading='lazy' src={import.meta.env.BASE_URL + data.imgsrc} alt={data.alt} />
                           </div>
                         </CardItem>
                       </CardBody>

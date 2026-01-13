@@ -107,7 +107,7 @@ const Me = () => {
                     className="right">
 
                     <img
-                        src="assets/Me-wbg.webp"
+                        src={`${import.meta.env.BASE_URL}assets/Me-wbg.webp`}
                         alt="My profile"
                         className="my-image"
                         loading="eager"

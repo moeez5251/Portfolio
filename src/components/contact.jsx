@@ -28,7 +28,7 @@ const Contact = () => {
 
                 <div className="left-contact">
                     <div className="box">
-                        <img data-aos="zoom-in" data-aos-duration="500" loading='lazy'  src="assets/contact.webp" alt="Contact Photo" />
+                        <img data-aos="zoom-in" data-aos-duration="500" loading='lazy'  src={`${import.meta.env.BASE_URL}assets/contact.webp`} alt="Contact Photo" />
                         <p data-aos="zoom-in" data-aos-duration="500" >I'm also available for freelance work. Get in touch right now.</p>
                         <p data-aos="zoom-in" data-aos-duration="500 "><span>Phone: </span>03207349527</p>
                         <p data-aos="zoom-in" data-aos-duration="500" ><span>Email: </span>moeez4241@gmail.com</p>

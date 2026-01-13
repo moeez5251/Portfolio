@@ -6,7 +6,7 @@ const Experience = () => {
             <div className="experience-sub">
                 <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true">
                     <div className="exp-left">
-                        <img src="assets/git.webp" alt="GitHub Logo" />
+                        <img src={`${import.meta.env.BASE_URL}assets/git.webp`} alt="GitHub Logo" />
                         <p className="exp-left-name">Full Stack Developer (MERN)</p>
                         <p className="exp-timeline">2020 - Present</p>
                     </div>
@@ -21,7 +21,7 @@ const Experience = () => {
 
                 <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true">
                     <div className="exp-left">
-                        <img src="assets/NEXT.jpeg" alt="Next.js Logo" />
+                        <img src={`${import.meta.env.BASE_URL}assets/NEXT.jpeg`} alt="Next.js Logo" />
                         <p className="exp-left-name">Freelance Developer</p>
                         <p className="exp-timeline">2019 - 2020</p>
                     </div>
@@ -36,7 +36,7 @@ const Experience = () => {
 
                 <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true">
                     <div className="exp-left">
-                        <img src="assets/Node.png" alt="Node.js Logo" />
+                        <img src={`${import.meta.env.BASE_URL}assets/Node.png`} alt="Node.js Logo" />
                         <p className="exp-left-name">Startup Projects</p>
                         <p className="exp-timeline">2018 - 2019</p>
                     </div>
