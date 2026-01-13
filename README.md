@@ -33,7 +33,7 @@ I'm Xheikh Moeez, a professional web designer with a passion for creating beauti
 ## 🌐 Live Demo
 
    Take a look at the live version of my portfolio:
-👉 [moeez5251.netlify.app](https://moeez5251.netlify.app/)
+👉 [Portfolio](https://moeez5251.github.io/Portfolio/)
 
 ## 💌 Contact Me
 
