@@ -115,13 +115,13 @@ return module.exports;`;var re=dt.agent;if(r&&(re.chrome||re.firefox&&re.version
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Xheikh Moeez",
-            "url": "https://moeez5251.netlify.app",
-            "image": "https://moeez5251.netlify.app/assets/Me-11.webp",
+            "url": "https://moeez5251.github.io/Portfolio/",
+            "image": "https://moeez5251.github.io/Portfolio/assets/Me-11.webp",
             "jobTitle": "MERN Web Developer",
             "sameAs": [
               "https://github.com/moeez5251",
               "https://www.linkedin.com/in/moeez-sheikh/",
-              "https://moeez5251.netlify.app"
+              "https://moeez5251.github.io/Portfolio/"
             ],
             "description": "Full Stack Developer specializing in MERN, React, Next.js, Node.js, APIs, and high-performance GitHub projects.",
             "skills": [
