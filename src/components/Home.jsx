@@ -187,7 +187,7 @@ function Home() {
       <div className="menubar bottom ">
         <div className='menu-div'>
           <div className="img">
-            <img className="menu-img" src="assets/logo.webp" alt="logo" />
+            <img className="menu-img" src={`${import.meta.env.BASE_URL}assets/logo.webp`} alt="logo" />
           </div>
           <span onClick={() => document.querySelector(".menubar").classList.toggle("bottom")} style={{ color: "white", fontSize: "27px" }} className="material-symbols-outlined">
             widgets
@@ -669,7 +669,7 @@ function Home() {
       <div className="footer">
         <div className="left-footer">
           <div className="name">
-            <img className='piclogo' src="assets/logo.webp" alt="logo" />
+            <img className='piclogo' src={`${import.meta.env.BASE_URL}assets/logo.webp`} alt="logo" />
           </div>
         </div>
         <div className="middle-footer">

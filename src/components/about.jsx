@@ -17,7 +17,7 @@ const About = () => {
             <CardBody>
               <CardItem>
 
-                <img data-aos="zoom-in" data-aos-duration="800" className='left-image' src="assets/Me-11.webp " alt="My Image" loading="eager"  />
+                <img data-aos="zoom-in" data-aos-duration="800" className='left-image' src={`${import.meta.env.BASE_URL}assets/Me-11.webp `} alt="My Image" loading="eager"  />
               </CardItem>
             </CardBody>
 
@@ -86,7 +86,7 @@ const About = () => {
             </div>
           </div>
           <div data-aos="zoom-in" data-aos-duration="800" data-aos-once="true" className="button">
-            <a  download="Xheikh Moeez CV" href="assets/files/My CV.pdf" className="anchor">
+            <a  download="Xheikh Moeez CV"   href={`${import.meta.env.BASE_URL}assets/files/My CV.pdf`} className="anchor">
               <span>Download CV</span>
             </a>
           </div>
