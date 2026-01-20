@@ -135,10 +135,7 @@ function Home() {
           content="Open-source MERN projects, full-stack apps, Next.js apps, React projects"
         />
 
-        <meta
-          name="google-site-verification"
-          content="o67PCilh0c_X6cE6fU1uklcWQGbAo6hRGuPT4minHxM"
-        />
+        <meta name="google-site-verification" content="y1W4WYO2lPO5plRdzuL67Nlrx6ctaPY4EVJiaMzcvz0" />
         <link
           rel="icon"
           type="image/x-icon"
