@@ -342,7 +342,7 @@ function Home() {
 
               <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="sk">
                 <span className="percentage">{office}</span>
-                <span className="sk-span">MS Office</span>
+                <span className="sk-span">Git , Docker</span>
                 <div className="progress">
                   <span className="progress-bar"></span>
                   <span style={{ width: office }} className="red-progress"></span>
@@ -352,7 +352,7 @@ function Home() {
           </div>
           <div className="right-skill">
             <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="circle">
-              <span>5</span>
+              <span>4</span>
               <span>.</span>
             </div>
             <span data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" className="years">years+ of experience</span>

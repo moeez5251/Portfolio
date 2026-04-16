@@ -17,8 +17,7 @@ const Qualification = () => {
           <div className="exp-right">
             <h2 className="exp-right-name">BS Computer Science</h2>
             <p>
-              Pursuing a Bachelor's degree in Computer Science with a strong focus on software development,
-              web technologies, and data structures.
+              Pursuing a Bachelor's degree in Computer Science with a strong focus on modern technologies.
             </p>
           </div>
         </div>
@@ -35,7 +34,6 @@ const Qualification = () => {
             <h2 className="exp-right-name">MERN Stack Development</h2>
             <p>
               Completed an in-depth MERN Stack certification covering MongoDB, Express.js, React, and Node.js.
-              Built multiple full-stack projects.
             </p>
           </div>
         </div>
@@ -50,8 +48,7 @@ const Qualification = () => {
           <div className="exp-right">
             <h2 className="exp-right-name">Cloud & Database Fundamentals</h2>
             <p>
-              Learned how to manage and deploy cloud-based web applications using services like MongoDB Atlas and
-              Vercel. Gained hands-on experience with database optimization, API hosting, and CI/CD workflows.
+              Learned how to manage and deploy cloud-based web applications using services.
             </p>
           </div>
         </div>

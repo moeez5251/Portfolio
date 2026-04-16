@@ -10,7 +10,7 @@
     justify-content: center;
     gap: 30px;
     align-items: flex-start;
-    height: 35vh;
+    /* height: 35vh; */
 }
 
 .experience-sub div>div {
@@ -29,6 +29,7 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 20px;
+    padding-bottom: 40px;
 }
 
 .exp-left img {
@@ -78,22 +79,17 @@
     margin-top: 24px;
 
 }
+
 @media screen and (max-width:500px) {
+
+    .exp-right-name,
+    .exp-left-name {
+        font-size: 15px;
+    }
+
     .exp-right p {
-    margin-top: 5px;
-    font-size: 13px;
-  }
+        margin-top: 0;
+        font-size: 12px;
+    }
 
-  .experience,
-  .qualification {
-    height: 130vh;
-  }
-    
-}
-@media screen and (max-width:700px) {
-     .experience-sub>div {
-    height: 40vh;
-  }
-
-    
 }

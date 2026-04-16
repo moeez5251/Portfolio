@@ -21,9 +21,7 @@
   justify-content: center;
   gap: 5px;
   position: absolute;
-  bottom: 10px;
-  left: 50%;
-  z-index: 9;
+
 }
 
 .custom-pagination .swiper-pagination-bullet {
@@ -152,13 +150,7 @@
 }
 
 @media screen and (max-width:450px) {
-  .custom-pagination {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-    justify-items: center;
-  }
-
-  .section {
-    padding-bottom: 40%;
+ .custom-pagination .swiper-pagination-bullet {
+   display: none;
   }
 }
