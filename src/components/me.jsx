@@ -14,8 +14,8 @@ const mousemove = (event) => {
 const Me = () => {
     return (
         <>
-            <Bg_1 />
             <div id='home' onMouseMove={(e) => { mousemove(e) }} className="container">
+            <Bg_1 />
                 <div className="left">
 
                     <motion.h2 initial={{
