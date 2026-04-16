@@ -3,9 +3,11 @@ import "./me.css"
 import Bg_1 from './bg-1';
 import { motion, useInView } from "motion/react"
 const mousemove = (event) => {
+    if (window.innerWidth <= 650) {
+        return;
+    }
     const x = (window.innerWidth - event.pageX * 1) / 50;
-    const y = (window.innerHeight - event.pageY * 1) / 50;
-    document.querySelector(".right").style.transform = `translateX(${x}px) translateY(${y}px)`
+    document.querySelector(".right").style.transform = `translateX(${x}px)`
 
 }
 

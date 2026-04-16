@@ -76,6 +76,7 @@
 .right {
     position: relative;
     width: 42%;
+    bottom: -13px;
     overflow: hidden;
 }
 
