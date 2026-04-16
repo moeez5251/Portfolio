@@ -206,10 +206,14 @@
 }
 
 @media screen and (max-width:420px) {
-    .right {
-        left: 10%;
+    .left{
+        top: 10%;
     }
-
-    
+    .right {
+        left: 14%;
+    }
+    .my-image{
+        width: 80%;
+    }
 
 }
