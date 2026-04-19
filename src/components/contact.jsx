@@ -3,7 +3,6 @@ import "./contact.css"
 import { useForm } from "react-hook-form"
 import emailjs from '@emailjs/browser';
 const Contact = () => {
-    console.log(import.meta.env.VITE_EMAIL_JS_ID)
     const form = useRef();
     const [green, setgreen] = useState(false)
     const [error, seterror] = useState(false)
@@ -16,8 +15,8 @@ const Contact = () => {
     const onSubmit = async () => {
         try {
             await emailjs
-                .sendForm(import.meta.env.VITE_EMAIL_JS_ID, 'template_c8sru5i', form.current, {
-                    publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+                .sendForm('service_cl48vdg', 'template_c8sru5i', form.current, {
+                    publicKey: 'OsnOld423T6zK_QBV',
                 })
         } catch (e) {
             console.log(e)
