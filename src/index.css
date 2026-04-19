@@ -1,24 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
+:root {
+  --navbar-link-color: #ffff;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text-primary: #000;
+  --text-secondary: #84888d;
+  --text-light-muted: #716969;
+  --border-color: #e7e2e2;
+  --border-secondary: #dfdada;
+  --theme-red: #cb2d3e;
+  --progress-bg: #bec6d1;
+  --card-bg: transparent;
+  --nav-bg: transparent;
+  --nav-bg-scrolled: rgba(255, 255, 255, 0.95);
+  --loader-bg: #000000;
+  --loader-inner: #212121;
+  --input-border: #000000;
+  --footer-bg: #000000;
+  --svg-filter: invert(1);
+  --landing-page-bg: #24272c;
+  --nav-li-scroll:#121212;
+}
 
+body.dark {
+  --navbar-link-color: #ffff;
+  --bg-primary: #121212;
+  --bg-secondary: #1a1a1a;
+  --text-primary: #f1f1f1;
+  --text-secondary: #a0a0a0;
+  --text-light-muted: #444444;
+  --border-color: #333333;
+  --border-secondary: #444444;
+  --theme-red: #cb2d3e;
+  --progress-bg: #444444;
+  --card-bg: #1e1e1e;
+  --nav-bg: transparent;
+  --loader-bg: #121212;
+  --loader-inner: #f1f1f1;
+  --input-border: #ffffff;
+  --footer-bg: #0a0a0a;
+  --landing-page-bg: #121212;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
 
 ::-webkit-scrollbar {
-    width: 12px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #cb2d3e;
+  background: #cb2d3e;
 }

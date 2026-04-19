@@ -27,7 +27,7 @@
 .left-border {
     width: 94%;
     height: 97%;
-    border: 10px solid #e1e1e1;
+    border: 10px solid var(--border-color);
     position: absolute;
     top: 43px;
     z-index: -10;
@@ -63,7 +63,7 @@
 }
 
 .right-para {
-    color: #84888d;
+    color: var(--text-secondary);
 }
 
 .icons {
@@ -101,7 +101,7 @@
 }
 
 .about-degree-name {
-    color: #84888d;
+    color: var(--text-secondary);
     text-wrap: wrap;
 }
 
@@ -130,7 +130,7 @@
 }
 
 .anchor:hover {
-    color: #4e484a;
+    color: var(--text-secondary);
 }
 
 .button a::before {

@@ -4,7 +4,7 @@
   height: 100vh;
   margin: 0;
   padding: 0;
-  background: #24272c;
+  background: var(--landing-page-bg);
   overflow: hidden;
   z-index: -10;
 }

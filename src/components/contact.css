@@ -14,7 +14,7 @@
 }
 
 .left-contact .box {
-    background-color: white;
+    background-color: var(--bg-primary);
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -34,7 +34,7 @@
 
 }
 .box p {
-    color: #84888d;
+    color: var(--text-secondary);
     width: 80%;
 }
 
@@ -72,9 +72,10 @@ form input {
     outline: navajowhite;
     background: none;
     font-size: 16px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--border-color);
     width: 80%;
     margin: 20px;
+    color: var(--text-primary);
 }
 
 form {
@@ -85,10 +86,12 @@ form textarea {
     width: 75%;
     outline: navajowhite;
     background: none;
+    color: var(--text-primary);
     font-size: 16px;
     margin: 20px;
     padding: 10px 20px;
     border-radius: 10px;
+    border: 1px solid var(--border-color);
     
 }
 .btn-contact{

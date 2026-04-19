@@ -22,7 +22,7 @@
 .exp-left {
     text-align: right;
     padding: 0px 34px;
-    border-right: dashed 1px #cbbfbf;
+    border-right: dashed 1px var(--border-secondary);
     position: relative;
     border-width: 2px;
     display: flex;
@@ -61,7 +61,7 @@
     position: absolute;
     background: #cb2d3e;
     right: -7px;
-    outline: 2px dashed #84888d;
+    outline: 2px dashed var(--text-secondary);
     outline-offset: 5px;
     top: 0;
 }
@@ -74,7 +74,7 @@
 }
 
 .exp-right p {
-    color: #84888d;
+    color: var(--text-secondary);
     width: 85%;
     margin-top: 24px;
 

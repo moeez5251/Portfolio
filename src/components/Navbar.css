@@ -2,18 +2,20 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: fixed ;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
     transition: background 0.4s;
     padding: 10px 0px;
 }
-.name{
+
+.name {
 
     height: 45px;
     width: 70px;
 }
+
 .piclogo {
     width: 100%;
     height: 100%;
@@ -33,16 +35,17 @@ nav {
     position: relative;
     font-size: 15px;
 }
-.other ul li a{
+
+.other ul li a {
     text-decoration: none;
-    color: white;
+    color: var(--navbar-link-color);
     font-weight: 500;
 }
 
 .other ul li a::before {
     position: absolute;
     content: '';
-    background-color: #cb2d3e;
+    background-color: var(--theme-red);
     width: 0%;
     height: 5px;
     display: block;
@@ -53,5 +56,89 @@ nav {
 
 .other ul li a:hover::before {
     width: 100%
-    
+}
+
+
+/* Scrolled Nav styling */
+nav.scrolled {
+    background-color: var(--nav-bg-scrolled);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+nav.scrolled .navbar-li {
+    color: var(--nav-li-scroll);
+}
+
+nav.scrolled img {
+    filter: var(--svg-filter);
+}
+
+
+
+
+/* From Uiverse.io by satyamchaudharydev */
+/* The switch - the box around the slider */
+.switch {
+    display: block;
+    --width-of-switch: 3.5em;
+    --height-of-switch: 2em;
+    /* size of sliding icon -- sun and moon */
+    --size-of-icon: 1.4em;
+    /* it is like a inline-padding of switch */
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon, 1.4em);
+    width: var(--size-of-icon, 1.4em);
+    border-radius: 20px;
+    left: var(--slider-offset, 0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+    ;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: white;
+}
+
+input:checked+.slider:before {
+    left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
+    background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+
+/* Add icon styles for toggle */
+.theme-toggle-btn {
+    position: absolute;
+    right: 10px;
+    /* top: 20px; */
 }

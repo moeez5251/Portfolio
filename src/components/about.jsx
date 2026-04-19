@@ -24,7 +24,7 @@ const About = () => {
           </CardContainer>
         </div>
         <div className="about-right">
-          <div data-aos="zoom-in" data-aos-duration="800" data-aos-once="true" className="head"> I'm Xheikh Moeez an <RotatingText
+          <div data-aos="zoom-in" data-aos-duration="800" data-aos-once="true" className="head"> I'm Xheikh Moeez a<RotatingText
             texts={[
               "MERN-WEB-DEVELOPER.",
               "API-DEVELOPER.",
