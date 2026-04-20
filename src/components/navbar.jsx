@@ -13,12 +13,14 @@ const Navbar = () => {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
     if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+      console.log("dark");
       setIsDarkMode(true);
       document.body.classList.add('dark');
     }
   }, []);
 
-  const toggleTheme = () => {
+  const toggleTheme = (e) => {
+    console.log(e.target);
     if (isDarkMode) {
       document.body.classList.remove('dark');
       localStorage.setItem('theme', 'light');
@@ -65,7 +67,7 @@ const Navbar = () => {
         </ul>
       </div>
       <label className="switch theme-toggle-btn">
-        <input value={isDarkMode} onChange={toggleTheme} type="checkbox" />
+        <input checked={isDarkMode}  onChange={toggleTheme} type="checkbox" />
         <span className="slider"></span>
       </label>
     </nav>
