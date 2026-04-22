@@ -1,42 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
+import { useModeAnimation,ThemeAnimationType } from "react-theme-switch-animation";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Theme state
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { ref, isDarkMode, toggleSwitchTheme } = useModeAnimation({
+    animationType:ThemeAnimationType.BLUR_CIRCLE,
+    duration:800
+  });
 
   useEffect(() => {
-    // Check initial theme from localStorage or system preference
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-      setIsDarkMode(true);
-      document.body.classList.add('dark');
-    }
-  }, []);
-
-  const toggleTheme = (e) => {
     if (isDarkMode) {
-      document.body.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-      setIsDarkMode(false);
+      document.body.classList.add("dark");
+      document.body.classList.remove("light");
+      localStorage.setItem("theme", "dark");
     } else {
-      document.body.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-      setIsDarkMode(true);
+      document.body.classList.remove("dark");
+      document.body.classList.add("light");
+      localStorage.setItem("theme", "light");
     }
-  };
+  }, [isDarkMode]);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 1) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 1);
     };
 
     const mediaQuery = window.matchMedia("(min-width: 750px)");
@@ -45,16 +33,19 @@ const Navbar = () => {
       window.addEventListener("scroll", handleScroll);
     }
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <nav className={isScrolled ? "scrolled" : ""}>
       <div className="name">
-        <img className='piclogo' src={`${import.meta.env.BASE_URL}assets/logo.webp`} alt="logo" />
+        <img
+          className="piclogo"
+          src={`${import.meta.env.BASE_URL}assets/logo.webp`}
+          alt="logo"
+        />
       </div>
+
       <div className="other">
         <ul>
           <li><a className="navbar-li" href="#home">HOME</a></li>
@@ -64,42 +55,45 @@ const Navbar = () => {
           <li><a className="navbar-li" href="#contact">CONTACT</a></li>
         </ul>
       </div>
+
       <label
-        title={isDarkMode ? "Light Mode" : "Dark Mode"}
         htmlFor="themeToggle"
+        title={isDarkMode ? "Light Mode" : "Dark Mode"}
         className="themeToggle st-sunMoonThemeToggleBtn theme-toggle-btn"
-        type="checkbox"
       >
-        <input checked={isDarkMode} onChange={toggleTheme} type="checkbox" id="themeToggle" className="themeToggleInput" />
-        <svg
-          width="18"
-          height="18"
-          viewBox="0 0 20 20"
-          fill="white"
-          stroke="none"
-        >
+        <input
+          ref={ref}
+          checked={isDarkMode}
+          onChange={toggleSwitchTheme}
+          type="checkbox"
+          id="themeToggle"
+          className="themeToggleInput"
+        />
+
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="white">
           <mask id="moon-mask">
-            <rect x="0" y="0" width="20" height="20" fill="white"></rect>
-            <circle cx="11" cy="3" r="8" fill="black"></circle>
+            <rect width="20" height="20" fill="white" />
+            <circle cx="11" cy="3" r="8" fill="black" />
           </mask>
+
           <circle
             className="sunMoon"
             cx="10"
             cy="10"
             r="8"
             mask="url(#moon-mask)"
-          ></circle>
+          />
+
           <g>
-            <circle className="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
-            <circle className="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
-            <circle className="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
-            <circle className="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
-            <circle className="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
-            <circle className="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+            <circle className="sunRay sunRay1" cx="18" cy="10" r="1.5" />
+            <circle className="sunRay sunRay2" cx="14" cy="16.928" r="1.5" />
+            <circle className="sunRay sunRay3" cx="6" cy="16.928" r="1.5" />
+            <circle className="sunRay sunRay4" cx="2" cy="10" r="1.5" />
+            <circle className="sunRay sunRay5" cx="6" cy="3.1718" r="1.5" />
+            <circle className="sunRay sunRay6" cx="14" cy="3.1718" r="1.5" />
           </g>
         </svg>
       </label>
-
     </nav>
   );
 };
