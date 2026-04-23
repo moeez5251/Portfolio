@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { useModeAnimation, ThemeAnimationType } from "react-theme-switch-animation";
-
+import "@theme-toggles/react/css/Expand.css"
+import { Expand } from "@theme-toggles/react"
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -52,44 +53,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <label
-        htmlFor="themeToggle"
-        title={isDarkMode ? "Light Mode" : "Dark Mode"}
-        className="themeToggle st-sunMoonThemeToggleBtn theme-toggle-btn"
-      >
-        <input
-          ref={ref}
-          checked={isDarkMode}
-          onChange={toggleSwitchTheme}
-          type="checkbox"
-          id="themeToggle"
-          className="themeToggleInput"
-        />
-
-        <svg width="18" height="18" viewBox="0 0 20 20" fill="white">
-          <mask id="moon-mask">
-            <rect width="20" height="20" fill="white" />
-            <circle cx="11" cy="3" r="8" fill="black" />
-          </mask>
-
-          <circle
-            className="sunMoon"
-            cx="10"
-            cy="10"
-            r="8"
-            mask="url(#moon-mask)"
-          />
-
-          <g>
-            <circle className="sunRay sunRay1" cx="18" cy="10" r="1.5" />
-            <circle className="sunRay sunRay2" cx="14" cy="16.928" r="1.5" />
-            <circle className="sunRay sunRay3" cx="6" cy="16.928" r="1.5" />
-            <circle className="sunRay sunRay4" cx="2" cy="10" r="1.5" />
-            <circle className="sunRay sunRay5" cx="6" cy="3.1718" r="1.5" />
-            <circle className="sunRay sunRay6" cx="14" cy="3.1718" r="1.5" />
-          </g>
-        </svg>
-      </label>
+      <Expand ref={ref} className="themeToggle theme-toggle-btn" toggled={isDarkMode} onToggle={toggleSwitchTheme} />
     </nav>
   );
 };

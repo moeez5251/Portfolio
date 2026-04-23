@@ -11,6 +11,8 @@ import Contact from "./contact";
 import { motion, useInView } from "motion/react"
 import { Helmet } from "react-helmet-async";
 import { useModeAnimation, ThemeAnimationType } from "react-theme-switch-animation";
+import "@theme-toggles/react/css/Around.css"
+import { Expand,Around } from "@theme-toggles/react"
 import "../App.css"
 function Home() {
   const { ref, isDarkMode, toggleSwitchTheme } = useModeAnimation({
@@ -215,19 +217,7 @@ function Home() {
             <img className="menu-img" src={`${import.meta.env.BASE_URL}assets/logo.webp`} alt="logo" />
           </div>
 
-          <button ref={ref} onClick={toggleSwitchTheme} style={{ color: "white", padding: 0 }} aria-label="Toggle Dark Mode">
-            {isDarkMode ? (
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" data-src="https://cdn.hugeicons.com/icons/sun-01-solid-sharp.svg?v=1.0.0" xmlnsXlink="http://www.w3.org/1999/xlink" role="img" color="#ffffff">
-                <path d="M11.9991 17.75C15.1747 17.75 17.7491 15.1756 17.7491 12C17.7491 8.82436 15.1747 6.25 11.9991 6.25C8.82345 6.25 6.24908 8.82436 6.24908 12C6.24908 15.1756 8.82345 17.75 11.9991 17.75Z" fill="#ffffff" />
-                <path d="M11.999 19.75C12.5513 19.75 12.999 20.1977 12.999 20.75C12.999 21.3023 12.5513 21.75 11.999 21.75C11.4468 21.7499 10.999 21.3022 10.999 20.75C10.999 20.1978 11.4468 19.7501 11.999 19.75ZM17.5557 17.4111C17.9222 17.1122 18.4518 17.1122 18.8184 17.4111L18.8945 17.4805L18.9629 17.5557C19.2834 17.9484 19.2606 18.5284 18.8945 18.8945C18.504 19.2851 17.87 19.2851 17.4795 18.8945C17.0892 18.5041 17.0894 17.871 17.4795 17.4805L17.5557 17.4111ZM5.18066 17.4111C5.54732 17.1118 6.07666 17.1119 6.44336 17.4111L6.51953 17.4795L6.58789 17.5557C6.90807 17.9483 6.88538 18.5275 6.51953 18.8936C6.12905 19.284 5.496 19.2839 5.10547 18.8936C4.71494 18.503 4.71494 17.87 5.10547 17.4795L5.18066 17.4111ZM21.75 12C21.75 12.5523 21.3023 13 20.75 13C20.1977 13 19.75 12.5523 19.75 12C19.75 11.4477 20.1977 11 20.75 11C21.3023 11 21.75 11.4477 21.75 12ZM5.10547 5.10547C5.49592 4.7151 6.12901 4.71521 6.51953 5.10547C6.91003 5.49597 6.90999 6.129 6.51953 6.51953C6.12901 6.91005 5.49599 6.91005 5.10547 6.51953C4.71519 6.12899 4.71503 5.49591 5.10547 5.10547ZM17.4795 5.10547C17.8699 4.71501 18.503 4.71514 18.8936 5.10547C19.2841 5.49599 19.2841 6.12901 18.8936 6.51953C18.503 6.90996 17.87 6.91002 17.4795 6.51953C17.0892 6.12902 17.0891 5.49594 17.4795 5.10547ZM12.1016 2.25488C12.606 2.30591 13 2.7321 13 3.25C13 3.80218 12.5521 4.24983 12 4.25C11.4823 4.25 11.0562 3.85665 11.0049 3.35254L11 3.25L11.0049 3.14746C11.0562 2.64335 11.4823 2.25 12 2.25L12.1016 2.25488ZM4.25 12C4.25 12.5523 3.80228 13 3.25 13C2.69771 13 2.25 12.5523 2.25 12C2.25 11.4477 2.69772 11 3.25 11C3.80228 11 4.25 11.4477 4.25 12Z" fill="#ffffff" />
-              </svg>
-            ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" data-src="https://cdn.hugeicons.com/icons/moon-02-solid-sharp.svg?v=1.0.0" xmlnsXlink="http://www.w3.org/1999/xlink" role="img" color="#ffffff">
-                <path d="M22 14.1878C20.7372 14.8621 19.2949 15.2443 17.7633 15.2443C12.7885 15.2443 8.75571 11.2115 8.75571 6.23669C8.75571 4.70512 9.13795 3.26282 9.81225 2C5.33437 3.04945 2 7.06856 2 11.8664C2 17.4631 6.53695 22 12.1336 22C16.9314 22 20.9505 18.6656 22 14.1878Z" fill="#ffffff" />
-              </svg>
-            )}
-          </button>
+          <Around className="themeToggle theme-toggle-btn menubar-btn" ref={ref} toggled={isDarkMode} onToggle={toggleSwitchTheme} />
           <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
 
             <span onClick={() => document.querySelector(".menubar").classList.toggle("bottom")} style={{ color: "white", fontSize: "27px" }} className="material-symbols-outlined">

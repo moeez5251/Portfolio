@@ -160,8 +160,9 @@
         height: 0;
         transition: all 1s;
     }
-    .theme-toggle-btn{
-        display: none ;
+
+    .theme-toggle-btn {
+        display: none;
     }
 
     .other ul li a {
@@ -205,16 +206,25 @@
         display: none;
     }
 
+    .menubar-btn {
+        display: block;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    
 }
 
 @media screen and (max-width:420px) {
-    .left{
+    .left {
         top: 10%;
     }
+
     .right {
         left: 0;
     }
-    .my-image{
+
+    .my-image {
         width: 80%;
     }
 
