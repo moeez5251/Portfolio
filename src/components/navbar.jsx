@@ -1,23 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import { useModeAnimation,ThemeAnimationType } from "react-theme-switch-animation";
+import { useModeAnimation, ThemeAnimationType } from "react-theme-switch-animation";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const { ref, isDarkMode, toggleSwitchTheme } = useModeAnimation({
-    animationType:ThemeAnimationType.BLUR_CIRCLE,
-    duration:800
+    animationType: ThemeAnimationType.BLUR_CIRCLE,
+    duration: 800
   });
 
   useEffect(() => {
     if (isDarkMode) {
-      document.body.classList.add("dark");
-      document.body.classList.remove("light");
       localStorage.setItem("theme", "dark");
     } else {
-      document.body.classList.remove("dark");
-      document.body.classList.add("light");
       localStorage.setItem("theme", "light");
     }
   }, [isDarkMode]);

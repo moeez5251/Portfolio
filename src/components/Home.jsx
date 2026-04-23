@@ -13,7 +13,7 @@ import { Helmet } from "react-helmet-async";
 import { useModeAnimation, ThemeAnimationType } from "react-theme-switch-animation";
 import "../App.css"
 function Home() {
-  const {ref, isDarkMode, toggleSwitchTheme } = useModeAnimation({
+  const { ref, isDarkMode, toggleSwitchTheme } = useModeAnimation({
     animationType: ThemeAnimationType.BLUR_CIRCLE,
     duration: 700
   });
@@ -121,12 +121,8 @@ function Home() {
 
   useEffect(() => {
     if (isDarkMode) {
-      document.body.classList.add("dark");
-      document.body.classList.remove("light");
       localStorage.setItem("theme", "dark");
     } else {
-      document.body.classList.remove("dark");
-      document.body.classList.add("light");
       localStorage.setItem("theme", "light");
     }
   }, [isDarkMode]);
@@ -240,11 +236,17 @@ function Home() {
           </div>
         </div>
         <div className="menu-items">
-          <li ><a href="#home">HOME</a></li>
-          <li ><a href="#about">ABOUT</a></li>
-          <li ><a href="#resume">RESUME</a></li>
-          <li ><a href="#swiper">PROJECTS</a></li>
-          <li ><a href="#contact">CONTACT</a></li>
+          <div>
+
+            <li ><a href="#home">HOME</a></li>
+            <li ><a href="#about">ABOUT</a></li>
+            <li ><a href="#resume">RESUME</a></li>
+          </div>
+          <div>
+
+            <li ><a href="#swiper">PROJECTS</a></li>
+            <li ><a href="#contact">CONTACT</a></li>
+          </div>
         </div>
       </div>
       <section

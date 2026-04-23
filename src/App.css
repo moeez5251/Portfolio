@@ -637,7 +637,7 @@ button {
     grid-template-columns: repeat(1, minmax(250px, 1fr));
   }
 
- 
+
   .skill {
     flex-direction: column-reverse;
     width: 93%;
@@ -683,7 +683,8 @@ button {
     align-items: flex-start;
     text-align: center;
   }
-  .left-footer{
+
+  .left-footer {
     display: none;
   }
 
@@ -716,13 +717,23 @@ button {
 
 
   .menu-items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: baseline;
     gap: 10px;
+  }
+
+
+  .menu-items>div {
+    display: flex;
     align-items: center;
-    justify-items: start;
-    text-align: center;
     justify-content: space-between;
+    width: 100%;
+  }
+
+  .menu-items :nth-child(2) {
+    justify-content: center;
+    gap:20px;
   }
 }
 

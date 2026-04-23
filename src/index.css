@@ -32,7 +32,7 @@
   --nav-li-scroll:#121212;
 }
 
-body.dark {
+html.dark {
   --navbar-link-color: #ffff;
   --bg-primary: #121212;
   --bg-secondary: #1a1a1a;
