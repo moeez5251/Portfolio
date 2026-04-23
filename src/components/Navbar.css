@@ -73,7 +73,7 @@ nav.scrolled img {
     filter: var(--svg-filter);
 }
 
-nav.scrolled label svg {
+nav.scrolled  svg {
     filter: var(--svg-filter);
 }
 
